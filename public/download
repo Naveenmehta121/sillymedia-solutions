@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SillyMedia Solutions — Delhi NCR’s Digital Growth Partner</title>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            surface: "#fff8f4",
+            "surface-cream": "#F5F0E8",
+            "surface-paper": "#FAF7F2",
+            "surface-container": "#fdebd9",
+            "surface-container-high": "#f7e5d4",
+            "surface-container-highest": "#f1e0ce",
+            primary: "#a03b00",
+            "primary-saffron": "#E8611A",
+            "charcoal-dark": "#1A1208",
+            "forest-green": "#1D4D2E",
+            "forest-accent": "#BAEFC4",
+            "ink-blue": "#1B2B5E",
+            "border-subtle": "#E0D8CC",
+            "border-divider": "#D6CEC0",
+            "on-surface": "#231a0f",
+            "on-surface-variant": "#594138",
+            "on-primary": "#ffffff"
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "editorial-nav": ["DM Sans", "sans-serif"],
+            body: ["DM Sans", "Inter", "sans-serif"],
+            "mono-metric": ["Space Mono", "monospace"],
+            label: ["Space Mono", "monospace"],
+            eyebrow: ["Space Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-[#E8611A] selection:text-white">
+<!-- 1. STICKY MINIMAL HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#F5F0E8]/95 backdrop-blur-md border-b border-[#E0D8CC] shadow-[0_2px_12px_rgba(26,18,8,0.04)]">
+<div class="h-20 max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12 flex items-center justify-between">
+<!-- Brand Logo Left -->
+<a class="flex items-center gap-3 group" href="#">
+<img alt="SillyMedia Solutions Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAMKGrRqjBsrl8Cu6wdDLapCU1bQ9btA6fX3j69pg6O95kZsNFrPQkcbjrbwq4eDUmoUAyxG-5C2vYheBzuvx4iRCIpbqyKu_3EvznaGHy2HFuAxbYDZ882hx-qNvYLQlCyYzOn8Hjl0WwYZg1lZLlmFl_Evc8nb8CYVHxYTrVJ4NVYGXYvO-tWMokdGg7i1WyHw2CJMsyXbfot3D56QRDyHPNBmkX96nmKz4mX1NVWe73ltRIyTiKqlg"/>
+</a>
+<!-- Center Nav Links (DM Sans) -->
+<nav class="hidden lg:flex items-center gap-8 font-editorial-nav text-[0.9375rem] font-medium text-on-surface-variant">
+<a class="hover:text-[#E8611A] transition-colors py-1" href="#work">Work</a>
+<a class="hover:text-[#E8611A] transition-colors py-1" href="#services">Services</a>
+<a class="hover:text-[#E8611A] transition-colors py-1" href="#who-we-serve">Who We Serve</a>
+<a class="hover:text-[#E8611A] transition-colors py-1" href="#lab-products">Lab</a>
+<a class="hover:text-[#E8611A] transition-colors py-1" href="#faq">FAQ</a>
+<a class="hover:text-[#E8611A] transition-colors py-1" href="#contact">Contact</a>
+</nav>
+<!-- Primary Right CTA -->
+<div class="flex items-center">
+<a class="inline-flex items-center justify-center font-label text-[0.75rem] md:text-[0.8125rem] font-bold uppercase tracking-wider px-5 py-2.5 md:py-3 bg-[#E8611A] text-white border border-[#1A1208] shadow-[3px_3px_0px_#1A1208] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" href="#contact">
+          Get a Free Quote
+        </a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface">
+<!-- 2. HERO SECTION -->
+<section class="w-full bg-[#F5F0E8] border-b border-[#D6CEC0] relative overflow-hidden">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-16 lg:pb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+<!-- Left Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FDF0E8] border border-[#E8611A] mb-5">
+<span class="w-2 h-2 bg-[#E8611A]"></span>
+<span class="font-eyebrow text-[0.7rem] md:text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold">
+                DELHI NCR · FULL-STACK WEB, SEO &amp; AI AUTOMATION
+              </span>
+</div>
+<h1 class="font-display text-[2.75rem] sm:text-[3.5rem] md:text-[4.25rem] lg:text-[4.5rem] leading-[1.04] text-[#1A1208] tracking-tight font-bold mb-5">
+              Your Business, Built for the Web.
+            </h1>
+<p class="font-editorial-nav text-[1.125rem] md:text-[1.25rem] text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
+              Custom websites, high-converting web apps, Google Maps ranking, and AI automation for every ambitious business across Delhi, Gurugram, and Noida.
+            </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-8">
+<a class="inline-flex items-center justify-center font-label text-[0.8125rem] font-bold uppercase tracking-wider px-7 py-3.5 bg-[#E8611A] text-white border border-[#1A1208] shadow-[3px_3px_0px_#1A1208] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" href="#work">
+<span>See Our Work</span>
+<span class="ml-2 font-mono-metric text-sm">→</span>
+</a>
+<a class="inline-flex items-center justify-center font-label text-[0.8125rem] font-bold uppercase tracking-wider px-7 py-3.5 bg-[#FFFFFF] text-[#1A1208] border border-[#1A1208] shadow-[3px_3px_0px_#1A1208] hover:bg-[#FAF7F2] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" href="#contact">
+                Talk to Naveen
+              </a>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-[#D6CEC0] w-full max-w-xl">
+<span class="material-symbols-outlined text-[#1D4D2E] text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-editorial-nav text-[0.875rem] text-on-surface-variant font-medium">
+                Zero agency middlemen. Direct architecture &amp; engineering with Naveen. No bloated retainers.
+              </span>
+</div>
+</div>
+<!-- Right Architectural Visual Card (5 cols) -->
+<div class="lg:col-span-5 relative">
+<div class="relative bg-[#FFFFFF] border border-[#E0D8CC] p-3 shadow-[6px_6px_0px_rgba(26,18,8,0.12)]">
+<div class="overflow-hidden border border-[#E0D8CC] bg-[#F5F0E8] relative aspect-[4/3] group">
+<img alt="A clean editorial collage and preview mockup of diverse Delhi NCR business digital interfaces on warm cream tabletop: a chic Gurugram retail fashion store web app, a clean South Delhi dental clinic booking portal, a high-growth Noida fintech SaaS dashboard, and a specialty cafe QR menu." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDgYyMIKsRPZbNFWeX7b8IT_enRm4Tjx6cfknuLGgcy2NWqGtpfCqy9ih-r85PtsFtdIBHsrXAc7Zp0lrtclccF1oPXGc0sUG2QOwP4_7mWZEYkjOwDYu95LmGAamMRhM5MxAuzigfxVmOLdrhtpp4FiKH9-NUcmaE4YdnCSfktBLmf1azX1dXyPBFz4NCKIoeS4FJwx1YyWmrFu4tO652ZvPfH9ML8z2-Nf-WfvuKgpqCTjNUR4sd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1A1208]/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Floating badge inside image -->
+<div class="absolute bottom-3 left-3 right-3 bg-[#FAF7F2] border border-[#1A1208] px-3 py-2 flex items-center justify-between shadow-[2px_2px_0px_#1A1208]">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-[#1D4D2E] rounded-full animate-pulse"></span>
+<span class="font-label text-[0.6875rem] font-bold text-[#1A1208] uppercase tracking-wider">Speed: &lt;0.5s · Google 99/100</span>
+</div>
+<span class="font-label text-[0.6875rem] font-bold text-[#E8611A] uppercase tracking-wider">Multi-Sector</span>
+</div>
+</div>
+<!-- Metadata caption -->
+<div class="pt-3 px-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-[0.6875rem] uppercase tracking-widest text-[#E8611A] font-bold">CASE SPECIMEN 01–04 · DELHI NCR ECOSYSTEM</span>
+<span class="font-label text-[0.6875rem] text-[#1D4D2E] font-bold uppercase">South Delhi · Cyber Hub · Noida</span>
+</div>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mt-1.5 font-medium leading-normal">
+                  Multi-sector digital architecture across South Delhi, Cyber Hub &amp; Noida. High-intent conversion workflows, custom dashboards, and local search dominance.
+                </p>
+</div>
+</div>
+<!-- Accent stamp badge -->
+<div class="absolute -top-3 -right-3 hidden sm:flex w-16 h-16 bg-[#E8611A] text-white border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] flex-col items-center justify-center -rotate-6">
+<span class="font-label text-[0.625rem] font-bold tracking-tighter leading-tight">NCR</span>
+<span class="font-label text-[0.75rem] font-bold leading-tight">2026</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Scrolling Ticker / Marquee Strip -->
+<div class="w-full bg-[#1A1208] border-t border-[#1A1208] py-3 overflow-hidden">
+<div class="flex whitespace-nowrap text-white font-label text-[0.75rem] md:text-[0.8125rem] tracking-widest uppercase">
+<div class="flex shrink-0 items-center gap-6 animate-[marquee_26s_linear_infinite]">
+<span>WEB DESIGN</span><span class="text-[#E8611A]">·</span>
+<span>LOCAL SEO</span><span class="text-[#E8611A]">·</span>
+<span>WHATSAPP AUTOMATION</span><span class="text-[#E8611A]">·</span>
+<span>DELHI NCR</span><span class="text-[#E8611A]">·</span>
+<span>WEB APPS</span><span class="text-[#E8611A]">·</span>
+<span>AI CHATBOTS</span><span class="text-[#E8611A]">·</span>
+<span>GOOGLE MAPS</span><span class="text-[#E8611A]">·</span>
+<span>HIGH-CONVERSION LANDING PAGES</span><span class="text-[#E8611A]">·</span>
+</div>
+<div aria-hidden="true" class="flex shrink-0 items-center gap-6 animate-[marquee_26s_linear_infinite]">
+<span>WEB DESIGN</span><span class="text-[#E8611A]">·</span>
+<span>LOCAL SEO</span><span class="text-[#E8611A]">·</span>
+<span>WHATSAPP AUTOMATION</span><span class="text-[#E8611A]">·</span>
+<span>DELHI NCR</span><span class="text-[#E8611A]">·</span>
+<span>WEB APPS</span><span class="text-[#E8611A]">·</span>
+<span>AI CHATBOTS</span><span class="text-[#E8611A]">·</span>
+<span>GOOGLE MAPS</span><span class="text-[#E8611A]">·</span>
+<span>HIGH-CONVERSION LANDING PAGES</span><span class="text-[#E8611A]">·</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. STATS / SOCIAL PROOF BAR -->
+<section class="w-full bg-[#1A1208] text-white border-b border-[#2D2214]">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12 py-10 lg:py-12">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-y-0 lg:divide-x lg:divide-[#2D2214]">
+<div class="flex flex-col lg:px-8 first:pl-0">
+<span class="font-mono-metric text-[2.75rem] md:text-[3.25rem] text-[#E8611A] font-bold leading-none mb-2">80+</span>
+<span class="font-editorial-nav text-[1.0625rem] font-bold text-white">Businesses Scaled</span>
+<span class="font-editorial-nav text-[0.8125rem] text-[#A69784] mt-1">Retail, Healthcare, Tech &amp; Dining</span>
+</div>
+<div class="flex flex-col lg:px-8">
+<span class="font-mono-metric text-[2.75rem] md:text-[3.25rem] text-[#E8611A] font-bold leading-none mb-2">₹3 Cr</span>
+<span class="font-editorial-nav text-[1.0625rem] font-bold text-white">Revenue Generated</span>
+<span class="font-editorial-nav text-[0.8125rem] text-[#A69784] mt-1">Direct Sales &amp; Inquiries for NCR Clients</span>
+</div>
+<div class="flex flex-col lg:px-8">
+<span class="font-mono-metric text-[2.75rem] md:text-[3.25rem] text-[#E8611A] font-bold leading-none mb-2">#1 Rank</span>
+<span class="font-editorial-nav text-[1.0625rem] font-bold text-white">Google Maps Pack</span>
+<span class="font-editorial-nav text-[0.8125rem] text-[#A69784] mt-1">Top 3 Local Placement in 60 Days</span>
+</div>
+<div class="flex flex-col lg:px-8 last:pr-0">
+<span class="font-mono-metric text-[2.75rem] md:text-[3.25rem] text-[#E8611A] font-bold leading-none mb-2">&lt;0.5s</span>
+<span class="font-editorial-nav text-[1.0625rem] font-bold text-white">Core Web Vitals</span>
+<span class="font-editorial-nav text-[0.8125rem] text-[#A69784] mt-1">Mobile-First 99/100 Google Score</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. WHO WE SERVE (INDUSTRIES) -->
+<section class="w-full bg-[#FAF7F2] py-20 lg:py-24 border-b border-[#D6CEC0]" id="who-we-serve">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="max-w-3xl mb-10">
+<span class="font-eyebrow text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold block mb-2">WHO WE SERVE</span>
+<h2 class="font-display text-[2.25rem] md:text-[3rem] text-[#1A1208] font-bold leading-tight">
+            Every Business That Wants to Grow Online
+          </h2>
+</div>
+<!-- Responsive grid of warm outlined pills/tags -->
+<div class="flex flex-wrap gap-3 md:gap-4 mb-10">
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#E8611A]"></span>Restaurants &amp; Cafes
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#1D4D2E]"></span>Retail Shops &amp; D2C
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#1B2B5E]"></span>Clinics &amp; Healthcare
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#E8611A]"></span>Real Estate &amp; Architecture
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#1D4D2E]"></span>Gyms &amp; Wellness
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#1B2B5E]"></span>Startups &amp; SaaS MVPs
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#E8611A]"></span>Education &amp; Coaching
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#1D4D2E]"></span>Professional &amp; Legal Services
+          </span>
+<span class="inline-flex items-center gap-2 px-5 py-3 bg-[#FFFFFF] border border-[#1A1208] shadow-[2px_2px_0px_#1A1208] font-editorial-nav text-[0.9375rem] font-bold text-[#1A1208] hover:bg-[#FDF0E8] transition-colors">
+<span class="w-2 h-2 bg-[#1B2B5E]"></span>Boutique Hotels &amp; Stays
+          </span>
+</div>
+<!-- Accompanying quote / callout box -->
+<div class="p-6 md:p-8 bg-[#F5F0E8] border-l-4 border-[#E8611A] border-y border-r border-[#E0D8CC] shadow-[4px_4px_0px_rgba(26,18,8,0.06)] flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<span class="font-mono-metric text-[#E8611A] text-2xl font-bold">“</span>
+<p class="font-display italic text-[1.125rem] md:text-[1.25rem] text-[#1A1208] font-semibold leading-snug">
+              If you have customers in Delhi NCR, we have an engineered digital solution to bring them through your door.
+            </p>
+</div>
+<a class="inline-flex items-center justify-center font-label text-[0.75rem] font-bold uppercase tracking-wider px-5 py-3 bg-[#1A1208] text-white hover:bg-[#E8611A] transition-colors shrink-0" href="#contact">
+            Consult With Naveen →
+          </a>
+</div>
+</div>
+</section>
+<!-- 5. SERVICES SECTION: OUR SOLUTIONS -->
+<section class="w-full bg-[#FFFFFF] py-20 lg:py-24 border-b border-[#D6CEC0]" id="services">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[#D6CEC0]">
+<div>
+<span class="font-eyebrow text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold block mb-2">OUR SOLUTIONS — 02</span>
+<h2 class="font-display text-[2.25rem] md:text-[3rem] text-[#1A1208] font-bold leading-tight max-w-2xl">
+              Engineered for Delhi NCR's Competitive Market
+            </h2>
+</div>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant max-w-sm mt-4 md:mt-0 leading-relaxed">
+            High-velocity digital engineering that replaces slow agencies with precision web systems and measurable commercial outcomes.
+          </p>
+</div>
+<!-- 5 Stacked Horizontal Rows -->
+<div class="flex flex-col border border-[#E0D8CC] shadow-[4px_4px_0px_rgba(26,18,8,0.06)] bg-[#FFFFFF]">
+<!-- Row 01 -->
+<div class="p-6 md:p-8 border-b border-[#E0D8CC] bg-[#FFFFFF] hover:bg-[#FFFDFB] transition-colors flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="flex items-start gap-6 lg:w-3/4">
+<span class="font-display text-[2.25rem] lg:text-[2.75rem] font-bold text-[#D6CEC0] group-hover:text-[#E8611A] transition-colors leading-none shrink-0">01</span>
+<div>
+<span class="font-eyebrow text-[0.6875rem] text-[#E8611A] uppercase font-bold tracking-widest">Speed &amp; Conversion</span>
+<h3 class="font-display text-[1.375rem] md:text-[1.5rem] font-bold text-[#1A1208] mt-1">Custom Websites &amp; Headless Web Architecture</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant mt-2 max-w-2xl leading-relaxed">
+                  Sub-second load times, mobile-first design, high-converting layouts built to turn visitors into paying clients across retail, clinics, dining, and corporate firms.
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-4 w-full lg:w-1/4">
+<a class="font-label text-[0.8125rem] font-bold text-[#1A1208] group-hover:text-[#E8611A] transition-colors flex items-center gap-2" href="#contact">
+<span>Explore Websites</span>
+<span class="font-mono-metric">→</span>
+</a>
+</div>
+</div>
+<!-- Row 02 -->
+<div class="p-6 md:p-8 border-b border-[#E0D8CC] bg-[#FAF7F2] hover:bg-[#FFFDFB] transition-colors flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="flex items-start gap-6 lg:w-3/4">
+<span class="font-display text-[2.25rem] lg:text-[2.75rem] font-bold text-[#D6CEC0] group-hover:text-[#1D4D2E] transition-colors leading-none shrink-0">02</span>
+<div>
+<span class="font-eyebrow text-[0.6875rem] text-[#1D4D2E] uppercase font-bold tracking-widest">Local Dominance</span>
+<h3 class="font-display text-[1.375rem] md:text-[1.5rem] font-bold text-[#1A1208] mt-1">Hyperlocal Delhi NCR SEO &amp; Google Maps</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant mt-2 max-w-2xl leading-relaxed">
+                  Dominate local search in Connaught Place, Cyber Hub, South Ex, Sector 62 &amp; Indirapuram. Systematically claim the top 3 spots in Google Map Packs.
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-4 w-full lg:w-1/4">
+<a class="font-label text-[0.8125rem] font-bold text-[#1A1208] group-hover:text-[#1D4D2E] transition-colors flex items-center gap-2" href="#contact">
+<span>Review SEO Playbook</span>
+<span class="font-mono-metric">→</span>
+</a>
+</div>
+</div>
+<!-- Row 03 -->
+<div class="p-6 md:p-8 border-b border-[#E0D8CC] bg-[#FFFFFF] hover:bg-[#FFFDFB] transition-colors flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="flex items-start gap-6 lg:w-3/4">
+<span class="font-display text-[2.25rem] lg:text-[2.75rem] font-bold text-[#D6CEC0] group-hover:text-[#E8611A] transition-colors leading-none shrink-0">03</span>
+<div>
+<span class="font-eyebrow text-[0.6875rem] text-[#E8611A] uppercase font-bold tracking-widest">Zero Lead Drop-Off</span>
+<h3 class="font-display text-[1.375rem] md:text-[1.5rem] font-bold text-[#1A1208] mt-1">WhatsApp Automation &amp; CRM Bots</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant mt-2 max-w-2xl leading-relaxed">
+                  Convert inquiries 24/7 without manual staff, automated appointment booking, follow-ups, and catalog orders directly integrated into your operational pipeline.
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-4 w-full lg:w-1/4">
+<a class="font-label text-[0.8125rem] font-bold text-[#1A1208] group-hover:text-[#E8611A] transition-colors flex items-center gap-2" href="#contact">
+<span>See WhatsApp Flows</span>
+<span class="font-mono-metric">→</span>
+</a>
+</div>
+</div>
+<!-- Row 04 -->
+<div class="p-6 md:p-8 border-b border-[#E0D8CC] bg-[#FAF7F2] hover:bg-[#FFFDFB] transition-colors flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="flex items-start gap-6 lg:w-3/4">
+<span class="font-display text-[2.25rem] lg:text-[2.75rem] font-bold text-[#D6CEC0] group-hover:text-[#1B2B5E] transition-colors leading-none shrink-0">04</span>
+<div>
+<span class="font-eyebrow text-[0.6875rem] text-[#1B2B5E] uppercase font-bold tracking-widest">Product Engineering</span>
+<h3 class="font-display text-[1.375rem] md:text-[1.5rem] font-bold text-[#1A1208] mt-1">Web Apps &amp; Full-Stack SaaS MVPs</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant mt-2 max-w-2xl leading-relaxed">
+                  From validated idea to production web application in weeks with Next.js, FastAPI, and Postgres. Built for NCR startups and enterprise internal tooling.
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-4 w-full lg:w-1/4">
+<a class="font-label text-[0.8125rem] font-bold text-[#1A1208] group-hover:text-[#1B2B5E] transition-colors flex items-center gap-2" href="#contact">
+<span>Explore App Engineering</span>
+<span class="font-mono-metric">→</span>
+</a>
+</div>
+</div>
+<!-- Row 05 -->
+<div class="p-6 md:p-8 bg-[#FFFFFF] hover:bg-[#FFFDFB] transition-colors flex flex-col lg:flex-row lg:items-center justify-between gap-6 group">
+<div class="flex items-start gap-6 lg:w-3/4">
+<span class="font-display text-[2.25rem] lg:text-[2.75rem] font-bold text-[#D6CEC0] group-hover:text-[#1A1208] transition-colors leading-none shrink-0">05</span>
+<div>
+<span class="font-eyebrow text-[0.6875rem] text-[#1D4D2E] uppercase font-bold tracking-widest">Algorithmic Edge</span>
+<h3 class="font-display text-[1.375rem] md:text-[1.5rem] font-bold text-[#1A1208] mt-1">Custom AI Agents &amp; Voice/Chat Bots</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant mt-2 max-w-2xl leading-relaxed">
+                  Intelligent customer service bots, multilingual Hindi/English support, and internal workflow automation tailored specifically for fast-growing Indian enterprises.
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-4 w-full lg:w-1/4">
+<a class="font-label text-[0.8125rem] font-bold text-[#1A1208] group-hover:text-[#1D4D2E] transition-colors flex items-center gap-2" href="#contact">
+<span>Inspect AI Lab</span>
+<span class="font-mono-metric">→</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. WORK & DEMOS SECTION: OUR WORK -->
+<section class="w-full bg-[#F5F0E8] py-20 lg:py-24 border-b border-[#D6CEC0]" id="work">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[#D6CEC0]">
+<div>
+<span class="font-eyebrow text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold block mb-2">OUR WORK — 03</span>
+<h2 class="font-display text-[2.25rem] md:text-[3rem] text-[#1A1208] font-bold leading-tight">Selected Works &amp; Production Deployments</h2>
+</div>
+<span class="font-label text-[0.8125rem] text-on-surface-variant">Validated Production Deployments across Delhi NCR</span>
+</div>
+<!-- 2-column asymmetric bento layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Large Card (7 cols): Aura Luxe Fashion -->
+<div class="lg:col-span-7 bg-[#FFFFFF] border border-[#E0D8CC] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.1)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-[#F5F0E8]">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-[#E8611A]"></span>
+<span class="font-label text-[0.8125rem] font-bold uppercase text-[#1A1208]">Aura Luxe Fashion</span>
+</div>
+<span class="font-label text-[0.6875rem] px-2.5 py-0.5 bg-[#FDF0E8] text-[#E8611A] border border-[#E8611A] uppercase font-bold">
+                  Gurugram · Retail E-Commerce
+                </span>
+</div>
+<!-- Visual preview frame -->
+<div class="mt-5 aspect-[16/10] overflow-hidden border border-[#E0D8CC] relative group bg-[#FAF7F2]">
+<img alt="Aura Luxe Fashion Headless Commerce Interface" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDgYyMIKsRPZbNFWeX7b8IT_enRm4Tjx6cfknuLGgcy2NWqGtpfCqy9ih-r85PtsFtdIBHsrXAc7Zp0lrtclccF1oPXGc0sUG2QOwP4_7mWZEYkjOwDYu95LmGAamMRhM5MxAuzigfxVmOLdrhtpp4FiKH9-NUcmaE4YdnCSfktBLmf1azX1dXyPBFz4NCKIoeS4FJwx1YyWmrFu4tO652ZvPfH9ML8z2-Nf-WfvuKgpqCTjNUR4sd"/>
+<div class="absolute top-3 right-3 bg-[#1A1208] text-white font-label text-[0.6875rem] px-2.5 py-1 uppercase tracking-wider font-bold">
+                  0.34s Load · Headless
+                </div>
+</div>
+<div class="mt-6">
+<h3 class="font-display text-[1.5rem] md:text-[1.75rem] text-[#1A1208] font-bold leading-snug">
+                  High-Speed Headless Shopify Store &amp; Instant Catalog
+                </h3>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant mt-2 leading-relaxed">
+                  Engineered custom headless Next.js frontend integrated with Shopify Storefront API. Achieved sub-second product browsing, seamless one-click UPI checkout, and a 3.8x checkout conversion increase for upscale NCR retail fashion.
+                </p>
+</div>
+</div>
+<div class="mt-8 pt-5 border-t border-[#F5F0E8] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-baseline gap-2">
+<span class="font-mono-metric text-[1.75rem] text-[#1D4D2E] font-bold">+3.8x</span>
+<span class="font-editorial-nav text-[0.8125rem] text-on-surface-variant">Checkout conversion rate</span>
+</div>
+<a class="inline-flex items-center font-label text-[0.75rem] font-bold uppercase tracking-wider px-5 py-2.5 bg-[#1A1208] text-white border border-[#1A1208] shadow-[2px_2px_0px_#E8611A] hover:bg-[#E8611A] transition-colors" href="#contact">
+<span>View Live Demo</span>
+<span class="material-symbols-outlined text-[16px] ml-1">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Right Stacked Cards (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Stack Card 1: Delhi Dental Care -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.1)] flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-[#F5F0E8]">
+<span class="font-label text-[0.8125rem] font-bold text-[#1A1208]">Delhi Dental Care</span>
+<span class="font-label text-[0.6875rem] px-2.5 py-0.5 bg-[#EDF4EF] text-[#1D4D2E] border border-[#1D4D2E] uppercase font-bold">
+                    South Delhi · Healthcare
+                  </span>
+</div>
+<h4 class="font-display text-[1.25rem] md:text-[1.375rem] text-[#1A1208] font-bold mt-4 leading-snug">
+                  Automated Patient Booking System &amp; #1 Local Google Pack
+                </h4>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mt-2 leading-relaxed">
+                  Automated patient appointment booking system &amp; #1 Google Map Pack ranking in Greater Kailash (+185% organic patient consultation leads with automated WhatsApp reminders).
+                </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#F5F0E8] flex items-center justify-between">
+<span class="font-mono-metric text-[1.25rem] text-[#1D4D2E] font-bold">+185% Patient Leads</span>
+<a class="font-label text-[0.75rem] text-[#1A1208] hover:text-[#1D4D2E] underline underline-offset-4 font-bold flex items-center gap-1" href="#contact">
+<span>Case Study</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Stack Card 2: FinOps India -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.1)] flex flex-col justify-between flex-1">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-[#F5F0E8]">
+<span class="font-label text-[0.8125rem] font-bold text-[#1A1208]">FinOps India</span>
+<span class="font-label text-[0.6875rem] px-2.5 py-0.5 bg-[#EDF0F7] text-[#1B2B5E] border border-[#1B2B5E] uppercase font-bold">
+                    Noida Sector 62 · Fintech SaaS
+                  </span>
+</div>
+<h4 class="font-display text-[1.25rem] md:text-[1.375rem] text-[#1A1208] font-bold mt-4 leading-snug">
+                  Intuitive B2B Financial Dashboard &amp; Automated GST Flow
+                </h4>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mt-2 leading-relaxed">
+                  Designed and developed an intuitive enterprise dashboard with automated GST reconciliation, multi-tenant authentication, and instant audit reporting launched to production in 4 weeks.
+                </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#F5F0E8] flex items-center justify-between">
+<span class="font-mono-metric text-[1.25rem] text-[#E8611A] font-bold">4-Week Launch</span>
+<a class="font-label text-[0.75rem] text-[#1A1208] hover:text-[#E8611A] underline underline-offset-4 font-bold flex items-center gap-1" href="#contact">
+<span>Case Study</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. WHY SILLYMEDIA / DIFFERENTIATORS -->
+<section class="w-full bg-[#1D4D2E] text-white py-20 lg:py-24 border-b border-[#143721]">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Left Statement (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-eyebrow text-[0.75rem] text-[#BAEFC4] uppercase tracking-widest font-bold block mb-3">DIFFERENTIATORS — 04</span>
+<h2 class="font-display text-[2.25rem] md:text-[2.75rem] lg:text-[3rem] text-white font-bold leading-tight">
+                Why 80+ Delhi Businesses Work With Naveen, Not Big Agencies
+              </h2>
+<p class="font-editorial-nav text-[1.0625rem] text-[#D0E6D6] mt-5 leading-relaxed">
+                Most digital agencies sell bloated slide decks and delegate your project to interns. We build production-ready digital growth engines engineered directly by Naveen for commercial velocity.
+              </p>
+</div>
+<div class="p-6 bg-[#245D39] border border-[#3A7E52] mt-8 shadow-[3px_3px_0px_#143721]">
+<span class="font-label text-[0.6875rem] text-[#BAEFC4] uppercase tracking-widest block font-bold">Core Working Standard</span>
+<p class="font-editorial-nav text-[0.9375rem] text-white mt-1.5 italic">
+                “Every line of code and every pixel exists to drive phone inquiries, store visits, and direct bank transfers.”
+              </p>
+</div>
+</div>
+<!-- Right 3 Minimalist Bullets (7 cols) -->
+<div class="lg:col-span-7 flex flex-col justify-center gap-6">
+<!-- Bullet 01 -->
+<div class="p-6 md:p-8 bg-[#225735] border-l-4 border-[#E8611A] border-y border-r border-[#2D6E44] shadow-[4px_4px_0px_#143721]">
+<div class="flex items-center gap-3 mb-2">
+<span class="font-label text-[0.75rem] font-bold text-[#E8611A]">01 / DIRECT ACCOUNTABILITY</span>
+<span class="h-px flex-1 bg-[#2D6E44]"></span>
+</div>
+<h3 class="font-display text-[1.25rem] md:text-[1.375rem] font-bold text-white">Direct Principal Accountability</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-[#D0E6D6] mt-2 leading-relaxed">
+                You work 1-on-1 with the senior engineer and designer who builds your system. Zero account managers, no game of telephone, and no junior handoffs.
+              </p>
+</div>
+<!-- Bullet 02 -->
+<div class="p-6 md:p-8 bg-[#225735] border-l-4 border-[#BAEFC4] border-y border-r border-[#2D6E44] shadow-[4px_4px_0px_#143721]">
+<div class="flex items-center gap-3 mb-2">
+<span class="font-label text-[0.75rem] font-bold text-[#BAEFC4]">02 / HYPERLOCAL EXPERTISE</span>
+<span class="h-px flex-1 bg-[#2D6E44]"></span>
+</div>
+<h3 class="font-display text-[1.25rem] md:text-[1.375rem] font-bold text-white">Deep Delhi NCR Hyperlocal Nuance</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-[#D0E6D6] mt-2 leading-relaxed">
+                We understand footfall dynamics in Sector 29 vs Cyber Hub vs Khan Market, regional search habits, and local buyer intent across Delhi, Gurugram, and Noida.
+              </p>
+</div>
+<!-- Bullet 03 -->
+<div class="p-6 md:p-8 bg-[#225735] border-l-4 border-[#E8611A] border-y border-r border-[#2D6E44] shadow-[4px_4px_0px_#143721]">
+<div class="flex items-center gap-3 mb-2">
+<span class="font-label text-[0.75rem] font-bold text-[#E8611A]">03 / COMMERCIAL FOCUS</span>
+<span class="h-px flex-1 bg-[#2D6E44]"></span>
+</div>
+<h3 class="font-display text-[1.25rem] md:text-[1.375rem] font-bold text-white">Speed &amp; Revenue First, Not Pixel Vanity</h3>
+<p class="font-editorial-nav text-[0.9375rem] text-[#D0E6D6] mt-2 leading-relaxed">
+                Every millisecond of load time and every line of copy is tuned to lower customer acquisition cost, eliminate manual friction, and maximize conversions.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. DIGITAL PRODUCTS INCUBATED IN THE LAB -->
+<section class="w-full bg-[#FAF7F2] py-20 lg:py-24 border-b border-[#D6CEC0]" id="lab-products">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[#D6CEC0]">
+<div>
+<span class="font-eyebrow text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold block mb-2">PROPRIETARY TECH — 05</span>
+<h2 class="font-display text-[2.25rem] md:text-[3rem] text-[#1A1208] font-bold leading-tight">Digital Products We've Built</h2>
+</div>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant max-w-sm mt-4 md:mt-0 leading-relaxed">
+            In-house tools and software frameworks engineered to give Delhi NCR businesses an asymmetric algorithmic advantage.
+          </p>
+</div>
+<!-- 2x2 Grid with distinct vertical accent bars -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Product 1: LocalRanker NCR (Forest Green bar) -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] border-l-4 border-l-[#1D4D2E] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.08)] flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-[#F5F0E8] mb-4">
+<span class="font-label text-[0.6875rem] font-bold text-[#1D4D2E] uppercase tracking-wider">Product 01 // Geo Tracking</span>
+<span class="font-label text-[0.6875rem] px-2.5 py-0.5 bg-[#EDF4EF] text-[#1D4D2E] border border-[#1D4D2E] uppercase font-bold">BETA</span>
+</div>
+<h3 class="font-display text-[1.375rem] font-bold text-[#1A1208]">LocalRanker NCR</h3>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mt-2 leading-relaxed">
+                Automated geo-grid ranking tracker for Google Business Profiles across Delhi NCR hubs. Monitors pin positions every 12 hours across 25 distinct GPS nodes.
+              </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between border-t border-[#F5F0E8]">
+<span class="font-label text-[0.75rem] text-on-surface-variant font-bold">50+ NCR Commercial Hubs</span>
+<a class="font-label text-[0.75rem] text-[#1D4D2E] font-bold hover:underline" href="#contact">Request Invite →</a>
+</div>
+</div>
+<!-- Product 2: WhatsDesk Pro (Saffron Orange bar) -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] border-l-4 border-l-[#E8611A] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.08)] flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-[#F5F0E8] mb-4">
+<span class="font-label text-[0.6875rem] font-bold text-[#E8611A] uppercase tracking-wider">Product 02 // WhatsApp Engine</span>
+<span class="font-label text-[0.6875rem] px-2.5 py-0.5 bg-[#FDF0E8] text-[#E8611A] border border-[#E8611A] uppercase font-bold">LIVE</span>
+</div>
+<h3 class="font-display text-[1.375rem] font-bold text-[#1A1208]">WhatsDesk Pro</h3>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mt-2 leading-relaxed">
+                Omnichannel WhatsApp CRM and lead distribution engine for multi-agent retail, clinics, and service operations with instant catalog ordering and UPI links.
+              </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between border-t border-[#F5F0E8]">
+<span class="font-label text-[0.75rem] text-on-surface-variant font-bold">Cloud API · Zero Commission</span>
+<a class="font-label text-[0.75rem] text-[#E8611A] font-bold hover:underline" href="#contact">Explore Specs →</a>
+</div>
+</div>
+<!-- Product 3: DocuFlow AI (Ink Blue bar) -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] border-l-4 border-l-[#1B2B5E] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.08)] flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-[#F5F0E8] mb-4">
+<span class="font-label text-[0.6875rem] font-bold text-[#1B2B5E] uppercase tracking-wider">Product 03 // Vernacular AI</span>
+<span class="font-label text-[0.6875rem] px-2.5 py-0.5 bg-[#EDF0F7] text-[#1B2B5E] border border-[#1B2B5E] uppercase font-bold">PILOT</span>
+</div>
+<h3 class="font-display text-[1.375rem] font-bold text-[#1A1208]">DocuFlow AI</h3>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mt-2 leading-relaxed">
+                Multilingual vernacular AI assistant for patient intake and legal inquiry summarization. Converts unstructured Hindi/English voice and text into structured CRM records.
+              </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between border-t border-[#F5F0E8]">
+<span class="font-label text-[0.75rem] text-on-surface-variant font-bold">Healthcare &amp; Legal Intake</span>
+<a class="font-label text-[0.75rem] text-[#1B2B5E] font-bold hover:underline" href="#contact">Join Sandbox →</a>
+</div>
+</div>
+<!-- Product 4: SiteSpeed Turbo (Charcoal bar) -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] border-l-4 border-l-[#1A1208] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.08)] flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-[#F5F0E8] mb-4">
+<span class="font-label text-[0.6875rem] font-bold text-[#1A1208] uppercase tracking-wider">Product 04 // Performance</span>
+<span class="font-label text-[0.6875rem] px-2.5 py-0.5 bg-[#F5F0E8] text-[#1A1208] border border-[#1A1208] uppercase font-bold">LIVE</span>
+</div>
+<h3 class="font-display text-[1.375rem] font-bold text-[#1A1208]">SiteSpeed Turbo</h3>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mt-2 leading-relaxed">
+                Automated asset optimization pipeline cutting Next.js TTFB to under 120ms and guaranteeing 95+ Core Web Vitals on real mobile 4G/5G networks.
+              </p>
+</div>
+<div class="mt-6 pt-3 flex items-center justify-between border-t border-[#F5F0E8]">
+<span class="font-label text-[0.75rem] text-on-surface-variant font-bold">Edge Edge-Cached Delivery</span>
+<a class="font-label text-[0.75rem] text-[#1A1208] font-bold hover:underline" href="#contact">Run Benchmark →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. TESTIMONIALS STRIP -->
+<section class="w-full bg-[#FFF8F4] py-20 lg:py-24 border-b border-[#D6CEC0]">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[#D6CEC0]">
+<div>
+<span class="font-eyebrow text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold block mb-2">VALIDATION — 06</span>
+<h2 class="font-display text-[2.25rem] md:text-[3rem] text-[#1A1208] font-bold leading-tight">Client Testimonials</h2>
+</div>
+<span class="font-label text-[0.8125rem] text-on-surface-variant">Real Founders &amp; Operators Across Delhi NCR</span>
+</div>
+<!-- 3 Horizontal Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-[#E8611A] mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-editorial-nav text-[0.9375rem] text-[#1A1208] leading-relaxed italic">
+                “Naveen took our clinic from page 4 to #1 on Google Maps in South Delhi. Our monthly consultation bookings doubled in 90 days.”
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#F5F0E8]">
+<span class="font-display font-bold text-[1rem] text-[#1A1208] block">Dr. Anjali Sharma</span>
+<span class="font-editorial-nav text-[0.8125rem] text-on-surface-variant">Founder, Delhi Dental Care, GK-1</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-[#E8611A] mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-editorial-nav text-[0.9375rem] text-[#1A1208] leading-relaxed italic">
+                “Our headless e-commerce store loads instantly on 4G. Naveen built and launched the entire platform in 3 weeks.”
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#F5F0E8]">
+<span class="font-display font-bold text-[1rem] text-[#1A1208] block">Rohan Sethi</span>
+<span class="font-editorial-nav text-[0.8125rem] text-on-surface-variant">MD, Aura Luxe Apparel, DLF CyberCity</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-[#FFFFFF] border border-[#E0D8CC] p-6 md:p-8 shadow-[4px_4px_0px_rgba(26,18,8,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-[#E8611A] mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-editorial-nav text-[0.9375rem] text-[#1A1208] leading-relaxed italic">
+                “Flawless engineering and zero agency bloat. Naveen writes clean, scalable code and communicates with total clarity.”
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#F5F0E8]">
+<span class="font-display font-bold text-[1rem] text-[#1A1208] block">Vikram Malhotra</span>
+<span class="font-editorial-nav text-[0.8125rem] text-on-surface-variant">CTO, FinOps India, Noida</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FAQ SECTION -->
+<section class="w-full bg-[#F5F0E8] py-20 lg:py-24 border-b border-[#D6CEC0]" id="faq">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Left Title (4 cols) -->
+<div class="lg:col-span-4">
+<span class="font-eyebrow text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold block mb-2">TRANSPARENCY — 07</span>
+<h2 class="font-display text-[2.25rem] md:text-[2.75rem] text-[#1A1208] font-bold leading-tight">Direct Answers to Hard Questions</h2>
+<p class="font-editorial-nav text-[0.9375rem] text-on-surface-variant mt-4 leading-relaxed">
+              No agency buzzwords, no opaque retainers, and no hidden fine print. Direct answers from Naveen on how we deliver value.
+            </p>
+<div class="mt-8 p-6 bg-[#FFFFFF] border border-[#E0D8CC] shadow-[3px_3px_0px_rgba(26,18,8,0.06)]">
+<span class="font-label text-[0.75rem] font-bold uppercase text-[#1A1208] block mb-1">Need a custom scope?</span>
+<p class="font-editorial-nav text-[0.8125rem] text-on-surface-variant">Send an email directly to Naveen with your business location and existing site.</p>
+<a class="font-label text-[0.8125rem] text-[#E8611A] font-bold mt-3 inline-block hover:underline" href="mailto:naveen@sillymedia.in">naveen@sillymedia.in</a>
+</div>
+</div>
+<!-- Right Accordion (8 cols) -->
+<div class="lg:col-span-8 flex flex-col divide-y divide-[#D6CEC0] border-y border-[#D6CEC0]" id="faq-accordion">
+<!-- FAQ Item 1 -->
+<div class="py-6 cursor-pointer group" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-4">
+<h3 class="font-editorial-nav text-[1.0625rem] md:text-[1.1875rem] font-bold text-[#1A1208] group-hover:text-[#E8611A] transition-colors">
+                  Do you work with all types of businesses across Delhi NCR?
+                </h3>
+<span class="faq-icon font-mono-metric text-[1.5rem] text-[#1A1208] shrink-0 font-bold">+</span>
+</div>
+<div class="faq-content hidden mt-4 pt-2 font-editorial-nav text-[0.9375rem] text-on-surface-variant leading-relaxed">
+                Yes. While we have deep roots in Delhi’s high-traffic retail, healthcare, and hospitality ecosystems, our core stack serves retail shops, medical clinics, corporate services, real estate developers, education academies, and tech startups across Delhi, Gurugram, and Noida.
+              </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="py-6 cursor-pointer group" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-4">
+<h3 class="font-editorial-nav text-[1.0625rem] md:text-[1.1875rem] font-bold text-[#1A1208] group-hover:text-[#E8611A] transition-colors">
+                  How long does a bespoke website or web app take from kickoff to launch?
+                </h3>
+<span class="faq-icon font-mono-metric text-[1.5rem] text-[#1A1208] shrink-0 font-bold">+</span>
+</div>
+<div class="faq-content hidden mt-4 pt-2 font-editorial-nav text-[0.9375rem] text-on-surface-variant leading-relaxed">
+                A custom high-performance website takes between 14 to 21 working days from kickoff to live deployment. For full-stack web applications, SaaS MVPs, and complex booking engines, timelines are typically 4 to 6 weeks, structured into fast 1-week iterative sprints.
+              </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="py-6 cursor-pointer group" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-4">
+<h3 class="font-editorial-nav text-[1.0625rem] md:text-[1.1875rem] font-bold text-[#1A1208] group-hover:text-[#E8611A] transition-colors">
+                  Can you rank our business in the top 3 on Google Maps in our specific locality?
+                </h3>
+<span class="faq-icon font-mono-metric text-[1.5rem] text-[#1A1208] shrink-0 font-bold">+</span>
+</div>
+<div class="faq-content hidden mt-4 pt-2 font-editorial-nav text-[0.9375rem] text-on-surface-variant leading-relaxed">
+                Yes. We apply an engineering-led local SEO methodology: neighborhood entity markup, citation cleansing, optimized Google Business Profile taxonomy, geo-tagged asset indexing, and automated review generation funnels tailored specifically for NCR micro-markets.
+              </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="py-6 cursor-pointer group" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-4">
+<h3 class="font-editorial-nav text-[1.0625rem] md:text-[1.1875rem] font-bold text-[#1A1208] group-hover:text-[#E8611A] transition-colors">
+                  Do you provide ongoing technical support, hosting, and updates?
+                </h3>
+<span class="faq-icon font-mono-metric text-[1.5rem] text-[#1A1208] shrink-0 font-bold">+</span>
+</div>
+<div class="faq-content hidden mt-4 pt-2 font-editorial-nav text-[0.9375rem] text-on-surface-variant leading-relaxed">
+                Absolutely. All systems are hosted on ultra-fast edge infrastructure (Vercel, AWS, Cloudflare) with zero server maintenance overhead. We provide proactive monthly maintenance, security patching, local ranking tracking, and direct developer support on WhatsApp.
+              </div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="py-6 cursor-pointer group" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-4">
+<h3 class="font-editorial-nav text-[1.0625rem] md:text-[1.1875rem] font-bold text-[#1A1208] group-hover:text-[#E8611A] transition-colors">
+                  What does pricing look like for an independent business versus a growing brand?
+                </h3>
+<span class="faq-icon font-mono-metric text-[1.5rem] text-[#1A1208] shrink-0 font-bold">+</span>
+</div>
+<div class="faq-content hidden mt-4 pt-2 font-editorial-nav text-[0.9375rem] text-on-surface-variant leading-relaxed">
+                We work on fixed, transparent architectural project fees. Independent businesses can get launched with flat-fee sprints that cover design, engineering, and local SEO setup. Multi-outlet franchises or enterprise SaaS platforms are scoped transparently with clear delivery milestones.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. CTA / CONTACT SECTION -->
+<section class="w-full bg-[#1A1208] text-white py-20 lg:py-24 relative" id="contact">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#2D2214] border border-[#E8611A] mb-5">
+<span class="w-2 h-2 bg-[#E8611A]"></span>
+<span class="font-label text-[0.75rem] text-[#E8611A] uppercase tracking-widest font-bold">Direct Discovery · No Obligation</span>
+</div>
+<h2 class="font-display text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] text-white font-bold leading-tight max-w-4xl">
+          Ready to Grow Your Business Online?
+        </h2>
+<p class="font-editorial-nav text-[1.125rem] md:text-[1.25rem] text-[#D6CEC0] max-w-2xl mt-4 mb-10 leading-relaxed">
+          Let's review your current digital presence, local Google ranking, and conversion bottlenecks over a free 20-minute strategy call with Naveen.
+        </p>
+<!-- Two Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-14">
+<!-- WhatsApp Green Button -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 font-label text-[0.8125rem] font-bold uppercase tracking-wider px-8 py-4 bg-[#25D366] text-[#0B3A1C] border border-[#20BA5A] shadow-[3px_3px_0px_#000000] hover:bg-[#20bd5a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" href="https://wa.me/919800000000" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat with Naveen on WhatsApp</span>
+</a>
+<!-- Saffron Orange Button -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center font-label text-[0.8125rem] font-bold uppercase tracking-wider px-8 py-4 bg-[#E8611A] text-white border border-[#E8611A] shadow-[3px_3px_0px_#000000] hover:bg-[#c94c00] hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all" href="mailto:naveen@sillymedia.in?subject=Growth%20Strategy%20Inquiry">
+<span>Book a 20-Min Strategy Call</span>
+</a>
+</div>
+<!-- Contact Meta Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-[#2D2214] w-full max-w-3xl text-center">
+<div>
+<span class="font-label text-[0.75rem] text-[#857766] uppercase tracking-wider block">Direct Email</span>
+<span class="font-editorial-nav text-[0.9375rem] text-white font-medium">naveen@sillymedia.in</span>
+</div>
+<div>
+<span class="font-label text-[0.75rem] text-[#857766] uppercase tracking-wider block">Headquarters</span>
+<span class="font-editorial-nav text-[0.9375rem] text-white font-medium">Delhi NCR, India</span>
+</div>
+<div>
+<span class="font-label text-[0.75rem] text-[#857766] uppercase tracking-wider block">Response SLA</span>
+<span class="font-editorial-nav text-[0.9375rem] text-white font-medium">Response within 3 hours</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 12. 4-COLUMN EDITORIAL FOOTER -->
+<footer class="w-full bg-[#FAF7F2] border-t-2 border-[#D6CEC0] pt-16 pb-12">
+<div class="max-w-[1320px] mx-auto px-5 md:px-8 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#D6CEC0]">
+<!-- Col 1: Brand & Logo -->
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-3">
+<img alt="SillyMedia Solutions Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAMKGrRqjBsrl8Cu6wdDLapCU1bQ9btA6fX3j69pg6O95kZsNFrPQkcbjrbwq4eDUmoUAyxG-5C2vYheBzuvx4iRCIpbqyKu_3EvznaGHy2HFuAxbYDZ882hx-qNvYLQlCyYzOn8Hjl0WwYZg1lZLlmFl_Evc8nb8CYVHxYTrVJ4NVYGXYvO-tWMokdGg7i1WyHw2CJMsyXbfot3D56QRDyHPNBmkX96nmKz4mX1NVWe73ltRIyTiKqlg"/>
+</div>
+<span class="font-eyebrow text-[0.7rem] text-[#E8611A] uppercase tracking-widest mb-3">Broadsheet Studio · Delhi NCR</span>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mb-4 leading-relaxed">
+            Independent digital product architecture and growth consulting operated by Naveen. Building resilient web engines, local search authority, and custom automation for businesses across NCR.
+          </p>
+<div class="inline-flex items-center gap-2 border-l-2 border-[#1D4D2E] pl-3">
+<span class="font-label text-[0.6875rem] text-[#1D4D2E] font-bold uppercase tracking-wider">Discipline:</span>
+<span class="font-editorial-nav text-[0.8125rem] text-on-surface">Web Engineering &amp; Growth</span>
+</div>
+</div>
+<!-- Col 2: Services -->
+<div class="flex flex-col">
+<span class="font-label text-[0.8125rem] font-bold text-on-surface uppercase tracking-widest mb-4 pb-2 border-b border-[#D6CEC0]">Services</span>
+<ul class="flex flex-col gap-2.5 font-editorial-nav text-[0.875rem] text-on-surface-variant">
+<li><a class="hover:text-[#E8611A] transition-colors flex items-center justify-between" href="#services"><span>Custom Websites</span><span class="font-label text-[0.6875rem] text-[#8D7166]">01</span></a></li>
+<li><a class="hover:text-[#E8611A] transition-colors flex items-center justify-between" href="#services"><span>Hyperlocal SEO</span><span class="font-label text-[0.6875rem] text-[#8D7166]">02</span></a></li>
+<li><a class="hover:text-[#E8611A] transition-colors flex items-center justify-between" href="#services"><span>WhatsApp Automation</span><span class="font-label text-[0.6875rem] text-[#8D7166]">03</span></a></li>
+<li><a class="hover:text-[#E8611A] transition-colors flex items-center justify-between" href="#services"><span>Web Apps &amp; SaaS</span><span class="font-label text-[0.6875rem] text-[#8D7166]">04</span></a></li>
+<li><a class="hover:text-[#E8611A] transition-colors flex items-center justify-between" href="#services"><span>Custom AI Agents</span><span class="font-label text-[0.6875rem] text-[#8D7166]">05</span></a></li>
+</ul>
+</div>
+<!-- Col 3: Cities Served -->
+<div class="flex flex-col">
+<span class="font-label text-[0.8125rem] font-bold text-on-surface uppercase tracking-widest mb-4 pb-2 border-b border-[#D6CEC0]">Cities Served</span>
+<ul class="flex flex-col gap-2.5 font-editorial-nav text-[0.875rem] text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#E8611A]"></span><span>Delhi (North, South, Central &amp; West)</span></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#E8611A]"></span><span>Gurugram (CyberCity, Golf Course Rd, Sec 29)</span></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#E8611A]"></span><span>Noida (Sec 62, Sec 18 &amp; Expressway)</span></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#E8611A]"></span><span>Faridabad</span></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#E8611A]"></span><span>Ghaziabad</span></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#E8611A]"></span><span>Greater Noida</span></li>
+</ul>
+</div>
+<!-- Col 4: Direct Contact -->
+<div class="flex flex-col">
+<span class="font-label text-[0.8125rem] font-bold text-on-surface uppercase tracking-widest mb-4 pb-2 border-b border-[#D6CEC0]">Direct Contact</span>
+<p class="font-editorial-nav text-[0.875rem] text-on-surface-variant mb-3">
+            Consultations, technical audits, and new builds directly led by Naveen.
+          </p>
+<div class="flex flex-col gap-2.5 font-label text-[0.8125rem]">
+<a class="text-[#E8611A] hover:text-[#1A1208] underline underline-offset-4 font-bold" href="mailto:naveen@sillymedia.in">
+              naveen@sillymedia.in
+            </a>
+<a class="text-[#1D4D2E] hover:text-[#1A1208] transition-colors font-bold flex items-center gap-1.5" href="https://wa.me/919800000000" target="_blank">
+<span class="w-2 h-2 rounded-full bg-[#1D4D2E]"></span>
+<span>WhatsApp Direct Line</span>
+</a>
+<span class="font-editorial-nav text-[0.8125rem] text-on-surface-variant pt-2">
+              Available 09:00 – 19:00 IST
+            </span>
+</div>
+</div>
+</div>
+<!-- Bottom Line -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-[0.75rem] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-[#E8611A]"></span>
+<span>© 2026 SillyMedia Solutions. Architectural engineering by Naveen. All rights reserved.</span>
+</div>
+<div class="flex items-center gap-6 uppercase tracking-wider">
+<a class="hover:text-[#E8611A] transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-[#E8611A] transition-colors" href="#">GitHub</a>
+<a class="hover:text-[#E8611A] transition-colors" href="#">Substack</a>
+<a class="hover:text-[#E8611A] transition-colors" href="#">X / Dispatch</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Accordion Logic -->
+<script>
+    function toggleFaq(item) {
+      const content = item.querySelector('.faq-content');
+      const icon = item.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+      
+      document.querySelectorAll('#faq-accordion .faq-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion .faq-icon').forEach(el => el.textContent = '+');
+      
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</body></html>
