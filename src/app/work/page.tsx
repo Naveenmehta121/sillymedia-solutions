@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema } from '@/lib/schema';
 import { caseStudiesData } from '@/data/work';
 import { siteConfig } from '@/config/site.config';
 
@@ -13,11 +15,13 @@ export const metadata: Metadata = {
 };
 
 export default function WorkIndexPage() {
+  const crumbs = [{ label: 'Home', href: '/' }, { label: 'Work' }];
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, '/work')} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Work' }]} />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             SELECTED WORK · DELHI NCR

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactActions from '@/components/ContactActions';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema, buildFaqSchema } from '@/lib/schema';
 import { faqsData } from '@/data/faqs';
 import { siteConfig } from '@/config/site.config';
 
@@ -21,11 +23,14 @@ const categories = [
 ] as const;
 
 export default function FaqPage() {
+  const crumbs = [{ label: 'Home', href: '/' }, { label: 'FAQ' }];
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, '/faq')} />
+      <JsonLd data={buildFaqSchema(faqsData)} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'FAQ' }]} />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             TRANSPARENCY &amp; ANSWERS

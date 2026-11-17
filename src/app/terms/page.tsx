@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema } from '@/lib/schema';
 import { siteConfig } from '@/config/site.config';
 
 export const metadata: Metadata = {
@@ -10,11 +12,13 @@ export const metadata: Metadata = {
 };
 
 export default function TermsPage() {
+  const crumbs = [{ label: 'Home', href: '/' }, { label: 'Terms of Service' }];
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, '/terms')} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Terms of Service' }]} />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             ENGAGEMENT &amp; WEBSITE TERMS

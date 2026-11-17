@@ -3,6 +3,8 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import AnalyticsScripts from '@/components/AnalyticsScripts';
+import JsonLd from '@/components/JsonLd';
+import { buildGlobalGraph } from '@/lib/schema';
 import { isConfigured, siteConfig } from '@/config/site.config';
 import './globals.css';
 
@@ -87,6 +89,7 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        <JsonLd data={buildGlobalGraph()} />
       </head>
       <body>
         <a href="#main-content" className="skip-link">

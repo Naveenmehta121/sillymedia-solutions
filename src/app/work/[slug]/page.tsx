@@ -5,6 +5,8 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactActions from '@/components/ContactActions';
 import ContactForm from '@/components/ContactForm';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema } from '@/lib/schema';
 import { caseStudiesData, getCaseStudyBySlug } from '@/data/work';
 import { siteConfig } from '@/config/site.config';
 
@@ -34,17 +36,18 @@ export default function CaseStudyDetailPage({ params }: { params: { slug: string
 
   const otherCases = caseStudiesData.filter((item) => item.slug !== cs.slug);
 
+  const crumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Work', href: '/work' },
+    { label: cs.client },
+  ];
+
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, `/work/${cs.slug}`)} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Work', href: '/work' },
-              { label: cs.client },
-            ]}
-          />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             CASE STUDY · {cs.city.toUpperCase()} · {cs.sector.toUpperCase()}

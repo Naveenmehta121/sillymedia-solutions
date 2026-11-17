@@ -5,6 +5,8 @@ import { ArrowRight, ChevronDown } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactActions from '@/components/ContactActions';
 import ContactForm from '@/components/ContactForm';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema, buildFaqSchema } from '@/lib/schema';
 import { getLocationBySlug, locationsData } from '@/data/locations';
 import { getServiceBySlug } from '@/data/services';
 import { getCaseStudyBySlug } from '@/data/work';
@@ -39,17 +41,19 @@ export default function LocationPage({ params }: { params: { city: string } }) {
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
   const otherLocations = locationsData.filter((item) => item.slug !== loc.slug);
 
+  const crumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Locations', href: '/locations' },
+    { label: loc.city },
+  ];
+
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, `/locations/${loc.slug}`)} />
+      <JsonLd data={buildFaqSchema(loc.faqs)} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Locations', href: '/locations' },
-              { label: loc.city },
-            ]}
-          />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             LOCAL MARKET · {loc.city.toUpperCase()} ({loc.regionLabel.toUpperCase()})

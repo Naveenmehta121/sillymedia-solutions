@@ -4,6 +4,8 @@ import { ArrowRight, CheckCircle2, ExternalLink } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactActions from '@/components/ContactActions';
 import ContactForm from '@/components/ContactForm';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema } from '@/lib/schema';
 import { isConfigured, siteConfig } from '@/config/site.config';
 import { servicesData } from '@/data/services';
 
@@ -23,11 +25,14 @@ export default function AboutPage() {
   const hasGithub = isConfigured(siteConfig.founder.githubUrl);
   const hasYears = isConfigured(siteConfig.founder.experienceYears);
 
+  const crumbs = [{ label: 'Home', href: '/' }, { label: 'About' }];
+
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, '/about')} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             PRINCIPAL-LED DIGITAL ENGINEERING

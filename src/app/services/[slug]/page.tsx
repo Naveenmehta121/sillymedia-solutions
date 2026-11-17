@@ -5,6 +5,8 @@ import { ArrowRight, CheckCircle2, ChevronDown } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactActions from '@/components/ContactActions';
 import ContactForm from '@/components/ContactForm';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema, buildFaqSchema, buildServiceSchema } from '@/lib/schema';
 import { getServiceBySlug, servicesData } from '@/data/services';
 import { getLocationBySlug } from '@/data/locations';
 import { getCaseStudyBySlug } from '@/data/work';
@@ -42,17 +44,20 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
     .map((s) => getLocationBySlug(s))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
+  const crumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Services', href: '/services' },
+    { label: service.shortName },
+  ];
+
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, `/services/${service.slug}`)} />
+      <JsonLd data={buildServiceSchema(service)} />
+      <JsonLd data={buildFaqSchema(service.faqs)} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Services', href: '/services' },
-              { label: service.shortName },
-            ]}
-          />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             SERVICE {service.number} · {service.eyebrow}

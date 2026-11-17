@@ -5,6 +5,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PricingSection from '@/components/PricingSection';
 import ContactActions from '@/components/ContactActions';
 import ContactForm from '@/components/ContactForm';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema } from '@/lib/schema';
 import { servicesData } from '@/data/services';
 import { locationsData } from '@/data/locations';
 import { siteConfig } from '@/config/site.config';
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesIndexPage() {
+  const crumbs = [{ label: 'Home', href: '/' }, { label: 'Services' }];
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, '/services')} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Services' }]} />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             SERVICES · DELHI NCR DIGITAL ENGINEERING

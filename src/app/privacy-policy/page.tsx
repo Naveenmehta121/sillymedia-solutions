@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema } from '@/lib/schema';
 import { siteConfig } from '@/config/site.config';
 
 export const metadata: Metadata = {
@@ -10,11 +12,13 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicyPage() {
+  const crumbs = [{ label: 'Home', href: '/' }, { label: 'Privacy Policy' }];
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, '/privacy-policy')} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Privacy Policy' }]} />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             LEGAL &amp; DATA HANDLING

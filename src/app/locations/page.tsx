@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
+import { buildBreadcrumbSchema } from '@/lib/schema';
 import { locationsData } from '@/data/locations';
 import { siteConfig } from '@/config/site.config';
 
@@ -13,11 +15,13 @@ export const metadata: Metadata = {
 };
 
 export default function LocationsIndexPage() {
+  const crumbs = [{ label: 'Home', href: '/' }, { label: 'Locations' }];
   return (
     <main>
+      <JsonLd data={buildBreadcrumbSchema(crumbs, '/locations')} />
       <section className="page-hero">
         <div className="container">
-          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Locations' }]} />
+          <Breadcrumbs items={crumbs} />
           <span className="eyebrow-pill">
             <i />
             DELHI NCR COVERAGE
