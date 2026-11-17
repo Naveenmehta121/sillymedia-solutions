@@ -10,28 +10,36 @@ import ContactForm from '@/components/ContactForm';
 import ContactActions from '@/components/ContactActions';
 import PricingSection from '@/components/PricingSection';
 import { siteConfig } from '@/config/site.config';
+import { servicesData } from '@/data/services';
+import { locationsData } from '@/data/locations';
+import { caseStudiesData, productsData } from '@/data/work';
+import { homeFaqs } from '@/data/faqs';
 
-const services = [
-  ['01', 'Speed & Conversion', 'Custom Websites & Headless Web Architecture', 'Sub-second load times, mobile-first design, and high-converting layouts built to turn visitors into paying clients.', 'Explore Websites', 'orange'],
-  ['02', 'Local Dominance', 'Hyperlocal Delhi NCR SEO & Google Maps', 'Dominate local search in Connaught Place, Cyber Hub, South Ex, Sector 62 and Indirapuram.', 'Review SEO Playbook', 'green'],
-  ['03', 'Zero Lead Drop-Off', 'WhatsApp Automation & CRM Bots', 'Convert inquiries 24/7 with automated appointment booking, follow-ups, and catalog orders.', 'See WhatsApp Flows', 'orange'],
-  ['04', 'Product Engineering', 'Web Apps & Full-Stack SaaS MVPs', 'From validated idea to production web application in weeks, built for NCR startups and enterprise teams.', 'Explore App Engineering', 'blue'],
-  ['05', 'Algorithmic Edge', 'Custom AI Agents & Voice/Chat Bots', 'Intelligent customer service, multilingual support, and internal workflow automation for fast-growing teams.', 'Inspect AI Products', 'green'],
-];
-
-const faqs = [
-  ['Do you work with all types of businesses across Delhi NCR?', 'Yes. We work with retail shops, medical clinics, corporate services, real estate developers, education academies, and technology startups across Delhi, Gurugram, and Noida.'],
-  ['How long does a bespoke website or web app take from kickoff to launch?', 'A custom high-performance website takes between 14 and 21 working days. Full-stack web applications, SaaS MVPs, and complex booking engines typically take 4 to 6 weeks.'],
-  ['Can you rank our business in the top 3 on Google Maps in our locality?', 'Yes. We apply an engineering-led local SEO methodology tailored to the specific neighborhoods, search habits, and buyer intent of your NCR market.'],
-  ['Do you provide ongoing technical support, hosting, and updates?', 'Absolutely. We provide proactive maintenance, security patching, local ranking tracking, and direct developer support on WhatsApp.'],
-  ['What does pricing look like for an independent business versus a growing brand?', 'We work on fixed, transparent architectural project fees. Independent businesses can launch with flat-fee sprints, while larger platforms are scoped around clear delivery milestones.'],
-];
-
-function ButtonLink({ children, href = '#contact', light = false }: { children: React.ReactNode; href?: string; light?: boolean }) {
-  return <a href={href} className={`button-link ${light ? 'button-light' : ''}`}>{children}</a>;
+function ButtonLink({
+  children,
+  href = '/#contact',
+  light = false,
+}: {
+  children: React.ReactNode;
+  href?: string;
+  light?: boolean;
+}) {
+  return (
+    <Link href={href} className={`button-link ${light ? 'button-light' : ''}`}>
+      {children}
+    </Link>
+  );
 }
 
-function SectionHeading({ eyebrow, title, description }: { eyebrow: string; title: string; description?: string }) {
+function SectionHeading({
+  eyebrow,
+  title,
+  description,
+}: {
+  eyebrow: string;
+  title: string;
+  description?: string;
+}) {
   return (
     <div className="section-heading">
       <div>
@@ -44,298 +52,443 @@ function SectionHeading({ eyebrow, title, description }: { eyebrow: string; titl
 }
 
 export default function HomePage() {
+  const [featuredCase, ...stackCases] = caseStudiesData;
+
   return (
     <main id="top">
-        <section className="hero">
-          <div className="container hero-grid">
-            <div className="hero-copy">
-              <span className="eyebrow-pill"><i />DELHI NCR · FULL-STACK WEB, SEO &amp; AI AUTOMATION</span>
-              <h1>Your Business,<br /><em>Built for the Web.</em></h1>
-              <p className="hero-lede">Custom websites, high-converting web apps, Google Maps ranking, and AI automation for every ambitious business across Delhi, Gurugram, and Noida.</p>
-              <div className="hero-actions">
-                <ButtonLink href="#work">See Our Work <ArrowRight size={16} /></ButtonLink>
-                <ButtonLink href="#contact" light>Talk to Naveen</ButtonLink>
-              </div>
-              <div className="direct-note">
-                <CheckCircle2 size={20} />
-                <span>Zero agency middlemen. Direct architecture &amp; engineering with Naveen. No bloated retainers.</span>
-              </div>
+      <section className="hero">
+        <div className="container hero-grid">
+          <div className="hero-copy">
+            <span className="eyebrow-pill">
+              <i />
+              DELHI NCR · FULL-STACK WEB, SEO &amp; AI AUTOMATION
+            </span>
+            <h1>
+              Your Business,
+              <br />
+              <em>Built for the Web.</em>
+            </h1>
+            <p className="hero-lede">
+              SillyMedia Solutions is an independent Delhi NCR digital agency led directly by{' '}
+              {siteConfig.founder.name}. We build fast custom websites, hyperlocal Google Maps SEO,
+              WhatsApp automation, web apps, and AI chatbots for businesses across Delhi, Gurugram,
+              Noida, Greater Noida, Faridabad, and Ghaziabad.
+            </p>
+            <div className="hero-actions">
+              <ButtonLink href="/work">
+                See Our Work <ArrowRight size={16} aria-hidden="true" />
+              </ButtonLink>
+              <ButtonLink href="/#contact" light>
+                Talk to {siteConfig.founder.name}
+              </ButtonLink>
             </div>
-            <div className="hero-visual">
-              <div className="visual-card">
-                <div className="image-frame">
-                  <picture>
-                    <source srcSet="/images/hero-showcase-640.avif 640w, /images/hero-showcase-960.avif 960w" type="image/avif" sizes="(max-width: 900px) 92vw, 520px" />
-                    <source srcSet="/images/hero-showcase-640.webp 640w, /images/hero-showcase-960.webp 960w" type="image/webp" sizes="(max-width: 900px) 92vw, 520px" />
-                    <img
-                      src="/images/hero-showcase-960.webp"
-                      alt="Digital interfaces built by SillyMedia Solutions for Delhi NCR businesses"
-                      width={960}
-                      height={720}
-                      fetchPriority="high"
-                    />
-                  </picture>
-                  <div className="image-badge">
-                    <span><i />Core Web Vitals Optimized</span>
-                    <b>Multi-Sector</b>
-                  </div>
-                </div>
-                <div className="caption">
-                  <span>CASE SPECIMEN 01–04 · DELHI NCR ECOSYSTEM</span>
-                  <small>South Delhi · Cyber Hub · Noida</small>
-                  <p>Multi-sector digital architecture across South Delhi, Cyber Hub &amp; Noida. High-intent conversion workflows and local search dominance.</p>
-                </div>
-              </div>
-              <div className="stamp">NCR<br /><strong>2026</strong></div>
+            <div className="direct-note">
+              <CheckCircle2 size={20} aria-hidden="true" />
+              <span>
+                Zero agency middlemen. Direct architecture &amp; engineering with{' '}
+                {siteConfig.founder.name}. Fixed milestone scopes — no bloated retainers.
+              </span>
             </div>
           </div>
-          <div className="ticker" aria-hidden="true">
-            <div>WEB DESIGN <b>·</b> LOCAL SEO <b>·</b> WHATSAPP AUTOMATION <b>·</b> DELHI NCR <b>·</b> WEB APPS <b>·</b> AI CHATBOTS <b>·</b> GOOGLE MAPS <b>·</b> HIGH-CONVERSION LANDING PAGES <b>·</b></div>
-          </div>
-        </section>
 
-        <section className="stats" aria-label="Key indicators">
-          <div className="container stats-grid">
-            {siteConfig.stats.map((item) => (
-              <div className="stat" key={item.label}>
-                <strong>{item.value}</strong>
-                <b>{item.label}</b>
-                <span>{item.note}</span>
-                <Link href={item.proofHref} className="stat-proof-link">
-                  {item.proofLabel}
-                </Link>
+          <div className="hero-visual">
+            <div className="visual-card">
+              <div className="image-frame">
+                <picture>
+                  <source
+                    srcSet="/images/hero-showcase-640.avif 640w, /images/hero-showcase-960.avif 960w"
+                    type="image/avif"
+                    sizes="(max-width: 900px) 92vw, 520px"
+                  />
+                  <source
+                    srcSet="/images/hero-showcase-640.webp 640w, /images/hero-showcase-960.webp 960w"
+                    type="image/webp"
+                    sizes="(max-width: 900px) 92vw, 520px"
+                  />
+                  <img
+                    src="/images/hero-showcase-960.webp"
+                    alt="Digital interfaces engineered by SillyMedia Solutions for Delhi NCR businesses"
+                    width={960}
+                    height={720}
+                    fetchPriority="high"
+                  />
+                </picture>
+                <div className="image-badge">
+                  <span>
+                    <i />
+                    Core Web Vitals Optimized
+                  </span>
+                  <b>Multi-Sector</b>
+                </div>
               </div>
+              <div className="caption">
+                <span>CASE SPECIMEN 01–03 · DELHI NCR ECOSYSTEM</span>
+                <small>South Delhi · Cyber Hub · Noida</small>
+                <p>
+                  Multi-sector digital architecture across South Delhi, Gurugram &amp; Noida —
+                  built for mobile speed, local search visibility, and direct lead conversion.
+                </p>
+              </div>
+            </div>
+            <div className="stamp" aria-hidden="true">
+              NCR
+              <br />
+              <strong>2026</strong>
+            </div>
+          </div>
+        </div>
+        <div className="ticker" aria-hidden="true">
+          <div>
+            WEB DESIGN <b>·</b> LOCAL SEO <b>·</b> WHATSAPP AUTOMATION <b>·</b> DELHI NCR <b>·</b>{' '}
+            WEB APPS <b>·</b> AI CHATBOTS <b>·</b> GOOGLE MAPS <b>·</b> HIGH-CONVERSION LANDING
+            PAGES <b>·</b>
+          </div>
+        </div>
+      </section>
+
+      <section className="stats" aria-label="Key indicators">
+        <div className="container stats-grid">
+          {siteConfig.stats.map((item) => (
+            <div className="stat" key={item.label}>
+              <strong>{item.value}</strong>
+              <b>{item.label}</b>
+              <span>{item.note}</span>
+              <Link href={item.proofHref} className="stat-proof-link">
+                {item.proofLabel}
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section warm" id="who-we-serve">
+        <div className="container">
+          <SectionHeading
+            eyebrow="WHO WE SERVE — 01"
+            title="Every Delhi NCR Business Ready to Grow Online"
+            description="Serving independent businesses and startups across Delhi, Gurugram, Noida, Greater Noida, Faridabad, and Ghaziabad."
+          />
+          <div className="tag-list">
+            {[
+              'Restaurants & Cafes',
+              'Retail Shops & D2C',
+              'Clinics & Healthcare',
+              'Real Estate & Architecture',
+              'Gyms & Wellness',
+              'Startups & SaaS MVPs',
+              'Education & Coaching',
+              'Professional & Legal Services',
+              'Boutique Hotels & Stays',
+            ].map((tag, i) => (
+              <span key={tag}>
+                <i className={`dot dot-${i % 3}`} />
+                {tag}
+              </span>
             ))}
           </div>
-        </section>
 
-        <section className="section warm" id="who-we-serve">
-          <div className="container">
-            <SectionHeading eyebrow="WHO WE SERVE — 01" title="Every Business That Wants to Grow Online" />
-            <div className="tag-list">
-              {[
-                'Restaurants & Cafes',
-                'Retail Shops & D2C',
-                'Clinics & Healthcare',
-                'Real Estate & Architecture',
-                'Gyms & Wellness',
-                'Startups & SaaS MVPs',
-                'Education & Coaching',
-                'Professional & Legal Services',
-                'Boutique Hotels & Stays',
-              ].map((tag, i) => (
-                <span key={tag}><i className={`dot dot-${i % 3}`} />{tag}</span>
-              ))}
-            </div>
-            <div className="quote-box">
-              <p>“If you have customers in Delhi NCR, we have an engineered digital solution to bring them through your door.”</p>
-              <ButtonLink href="#contact">Consult With Naveen <ArrowRight size={16} /></ButtonLink>
-            </div>
-          </div>
-        </section>
-
-        <section className="section white" id="services">
-          <div className="container">
-            <SectionHeading
-              eyebrow="OUR SOLUTIONS — 02"
-              title="Engineered for Delhi NCR's Competitive Market"
-              description="High-velocity digital engineering that replaces slow agencies with precision web systems and measurable commercial outcomes."
-            />
-            <div className="service-list">
-              {services.map(([num, eyebrow, title, text, link, color]) => (
-                <article className="service-row" key={num}>
-                  <span className={`service-number ${color}`}>{num}</span>
-                  <div>
-                    <span className={`mini-label ${color}`}>{eyebrow}</span>
-                    <h3>{title}</h3>
-                    <p>{text}</p>
-                  </div>
-                  <a href="#contact">{link} <ArrowRight size={15} /></a>
-                </article>
+          <div style={{ marginBottom: 28 }}>
+            <span className="eyebrow" style={{ marginBottom: 12 }}>
+              EXPLORE BY DELHI NCR CITY
+            </span>
+            <div className="pill-grid">
+              {locationsData.map((loc) => (
+                <Link
+                  key={loc.slug}
+                  href={`/locations/${loc.slug}`}
+                  className="pill-item pill-link"
+                >
+                  <i className="dot dot-1" />
+                  {loc.city} →
+                </Link>
               ))}
             </div>
           </div>
-        </section>
 
-        <section className="section cream" id="work">
-          <div className="container">
-            <SectionHeading
-              eyebrow="OUR WORK — 03"
-              title="Selected Works & Production Deployments"
-              description="Production deployments across Delhi NCR"
-            />
-            <div className="work-grid">
+          <div className="quote-box">
+            <p>
+              “If you serve customers in Delhi NCR, we engineer the website, local search presence,
+              and WhatsApp workflow that turns searchers into booked conversations.”
+            </p>
+            <ButtonLink href="/#contact">
+              Consult With {siteConfig.founder.name} <ArrowRight size={16} aria-hidden="true" />
+            </ButtonLink>
+          </div>
+        </div>
+      </section>
+
+      <section className="section white" id="services">
+        <div className="container">
+          <SectionHeading
+            eyebrow="OUR SOLUTIONS — 02"
+            title="Engineered for Delhi NCR's Competitive Market"
+            description="Five focused technical services replacing slow agency templates with fast, crawlable systems built for commercial inquiries."
+          />
+          <div className="service-list">
+            {servicesData.map((svc) => (
+              <article className="service-row" key={svc.slug}>
+                <span className={`service-number ${svc.accent}`}>{svc.number}</span>
+                <div>
+                  <span className={`mini-label ${svc.accent}`}>{svc.eyebrow}</span>
+                  <h3>
+                    <Link href={`/services/${svc.slug}`}>{svc.name}</Link>
+                  </h3>
+                  <p>{svc.summary}</p>
+                </div>
+                <Link href={`/services/${svc.slug}`}>
+                  {svc.ctaLabel} <ArrowRight size={15} aria-hidden="true" />
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section cream" id="work">
+        <div className="container">
+          <SectionHeading
+            eyebrow="OUR WORK — 03"
+            title="Selected Works & Production Deployments"
+            description="Production deployments across South Delhi, Gurugram, and Noida Sector 62."
+          />
+          <div className="work-grid">
+            {featuredCase && (
               <article className="work-card featured">
                 <div className="card-meta">
-                  <b><i className="dot dot-0" />Aura Luxe Fashion</b>
-                  <span>Gurugram · Retail E-Commerce</span>
+                  <b>
+                    <i className="dot dot-0" />
+                    {featuredCase.client}
+                  </b>
+                  <span>
+                    {featuredCase.city} · {featuredCase.sector}
+                  </span>
                 </div>
                 <div className="work-image">
                   <picture>
-                    <source srcSet="/images/hero-showcase-640.avif 640w, /images/hero-showcase-960.avif 960w" type="image/avif" sizes="(max-width: 900px) 92vw, 680px" />
-                    <source srcSet="/images/hero-showcase-640.webp 640w, /images/hero-showcase-960.webp 960w" type="image/webp" sizes="(max-width: 900px) 92vw, 680px" />
-                    <img src="/images/hero-showcase-960.webp" alt="Aura Luxe Fashion ecommerce interface" width={960} height={600} loading="lazy" />
+                    <source srcSet={featuredCase.imageAvif} type="image/avif" />
+                    <img
+                      src={featuredCase.imageWebp}
+                      alt={featuredCase.imageAlt}
+                      width={960}
+                      height={600}
+                      loading="lazy"
+                    />
                   </picture>
-                  <span>Headless Architecture</span>
+                  <span>{featuredCase.imageTag}</span>
                 </div>
-                <h3>High-Speed Headless Shopify Store &amp; Instant Catalog</h3>
-                <p>Custom headless storefront with sub-second product browsing, streamlined UPI checkout, and conversion-focused product architecture.</p>
+                <h3>
+                  <Link href={`/work/${featuredCase.slug}`}>{featuredCase.title}</Link>
+                </h3>
+                <p>{featuredCase.summary}</p>
                 <div className="card-foot">
-                  <strong>+3.8x <small>Reported checkout lift</small></strong>
-                  <ButtonLink>Request Walkthrough <ExternalLink size={14} /></ButtonLink>
+                  <strong>
+                    {featuredCase.headlineMetric}{' '}
+                    <small>{featuredCase.headlineMetricLabel}</small>
+                  </strong>
+                  <ButtonLink href={`/work/${featuredCase.slug}`}>
+                    Read Case Study <ExternalLink size={14} aria-hidden="true" />
+                  </ButtonLink>
                 </div>
               </article>
-              <div className="work-stack">
-                <article className="work-card">
+            )}
+            <div className="work-stack">
+              {stackCases.map((cs) => (
+                <article className="work-card" key={cs.slug}>
                   <div className="card-meta">
-                    <b>Delhi Dental Care</b>
-                    <span className="green-tag">South Delhi · Healthcare</span>
+                    <b>{cs.client}</b>
+                    <span className={cs.badgeColor === 'green' ? 'green-tag' : 'blue-tag'}>
+                      {cs.city} · {cs.sector}
+                    </span>
                   </div>
-                  <h3>Automated Patient Booking System &amp; Local Google Pack</h3>
-                  <p>Automated booking and WhatsApp reminders engineered to capture organic local consultation leads.</p>
+                  <h3>
+                    <Link href={`/work/${cs.slug}`}>{cs.title}</Link>
+                  </h3>
+                  <p>{cs.summary}</p>
                   <div className="card-foot">
-                    <strong className="green-text">+185% <small>Reported patient leads</small></strong>
-                    <a href="#contact">Case Study <ArrowRight size={14} /></a>
+                    <strong className={cs.badgeColor === 'green' ? 'green-text' : ''}>
+                      {cs.headlineMetric} <small>{cs.headlineMetricLabel}</small>
+                    </strong>
+                    <Link href={`/work/${cs.slug}`}>
+                      Case Study <ArrowRight size={14} aria-hidden="true" />
+                    </Link>
                   </div>
                 </article>
-                <article className="work-card">
-                  <div className="card-meta">
-                    <b>FinOps India</b>
-                    <span className="blue-tag">Noida Sector 62 · Fintech SaaS</span>
-                  </div>
-                  <h3>Intuitive B2B Financial Dashboard &amp; Automated GST Flow</h3>
-                  <p>Enterprise dashboard with GST reconciliation, multi-tenant authentication, and audit reporting launched in 4 weeks.</p>
-                  <div className="card-foot">
-                    <strong>4-Week <small>Launch</small></strong>
-                    <a href="#contact">Case Study <ArrowRight size={14} /></a>
-                  </div>
-                </article>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="section green-section">
-          <div className="container differentiators">
-            <div className="difference-copy">
-              <span className="eyebrow light-eyebrow">DIFFERENTIATORS — 04</span>
-              <h2>Why Delhi Businesses Work With Naveen, Not Big Agencies</h2>
-              <p>Most digital agencies sell bloated slide decks and delegate your project to juniors. We build production-ready digital growth engines engineered directly by Naveen for commercial velocity.</p>
-              <div className="standard">
-                <span>CORE WORKING STANDARD</span>
-                <p>“Every line of code and every pixel exists to drive phone inquiries, store visits, and direct revenue.”</p>
-              </div>
+      <section className="section green-section">
+        <div className="container differentiators">
+          <div className="difference-copy">
+            <span className="eyebrow light-eyebrow">DIFFERENTIATORS — 04</span>
+            <h2>Why Delhi NCR Businesses Work With {siteConfig.founder.name}, Not Big Agencies</h2>
+            <p>
+              Most digital agencies sell bloated slide decks and delegate execution to juniors. At{' '}
+              {siteConfig.brandName}, every website, local SEO architecture, and automation system
+              is built directly by {siteConfig.founder.name} for speed and commercial clarity.
+            </p>
+            <div className="standard">
+              <span>CORE WORKING STANDARD</span>
+              <p>
+                “Every line of code and every page exists to drive qualified phone calls, WhatsApp
+                chats, and real business revenue.”
+              </p>
             </div>
-            <div className="difference-list">
-              {[
-                ['01 / DIRECT ACCOUNTABILITY', 'Direct Principal Accountability', 'You work 1-on-1 with the senior engineer and designer who builds your system.'],
-                ['02 / HYPERLOCAL EXPERTISE', 'Deep Delhi NCR Hyperlocal Nuance', 'We understand footfall dynamics, regional search habits, and local buyer intent.'],
-                ['03 / COMMERCIAL FOCUS', 'Speed & Revenue First, Not Pixel Vanity', 'Every millisecond and every line of copy is tuned to maximize conversions.'],
-              ].map(([label, title, text]) => (
-                <div className="difference-item" key={label}>
-                  <span>{label}</span>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
+            <div style={{ marginTop: 24 }}>
+              <Link href="/about" className="button-link button-light">
+                Meet {siteConfig.founder.name} <ArrowRight size={15} aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
+          <div className="difference-list">
+            {[
+              [
+                '01 / DIRECT ACCOUNTABILITY',
+                'Direct Principal Engineering',
+                'You collaborate 1-on-1 with the engineer and SEO architect writing your production code.',
+              ],
+              [
+                '02 / HYPERLOCAL EXPERTISE',
+                'Deep Delhi NCR Hyperlocal Nuance',
+                'We understand local neighbourhood search behaviour from South Delhi and Cyber Hub to Noida Sector 62 and Indirapuram.',
+              ],
+              [
+                '03 / COMMERCIAL FOCUS',
+                'Speed, Crawlability & Conversions First',
+                'Pre-rendered HTML, clear pricing signals, and mobile WhatsApp/call workflows built for both humans and AI search engines.',
+              ],
+            ].map(([label, title, text]) => (
+              <div className="difference-item" key={label}>
+                <span>{label}</span>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section warm" id="products">
+        <div className="container">
+          <SectionHeading
+            eyebrow="IN-HOUSE PRODUCTS — 05"
+            title="Digital Products We've Built"
+            description="Internal software tools and frameworks engineered to give Delhi NCR clients practical tracking, WhatsApp, and speed advantages."
+          />
+          <div className="products-grid">
+            {productsData.map((prod) => (
+              <article className={`product-card ${prod.color}`} key={prod.name}>
+                <div>
+                  <div className="product-meta">
+                    <span>PRODUCT // {prod.category}</span>
+                    <b>{prod.status}</b>
+                  </div>
+                  <h3>{prod.name}</h3>
+                  <p>{prod.description}</p>
                 </div>
-              ))}
-            </div>
+                <Link href="/#contact">
+                  Request Details <ArrowRight size={14} aria-hidden="true" />
+                </Link>
+              </article>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="section warm" id="products">
-          <div className="container">
-            <SectionHeading
-              eyebrow="IN-HOUSE PRODUCTS — 05"
-              title="Digital Products We've Built"
-              description="In-house tools and software frameworks engineered to give Delhi NCR businesses a practical digital advantage."
-            />
-            <div className="products-grid">
-              {[
-                ['LocalRanker NCR', 'Geo Tracking', 'Automated geo-grid ranking tracker for Google Business Profiles across Delhi NCR hubs.', 'BETA', 'green'],
-                ['WhatsDesk Pro', 'WhatsApp Engine', 'Omnichannel WhatsApp CRM and lead distribution engine for retail, clinics, and service operations.', 'LIVE', 'orange'],
-                ['DocuFlow AI', 'Vernacular AI', 'Multilingual assistant for patient intake and legal inquiry summarization.', 'PILOT', 'blue'],
-                ['SiteSpeed Turbo', 'Performance', 'Automated asset optimization pipeline built for high Core Web Vitals.', 'LIVE', 'dark'],
-              ].map(([title, category, text, status, color]) => (
-                <article className={`product-card ${color}`} key={title}>
-                  <div>
-                    <div className="product-meta">
-                      <span>PRODUCT // {category}</span>
-                      <b>{status}</b>
-                    </div>
-                    <h3>{title}</h3>
-                    <p>{text}</p>
-                  </div>
-                  <a href="#contact">Request Details <ArrowRight size={14} /></a>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+      <PricingSection sectionNumber="06" />
 
-        <PricingSection sectionNumber="06" />
-
-        <section className="section testimonials">
-          <div className="container">
-            <SectionHeading eyebrow="VALIDATION — 07" title="Client Testimonials" description="Founders & operators across Delhi NCR" />
-            <div className="testimonial-grid">
-              {[
-                ['Dr. Anjali Sharma', 'Founder, Delhi Dental Care, GK-1', 'Naveen helped our clinic climb local search in South Delhi and streamlined consultation bookings.'],
-                ['Rohan Sethi', 'MD, Aura Luxe Apparel, DLF CyberCity', 'Our headless e-commerce store loads fast on 4G. Naveen built and launched the platform in 3 weeks.'],
-                ['Vikram Malhotra', 'CTO, FinOps India, Noida', 'Clean engineering and zero agency bloat. Naveen writes scalable code and communicates with total clarity.'],
-              ].map(([name, role, quote]) => (
-                <article className="testimonial" key={name}>
+      <section className="section testimonials">
+        <div className="container">
+          <SectionHeading
+            eyebrow="CLIENT NOTES — 07"
+            title="What Delhi NCR Founders Say"
+            description="Feedback from client deployments across South Delhi, Gurugram, and Noida."
+          />
+          <div className="testimonial-grid">
+            {caseStudiesData
+              .filter((c) => c.testimonial)
+              .map((cs) => (
+                <article className="testimonial" key={cs.slug}>
                   <div className="stars" aria-hidden="true">
-                    {[1, 2, 3, 4, 5].map((star) => <Star key={star} size={15} fill="currentColor" />)}
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star key={star} size={15} fill="currentColor" />
+                    ))}
                   </div>
-                  <p>“{quote}”</p>
+                  <p>“{cs.testimonial!.quote}”</p>
                   <footer>
-                    <b>{name}</b>
-                    <span>{role}</span>
+                    <b>{cs.testimonial!.author}</b>
+                    <span>{cs.testimonial!.role}</span>
                   </footer>
                 </article>
               ))}
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="section faq-section" id="faq">
-          <div className="container faq-layout">
-            <div>
-              <SectionHeading eyebrow="TRANSPARENCY — 08" title="Direct Answers to Hard Questions" description="No agency buzzwords, no opaque retainers, and no hidden fine print." />
-              <div className="email-card">
-                <b>Need a custom scope?</b>
-                <p>Send an email directly to Naveen with your business location and existing site.</p>
-                <a href="mailto:naveen@sillymedia.in">naveen@sillymedia.in</a>
+      <section className="section faq-section" id="faq">
+        <div className="container faq-layout">
+          <div>
+            <SectionHeading
+              eyebrow="TRANSPARENCY — 08"
+              title="Direct Answers to Hard Questions"
+              description="No agency buzzwords, no opaque retainers, and no hidden fine print."
+            />
+            <div className="email-card">
+              <b>Need more answers or a custom scope?</b>
+              <p>
+                Read our full FAQ or email {siteConfig.founder.name} directly with your business
+                location and existing site.
+              </p>
+              <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 10 }}>
+                <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a>
+                <Link href="/faq">View Full FAQ →</Link>
               </div>
             </div>
-            <div className="faq-list">
-              {faqs.map(([question, answer]) => (
-                <details className="faq-item" key={question} open>
-                  <summary>
-                    <span>{question}</span>
-                    <ChevronDown size={20} aria-hidden="true" />
-                  </summary>
-                  <p className="faq-answer">{answer}</p>
-                </details>
-              ))}
-            </div>
           </div>
-        </section>
+          <div className="faq-list">
+            {homeFaqs.map((faq) => (
+              <details className="faq-item" key={faq.question} open>
+                <summary>
+                  <span>{faq.question}</span>
+                  <ChevronDown size={20} aria-hidden="true" />
+                </summary>
+                <p className="faq-answer">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
 
-        <section className="contact" id="contact">
-          <div className="container contact-inner">
-            <span className="eyebrow-pill dark-pill"><i />DIRECT DISCOVERY · NO OBLIGATION</span>
-            <h2>Ready to Grow Your Business Online?</h2>
-            <p>Let&apos;s review your current digital presence, local Google ranking, and conversion bottlenecks over a free 20-minute strategy call with Naveen.</p>
-            <ContactActions locationTag="home_contact_section" />
-            <ContactForm />
-            <div className="contact-meta">
-              <span><small>DIRECT EMAIL</small>{siteConfig.contact.email}</span>
-              <span><small>SERVICE AREA</small>Delhi · Gurugram · Noida · NCR</span>
-              <span><small>RESPONSE SLA</small>{siteConfig.contact.responseSla}</span>
-            </div>
+      <section className="contact" id="contact">
+        <div className="container contact-inner">
+          <span className="eyebrow-pill dark-pill">
+            <i />
+            DIRECT DISCOVERY · NO OBLIGATION
+          </span>
+          <h2>Ready to Grow Your Business Online?</h2>
+          <p>
+            Let&apos;s review your current website, local Google Maps visibility, and conversion
+            bottlenecks over a free 20-minute strategy call with {siteConfig.founder.name}.
+          </p>
+          <ContactActions locationTag="home_contact_section" />
+          <ContactForm />
+          <div className="contact-meta">
+            <span>
+              <small>DIRECT EMAIL</small>
+              {siteConfig.contact.email}
+            </span>
+            <span>
+              <small>SERVICE AREA</small>Delhi · Gurugram · Noida · NCR
+            </span>
+            <span>
+              <small>RESPONSE SLA</small>
+              {siteConfig.contact.responseSla}
+            </span>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
   );
 }
