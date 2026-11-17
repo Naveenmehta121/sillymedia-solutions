@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
+import MobileStickyBar from '@/components/MobileStickyBar';
+import AnalyticsScripts from '@/components/AnalyticsScripts';
 import { isConfigured, siteConfig } from '@/config/site.config';
 import './globals.css';
 
@@ -94,7 +96,9 @@ export default function RootLayout({
           <SiteHeader />
           <div id="main-content">{children}</div>
           <SiteFooter />
+          <MobileStickyBar />
         </div>
+        <AnalyticsScripts />
       </body>
     </html>
   );

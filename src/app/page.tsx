@@ -1,12 +1,15 @@
+import Link from 'next/link';
 import {
   ArrowRight,
   CheckCircle2,
   ChevronDown,
   ExternalLink,
-  MessageCircle,
   Star,
 } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
+import ContactActions from '@/components/ContactActions';
+import PricingSection from '@/components/PricingSection';
+import { siteConfig } from '@/config/site.config';
 
 const services = [
   ['01', 'Speed & Conversion', 'Custom Websites & Headless Web Architecture', 'Sub-second load times, mobile-first design, and high-converting layouts built to turn visitors into paying clients.', 'Explore Websites', 'orange'],
@@ -91,18 +94,16 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="stats">
+        <section className="stats" aria-label="Key indicators">
           <div className="container stats-grid">
-            {[
-              ['80+', 'Businesses Scaled', 'Retail, Healthcare, Tech & Dining'],
-              ['₹3 Cr', 'Revenue Generated', 'Direct sales & inquiries for NCR clients'],
-              ['#1 Rank', 'Google Maps Pack', 'Local placement strategy across NCR'],
-              ['<0.5s', 'Core Web Vitals', 'Mobile-first speed architecture'],
-            ].map(([value, label, note]) => (
-              <div className="stat" key={value}>
-                <strong>{value}</strong>
-                <b>{label}</b>
-                <span>{note}</span>
+            {siteConfig.stats.map((item) => (
+              <div className="stat" key={item.label}>
+                <strong>{item.value}</strong>
+                <b>{item.label}</b>
+                <span>{item.note}</span>
+                <Link href={item.proofHref} className="stat-proof-link">
+                  {item.proofLabel}
+                </Link>
               </div>
             ))}
           </div>
@@ -271,9 +272,11 @@ export default function HomePage() {
           </div>
         </section>
 
+        <PricingSection sectionNumber="06" />
+
         <section className="section testimonials">
           <div className="container">
-            <SectionHeading eyebrow="VALIDATION — 06" title="Client Testimonials" description="Founders & operators across Delhi NCR" />
+            <SectionHeading eyebrow="VALIDATION — 07" title="Client Testimonials" description="Founders & operators across Delhi NCR" />
             <div className="testimonial-grid">
               {[
                 ['Dr. Anjali Sharma', 'Founder, Delhi Dental Care, GK-1', 'Naveen helped our clinic climb local search in South Delhi and streamlined consultation bookings.'],
@@ -298,7 +301,7 @@ export default function HomePage() {
         <section className="section faq-section" id="faq">
           <div className="container faq-layout">
             <div>
-              <SectionHeading eyebrow="TRANSPARENCY — 07" title="Direct Answers to Hard Questions" description="No agency buzzwords, no opaque retainers, and no hidden fine print." />
+              <SectionHeading eyebrow="TRANSPARENCY — 08" title="Direct Answers to Hard Questions" description="No agency buzzwords, no opaque retainers, and no hidden fine print." />
               <div className="email-card">
                 <b>Need a custom scope?</b>
                 <p>Send an email directly to Naveen with your business location and existing site.</p>
@@ -324,19 +327,12 @@ export default function HomePage() {
             <span className="eyebrow-pill dark-pill"><i />DIRECT DISCOVERY · NO OBLIGATION</span>
             <h2>Ready to Grow Your Business Online?</h2>
             <p>Let&apos;s review your current digital presence, local Google ranking, and conversion bottlenecks over a free 20-minute strategy call with Naveen.</p>
-            <div className="contact-actions">
-              <a className="whatsapp" href="#contact">
-                <MessageCircle size={18} />Request WhatsApp Consultation
-              </a>
-              <a className="orange-button" href="mailto:naveen@sillymedia.in?subject=Growth%20Strategy%20Inquiry">
-                Book a 20-Min Strategy Call
-              </a>
-            </div>
+            <ContactActions locationTag="home_contact_section" />
             <ContactForm />
             <div className="contact-meta">
-              <span><small>DIRECT EMAIL</small>naveen@sillymedia.in</span>
-              <span><small>HEADQUARTERS</small>Delhi NCR, India</span>
-              <span><small>RESPONSE SLA</small>Response within 3 hours</span>
+              <span><small>DIRECT EMAIL</small>{siteConfig.contact.email}</span>
+              <span><small>SERVICE AREA</small>Delhi · Gurugram · Noida · NCR</span>
+              <span><small>RESPONSE SLA</small>{siteConfig.contact.responseSla}</span>
             </div>
           </div>
         </section>
