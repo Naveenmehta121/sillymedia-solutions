@@ -1,10 +1,59 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
+import SiteHeader from '@/components/SiteHeader';
+import SiteFooter from '@/components/SiteFooter';
+import { isConfigured, siteConfig } from '@/config/site.config';
 import './globals.css';
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#1a1208',
+};
+
 export const metadata: Metadata = {
-  title: 'SillyMedia Solutions — Delhi NCR’s Digital Growth Partner',
-  description:
-    'Custom websites, high-converting web apps, hyperlocal Delhi NCR SEO, Google Maps ranking, and AI automation by SillyMedia Solutions.',
+  metadataBase: new URL(siteConfig.siteUrl),
+  title: {
+    default: `${siteConfig.brandName} — ${siteConfig.tagline}`,
+    template: `%s | ${siteConfig.brandName}`,
+  },
+  description: siteConfig.shortDescription,
+  alternates: {
+    canonical: '/',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  manifest: '/site.webmanifest',
+  openGraph: {
+    type: 'website',
+    locale: siteConfig.locale,
+    url: siteConfig.siteUrl,
+    siteName: siteConfig.brandName,
+    title: `${siteConfig.brandName} — ${siteConfig.tagline}`,
+    description: siteConfig.shortDescription,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.brandName} — Delhi NCR Web Development, Local SEO & AI Automation`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${siteConfig.brandName} — ${siteConfig.tagline}`,
+    description: siteConfig.shortDescription,
+    images: ['/og-image.png'],
+  },
+  verification: isConfigured(siteConfig.analytics.gscToken)
+    ? { google: siteConfig.analytics.gscToken }
+    : undefined,
 };
 
 export default function RootLayout({
@@ -13,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-IN">
+    <html lang={siteConfig.language}>
       <head>
         <link
           rel="preload"
@@ -37,7 +86,16 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+        <div className="site-shell">
+          <SiteHeader />
+          <div id="main-content">{children}</div>
+          <SiteFooter />
+        </div>
+      </body>
     </html>
   );
 }

@@ -1,0 +1,21 @@
+{
+  "name": "SillyMedia Solutions",
+  "short_name": "SillyMedia",
+  "description": "Delhi NCR custom websites, hyperlocal SEO & Google Maps ranking, WhatsApp automation, web apps, and AI chatbots.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e8",
+  "theme_color": "#1a1208",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

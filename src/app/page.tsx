@@ -42,25 +42,7 @@ function SectionHeading({ eyebrow, title, description }: { eyebrow: string; titl
 
 export default function HomePage() {
   return (
-    <div className="site-shell">
-      <header className="site-header">
-        <div className="container header-inner">
-          <a href="#top" className="brand" aria-label="SillyMedia Solutions Home">
-            <strong>SillyMedia Solutions</strong>
-          </a>
-          <nav className="desktop-nav" aria-label="Main navigation">
-            <a href="#work">Work</a>
-            <a href="#services">Services</a>
-            <a href="#who-we-serve">Who We Serve</a>
-            <a href="#lab-products">Products</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <ButtonLink>Get a Free Quote</ButtonLink>
-        </div>
-      </header>
-
-      <main id="top">
+    <main id="top">
         <section className="hero">
           <div className="container hero-grid">
             <div className="hero-copy">
@@ -259,10 +241,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section warm" id="lab-products">
+        <section className="section warm" id="products">
           <div className="container">
             <SectionHeading
-              eyebrow="PROPRIETARY TECH — 05"
+              eyebrow="IN-HOUSE PRODUCTS — 05"
               title="Digital Products We've Built"
               description="In-house tools and software frameworks engineered to give Delhi NCR businesses a practical digital advantage."
             />
@@ -359,39 +341,5 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
-      <footer className="footer">
-        <div className="container footer-grid">
-          <div>
-            <strong>SillyMedia Solutions</strong>
-            <span className="eyebrow">DIGITAL ENGINEERING STUDIO · DELHI NCR</span>
-            <p>Independent digital product architecture and growth consulting operated by Naveen.</p>
-          </div>
-          <div>
-            <h3 className="footer-heading">Services</h3>
-            <a href="#services">Custom Websites</a>
-            <a href="#services">Hyperlocal SEO</a>
-            <a href="#services">WhatsApp Automation</a>
-            <a href="#services">Web Apps &amp; SaaS</a>
-            <a href="#services">Custom AI Agents</a>
-          </div>
-          <div>
-            <h3 className="footer-heading">Cities Served</h3>
-            <p>Delhi · Gurugram · Noida</p>
-            <p>Faridabad · Ghaziabad</p>
-            <p>Greater Noida</p>
-          </div>
-          <div>
-            <h3 className="footer-heading">Direct Contact</h3>
-            <p>Consultations, technical audits, and new builds directly led by Naveen.</p>
-            <a href="mailto:naveen@sillymedia.in" className="orange-text">naveen@sillymedia.in</a>
-          </div>
-        </div>
-        <div className="container footer-bottom">
-          <span>© 2026 SillyMedia Solutions. All rights reserved.</span>
-          <span>Architectural engineering by Naveen.</span>
-        </div>
-      </footer>
-    </div>
   );
 }
