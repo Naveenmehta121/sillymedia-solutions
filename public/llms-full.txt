@@ -1,0 +1,53 @@
+# SillyMedia Solutions — Complete Reference Context
+
+> Note: Support for llms-full.txt by AI crawlers is voluntary and not guaranteed. All facts below match the pre-rendered HTML pages published on https://sillymedia.in.
+
+## 1. Organization Overview
+SillyMedia Solutions is an independent Delhi NCR digital engineering agency founded and operated directly by Naveen. Clients collaborate directly with the founder on custom websites, hyperlocal SEO & Google Maps optimization, official WhatsApp Business Cloud API automation, full-stack web apps & SaaS MVPs, and grounded AI chatbots.
+
+- Canonical Website: https://sillymedia.in
+- Direct Email: naveen@sillymedia.in
+- Service Area: Delhi, Gurugram, Noida, Greater Noida, Faridabad, Ghaziabad (National Capital Region, India)
+- Delivery Philosophy: Fixed milestone quotes, full client code/domain ownership, pre-rendered HTML for crawlability and mobile Core Web Vitals, and zero guaranteed "#1 ranking" gimmicks.
+
+## 2. Services & Typical Timelines
+1. **Custom Website Development** (`/services/custom-websites`)
+   - Pre-rendered Next.js static/SSR architecture, mobile-first design, local SEO metadata & JSON-LD, click-to-call/WhatsApp triggers, UTM-tracked inquiry form.
+   - Typical timeline: 14–21 working days.
+2. **Hyperlocal SEO & Google Maps** (`/services/local-seo-google-maps`)
+   - Google Business Profile audit & category alignment, neighbourhood landing pages, LocalBusiness schema, ethical customer review workflows, call/inquiry reporting.
+   - Initial audit in 7 days; competitive Map Pack movement varies by locality density (typically 3–6 months in dense hubs like South Delhi or Cyber Hub).
+3. **WhatsApp Business Automation** (`/services/whatsapp-automation`)
+   - Official Meta WhatsApp Business Cloud API setup, automated inquiry qualification, clinic appointment confirmations & reminders, CRM/Sheets sync, instant human escalation.
+   - Typical timeline: 2–3 weeks.
+4. **Full-Stack Web Apps & SaaS MVPs** (`/services/web-apps-saas`)
+   - TypeScript, Next.js App Router, PostgreSQL, multi-tenant role-based auth, Razorpay/Stripe/UPI integrations, operational dashboards, GST/audit exports.
+   - Typical timeline: 4–6 weeks for MVP scope.
+5. **Custom AI Chatbots & Workflow Agents** (`/services/ai-chatbots-agents`)
+   - Knowledge-base grounded (RAG) assistants supporting English, Hindi, and Hinglish with strict guardrails, human fallback, and transparent API billing.
+   - Typical timeline: 2–4 weeks.
+
+## 3. Delhi NCR Geographic Coverage
+- **Delhi** (`/locations/delhi`): Connaught Place, South Extension, Greater Kailash (GK-1/GK-2), Hauz Khas, Saket, Defence Colony, Karol Bagh, Rajouri Garden, Dwarka, Rohini, Okhla.
+- **Gurugram** (`/locations/gurugram`): DLF Cyber City / Cyber Hub, Golf Course Road, Golf Course Extension, DLF Phases 1–5, MG Road, Sohna Road, Udyog Vihar, Dwarka Expressway.
+- **Noida** (`/locations/noida`): Sector 62, Sector 63, Sector 18, Film City, Noida Expressway (Sectors 125–142), Sector 50, Sector 75–78.
+- **Greater Noida** (`/locations/greater-noida`): Knowledge Park I–III, Pari Chowk, Alpha/Beta/Gamma Sectors, Greater Noida West (Noida Extension / Gaur City), Techzone 4, Ecotech.
+- **Faridabad** (`/locations/faridabad`): Sector 15–16, NIT Faridabad, Greater Faridabad (Neharpar), Mathura Road Industrial Belt, IMT Faridabad, Ballabgarh.
+- **Ghaziabad** (`/locations/ghaziabad`): Indirapuram, Vaishali, Kaushambi, Vasundhara, Raj Nagar Extension, RDC, Crossings Republik, Sahibabad Industrial Area.
+
+## 4. Selected Case Studies
+- **Aura Luxe Fashion** (`/work/aura-luxe-fashion`, Gurugram · Retail E-Commerce): Headless storefront with fast 4G catalog browsing and streamlined mobile UPI checkout.
+- **Delhi Dental Care** (`/work/delhi-dental-care`, South Delhi · Healthcare): Automated patient booking, WhatsApp reminders, and South Delhi hyperlocal SEO.
+- **FinOps India** (`/work/finops-india`, Noida Sector 62 · Fintech SaaS): Multi-tenant B2B financial dashboard with automated GST reconciliation launched in 4 weeks.
+
+## 5. Evergreen Guides
+- **Website Development Cost in Delhi NCR** (`/guides/website-cost-delhi-ncr`)
+- **How to Rank on Google Maps in Gurugram** (`/guides/rank-on-google-maps-gurugram`)
+- **WhatsApp Automation for Clinics in Delhi** (`/guides/whatsapp-automation-clinics-delhi`)
+
+## 6. Key Contact & Policies
+- Contact Form: https://sillymedia.in/#contact
+- About Founder: https://sillymedia.in/about
+- FAQ: https://sillymedia.in/faq
+- Privacy Policy: https://sillymedia.in/privacy-policy
+- Terms of Service: https://sillymedia.in/terms

@@ -15,6 +15,7 @@ import { siteConfig } from '@/config/site.config';
 import { servicesData } from '@/data/services';
 import { locationsData } from '@/data/locations';
 import { caseStudiesData, productsData } from '@/data/work';
+import { guidesData } from '@/data/guides';
 import { homeFaqs } from '@/data/faqs';
 
 function ButtonLink({
@@ -430,11 +431,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section warm" id="guides">
+        <div className="container">
+          <SectionHeading
+            eyebrow="DELHI NCR PLAYBOOKS — 08"
+            title="Practical Guides Before You Hire an Agency"
+            description="Answer-first technical guides covering Delhi NCR website pricing, Gurugram Google Maps SEO, and clinic WhatsApp automation."
+          />
+          <div className="content-grid-3">
+            {guidesData.map((guide) => (
+              <article className="editorial-card" key={guide.slug} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 14 }}>
+                <div>
+                  <span className="eyebrow">{guide.eyebrow}</span>
+                  <h3 style={{ marginTop: 8 }}>
+                    <Link href={`/guides/${guide.slug}`}>{guide.title}</Link>
+                  </h3>
+                  <p>{guide.directAnswer}</p>
+                </div>
+                <Link href={`/guides/${guide.slug}`} className="orange-text">
+                  Read Guide <ArrowRight size={14} style={{ display: 'inline' }} aria-hidden="true" />
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section faq-section" id="faq">
         <div className="container faq-layout">
           <div>
             <SectionHeading
-              eyebrow="TRANSPARENCY — 08"
+              eyebrow="TRANSPARENCY — 09"
               title="Direct Answers to Hard Questions"
               description="No agency buzzwords, no opaque retainers, and no hidden fine print."
             />
