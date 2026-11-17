@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1a1208"/>
+  <rect x="28" y="28" width="456" height="456" fill="#f5f0e8" stroke="#1a1208" stroke-width="12"/>
+  <rect x="52" y="52" width="408" height="408" fill="none" stroke="#e8611a" stroke-width="10"/>
+  <rect x="76" y="76" width="52" height="52" fill="#e8611a"/>
+  <text x="256" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="220" font-weight="700" fill="#1a1208" letter-spacing="-10">SM</text>
+  <rect x="76" y="384" width="360" height="22" fill="#1d4d2e"/>
+</svg>

@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { CheckCircle2, Loader2, Send } from 'lucide-react';
 
@@ -10,7 +12,7 @@ interface Errors {
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
 const WEB3FORMS_ACCESS_KEY =
-  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'aa990098-e503-45b4-b7eb-734fa28e4b97';
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || 'aa990098-e503-45b4-b7eb-734fa28e4b97';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
