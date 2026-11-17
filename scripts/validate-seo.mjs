@@ -131,6 +131,22 @@ for (const file of files) {
 console.log(`Validated ${files.length} HTML files and ${totalJsonLd} JSON-LD blocks.`);
 console.log(`Schema @types verified: ${[...schemaTypesSeen].sort().join(', ')}`);
 
+for (const requiredFile of ['robots.txt', 'sitemap.xml', 'llms.txt', 'llms-full.txt', 'og-image.png', 'favicon.svg', 'apple-touch-icon.png', 'site.webmanifest']) {
+  const full = path.join(outDir, requiredFile);
+  if (!fs.existsSync(full)) {
+    errors.push(`Missing required static output file: ${requiredFile}`);
+  }
+}
+
+const sitemapXml = fs.existsSync(path.join(outDir, 'sitemap.xml'))
+  ? fs.readFileSync(path.join(outDir, 'sitemap.xml'), 'utf8')
+  : '';
+const sitemapUrls = (sitemapXml.match(/<loc>/g) || []).length;
+console.log(`Sitemap URLs verified: ${sitemapUrls}`);
+if (sitemapUrls < 20) {
+  errors.push(`Expected at least 20 URLs in sitemap.xml, found ${sitemapUrls}`);
+}
+
 if (errors.length > 0) {
   console.error('\nVALIDATION ERRORS:');
   for (const err of errors) console.error(' - ' + err);

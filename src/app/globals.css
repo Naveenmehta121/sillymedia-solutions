@@ -266,7 +266,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .service-row:last-child { border: 0; }
 .service-row:nth-child(even) { background: #faf7f2; }
 .service-row:hover { background: #fffdfb; }
-.service-number { font: 700 43px/1 'Playfair Display', Georgia, serif; color: #a69784; }
+.service-number { font: 700 43px/1 'Playfair Display', Georgia, serif; color: #7c6d5c; }
 .service-row:hover .service-number.orange { color: #b5450b; }
 .service-row:hover .service-number.green { color: #1d4d2e; }
 .service-row:hover .service-number.blue { color: #1b2b5e; }
