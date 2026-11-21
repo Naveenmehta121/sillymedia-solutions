@@ -45,7 +45,7 @@ export const servicesData: ServiceItem[] = [
     name: 'Custom Website Development in Delhi NCR',
     metaTitle: 'Custom Website Development in Delhi NCR',
     metaDescription:
-      'Custom Next.js and headless websites in Delhi NCR built directly by Naveen. Fast Core Web Vitals, clean local SEO structure, and WhatsApp lead capture.',
+      'Custom Next.js and headless websites in Delhi NCR built by SillyMedia Solutions. Fast Core Web Vitals, clean local SEO structure, and WhatsApp lead capture.',
     accent: 'orange',
     h1: 'Custom Website Development in Delhi NCR',
     coreQuestion: 'What makes a custom business website convert in Delhi NCR?',
@@ -72,7 +72,7 @@ export const servicesData: ServiceItem[] = [
         step: '01',
         title: 'Commercial & Technical Discovery',
         detail:
-          'A focused 20-minute call with Naveen to map your target NCR localities, customer objections, competitors, and required lead flows.',
+          'A focused 20-minute consultation with our senior specialists to map your target NCR localities, customer objections, competitors, and required lead flows.',
       },
       {
         step: '02',
@@ -101,7 +101,7 @@ export const servicesData: ServiceItem[] = [
       },
       {
         dimension: 'Who Builds Your Site',
-        sillyMedia: 'Direct engineering with Naveen (founder)',
+        sillyMedia: 'Direct engineering with our senior specialists',
         typicalAgency: 'Handed off to junior theme installers',
       },
       {
@@ -283,7 +283,7 @@ export const servicesData: ServiceItem[] = [
       'Automated lead qualification flows (service needed, locality, budget/timing)',
       'Appointment confirmation and reminder workflows for clinics and service teams',
       'Two-way sync into Google Sheets, HubSpot, Zoho, or custom web dashboards',
-      'Instant human-agent escalation so Naveen’s workflows never trap a serious buyer in a bot loop',
+      'Instant human-agent escalation so our automated workflows never trap a serious buyer in a bot loop',
     ],
     processSteps: [
       {
@@ -372,7 +372,7 @@ export const servicesData: ServiceItem[] = [
     name: 'Full-Stack Web Apps & SaaS MVP Development in Delhi NCR',
     metaTitle: 'Web App & SaaS MVP Development in Delhi NCR',
     metaDescription:
-      'Full-stack TypeScript, Next.js, and Postgres web apps and SaaS MVPs built in Delhi NCR. Production architecture scoped in 4–6 week sprints with Naveen.',
+      'Full-stack TypeScript, Next.js, and Postgres web apps and SaaS MVPs built in Delhi NCR. Production architecture scoped in 4–6 week sprints by SillyMedia Solutions.',
     accent: 'blue',
     h1: 'Web Applications & Full-Stack SaaS MVPs in Delhi NCR',
     coreQuestion: 'How fast can a Delhi NCR startup or SME launch a production web app MVP?',
@@ -423,7 +423,7 @@ export const servicesData: ServiceItem[] = [
     comparisonTable: [
       {
         dimension: 'Engineering Model',
-        sillyMedia: 'Direct principal full-stack engineer (Naveen)',
+        sillyMedia: 'Senior full-stack engineering team',
         typicalAgency: 'Layered PMs and rotating junior contractors',
       },
       {

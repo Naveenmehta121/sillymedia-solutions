@@ -70,7 +70,7 @@ export const caseStudiesData: CaseStudy[] = [
     results: [
       'Significantly faster mobile page loads across 4G connections compared to the legacy theme setup.',
       'Client-reported +3.8x improvement in checkout conversion following launch.', // VERIFY
-      'Launched end-to-end in 3 weeks with direct engineering from Naveen.', // VERIFY
+      'Launched end-to-end in 3 weeks with direct engineering by SillyMedia Solutions.', // VERIFY
     ],
     architectureStack: [
       'Headless Storefront Frontend',
@@ -81,7 +81,7 @@ export const caseStudiesData: CaseStudy[] = [
     // VERIFY: Confirm client name, role, and permission for public quote
     testimonial: {
       quote:
-        'Our headless e-commerce store loads fast on 4G. Naveen built and launched the platform in 3 weeks.',
+        'Our headless e-commerce store loads fast on 4G. The SillyMedia Solutions team built and launched the platform in 3 weeks.',
       author: 'Rohan Sethi',
       role: 'MD, Aura Luxe Apparel, DLF CyberCity',
     },
@@ -137,7 +137,7 @@ export const caseStudiesData: CaseStudy[] = [
     // VERIFY: Confirm client name, role, and permission for public quote
     testimonial: {
       quote:
-        'Naveen helped our clinic climb local search in South Delhi and streamlined our monthly consultation bookings.',
+        'SillyMedia Solutions helped our clinic climb local search in South Delhi and streamlined our monthly consultation bookings.',
       author: 'Dr. Anjali Sharma',
       role: 'Founder, Delhi Dental Care, GK-1',
     },
@@ -191,7 +191,7 @@ export const caseStudiesData: CaseStudy[] = [
     // VERIFY: Confirm client name, role, and permission for public quote
     testimonial: {
       quote:
-        'Clean engineering and zero agency bloat. Naveen writes scalable code and communicates with total clarity.',
+        'Clean engineering and zero agency bloat. SillyMedia Solutions writes scalable code and communicates with total clarity.',
       author: 'Vikram Malhotra',
       role: 'CTO, FinOps India, Noida',
     },

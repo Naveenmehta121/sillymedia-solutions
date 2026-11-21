@@ -73,24 +73,24 @@ export default function HomePage() {
               <em>Built for the Web.</em>
             </h1>
             <p className="hero-lede">
-              SillyMedia Solutions is an independent Delhi NCR digital agency led directly by{' '}
-              {siteConfig.founder.name}. We build fast custom websites, hyperlocal Google Maps SEO,
-              WhatsApp automation, web apps, and AI chatbots for businesses across Delhi, Gurugram,
-              Noida, Greater Noida, Faridabad, and Ghaziabad.
+              SillyMedia Solutions is a Delhi NCR digital marketing and web engineering agency.
+              We build fast custom websites, hyperlocal Google Maps SEO, WhatsApp automation, web
+              apps, and AI chatbots for businesses across Delhi, Gurugram, Noida, Greater Noida,
+              Faridabad, and Ghaziabad.
             </p>
             <div className="hero-actions">
               <ButtonLink href="/work">
                 See Our Work <ArrowRight size={16} aria-hidden="true" />
               </ButtonLink>
               <ButtonLink href="/#contact" light>
-                Talk to {siteConfig.founder.name}
+                Talk to Our Team
               </ButtonLink>
             </div>
             <div className="direct-note">
               <CheckCircle2 size={20} aria-hidden="true" />
               <span>
-                Zero agency middlemen. Direct architecture &amp; engineering with{' '}
-                {siteConfig.founder.name}. Fixed milestone scopes — no bloated retainers.
+                Zero agency middlemen. Direct architecture &amp; engineering with our senior
+                specialists. Fixed milestone scopes — no bloated retainers.
               </span>
             </div>
           </div>
@@ -215,7 +215,7 @@ export default function HomePage() {
               and WhatsApp workflow that turns searchers into booked conversations.”
             </p>
             <ButtonLink href="/#contact">
-              Consult With {siteConfig.founder.name} <ArrowRight size={16} aria-hidden="true" />
+              Consult With Our Team <ArrowRight size={16} aria-hidden="true" />
             </ButtonLink>
           </div>
         </div>
@@ -327,11 +327,11 @@ export default function HomePage() {
         <div className="container differentiators">
           <div className="difference-copy">
             <span className="eyebrow light-eyebrow">DIFFERENTIATORS — 04</span>
-            <h2>Why Delhi NCR Businesses Work With {siteConfig.founder.name}, Not Big Agencies</h2>
+            <h2>Why Delhi NCR Businesses Work With SillyMedia Solutions, Not Slow Legacy Agencies</h2>
             <p>
-              Most digital agencies sell bloated slide decks and delegate execution to juniors. At{' '}
-              {siteConfig.brandName}, every website, local SEO architecture, and automation system
-              is built directly by {siteConfig.founder.name} for speed and commercial clarity.
+              Most digital agencies sell bloated slide decks and delegate execution to junior interns. At{' '}
+              {siteConfig.brandName}, our senior engineering and growth specialists build production-ready
+              digital growth engines engineered for commercial velocity and verified results.
             </p>
             <div className="standard">
               <span>CORE WORKING STANDARD</span>
@@ -342,16 +342,16 @@ export default function HomePage() {
             </div>
             <div style={{ marginTop: 24 }}>
               <Link href="/about" className="button-link button-light">
-                Meet {siteConfig.founder.name} <ArrowRight size={15} aria-hidden="true" />
+                About Our Agency <ArrowRight size={15} aria-hidden="true" />
               </Link>
             </div>
           </div>
           <div className="difference-list">
             {[
               [
-                '01 / DIRECT ACCOUNTABILITY',
-                'Direct Principal Engineering',
-                'You collaborate 1-on-1 with the engineer and SEO architect writing your production code.',
+                '01 / SENIOR SPECIALIST EXECUTION',
+                'Senior Engineering & Growth Specialists',
+                'You collaborate directly with senior engineers and SEO strategists writing your production code and managing campaigns.',
               ],
               [
                 '02 / HYPERLOCAL EXPERTISE',
@@ -468,7 +468,7 @@ export default function HomePage() {
             <div className="email-card">
               <b>Need more answers or a custom scope?</b>
               <p>
-                Read our full FAQ or email {siteConfig.founder.name} directly with your business
+                Read our full FAQ or email our team directly with your business
                 location and existing site.
               </p>
               <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 10 }}>
@@ -500,7 +500,7 @@ export default function HomePage() {
           <h2>Ready to Grow Your Business Online?</h2>
           <p>
             Let&apos;s review your current website, local Google Maps visibility, and conversion
-            bottlenecks over a free 20-minute strategy call with {siteConfig.founder.name}.
+            bottlenecks over a free 20-minute strategy call with our agency specialists.
           </p>
           <ContactActions locationTag="home_contact_section" />
           <ContactForm />

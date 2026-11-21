@@ -105,7 +105,7 @@ export default function SiteHeader() {
                     setMobileOpen(false);
                   }}
                 >
-                  WhatsApp Naveen
+                  WhatsApp Our Team
                 </a>
               )}
               <Link

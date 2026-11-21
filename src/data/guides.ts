@@ -48,7 +48,7 @@ export const guidesData: GuideItem[] = [
     coreQuestion: 'What does website development cost in Delhi NCR and why do quotes vary widely?',
     directAnswer:
       'Website quotes in Delhi NCR vary sharply because agencies quote very different deliverables under the same label — from unoptimized drag-and-drop themes to custom pre-rendered web applications with local SEO and WhatsApp automation. Price depends on page architecture, custom engineering depth, integrations, and who actually writes the code.',
-    // DATA NEEDED: Add Naveen's verified INR bracket figures once confirmed in site.config.ts (PRICING_CONFIG)
+    // DATA NEEDED: Add verified INR bracket figures once confirmed in site.config.ts (PRICING_CONFIG)
     sections: [
       {
         heading: 'Why Do Two Agencies in Delhi NCR Quote Wildly Different Prices for a Website?',
@@ -66,7 +66,7 @@ export const guidesData: GuideItem[] = [
       {
         heading: 'How Should You Compare Freelancers, Small Studios, and Large NCR Agencies?',
         paragraphs: [
-          'Large digital agencies in Gurugram or South Delhi carry layers of sales reps, account managers, and office overhead — yet often assign day-to-day build work to junior staff. Independent principal-led studios like SillyMedia Solutions remove those layers so your budget goes directly into senior architecture, SEO, and speed.',
+          'Large digital agencies in Gurugram or South Delhi often carry layers of sales reps, account managers, and office overhead — yet often assign day-to-day build work to junior staff. Agile specialist agencies like SillyMedia Solutions remove those middleman layers so your budget goes directly into senior architecture, SEO, and speed.',
           'Before approving any quote, ask four direct questions: Do I own my domain and Git repository? Is the site pre-rendered HTML or a heavy template? Are local SEO metadata and Schema.org included? What is the exact milestone delivery schedule?',
         ],
       },
@@ -75,7 +75,7 @@ export const guidesData: GuideItem[] = [
         paragraphs: [
           'A cleanly engineered static or Next.js website avoids costly plugin licensing and constant security patching. Your predictable recurring items are simply your domain renewal, managed hosting (often free or low-cost on platforms like Vercel for marketing sites), and any optional SEO or feature sprints you choose to run.',
         ],
-        // DATA NEEDED: Insert Naveen's typical annual hosting/domain maintenance estimate in INR if desired
+        // DATA NEEDED: Insert typical annual hosting/domain maintenance estimate in INR if desired
         bullets: [
           'Domain name registration (.in or .com) billed directly to your registrar account.',
           'Hosting on modern edge platforms (Vercel, Netlify, or Cloudflare Pages) or a dedicated VPS if running heavy backend databases.',
@@ -128,7 +128,7 @@ export const guidesData: GuideItem[] = [
       {
         question: 'How do I get an exact website quote from SillyMedia Solutions?',
         answer:
-          'Book a free 20-minute review with Naveen via our contact form. Once we review your page count, localities, and required integrations, you receive a fixed milestone quote with zero hidden fees.',
+          'Book a free 20-minute review with our team via our contact form. Once we review your page count, localities, and required integrations, you receive a fixed milestone quote with zero hidden fees.',
       },
     ],
   },
@@ -145,7 +145,7 @@ export const guidesData: GuideItem[] = [
     coreQuestion: 'What actually determines Google Maps rankings for a business in Gurugram?',
     directAnswer:
       'According to Google’s official Business Profile documentation, local Map Pack rankings are driven by three core factors: relevance (how well your profile and website match the query), distance (proximity to the searcher in Gurugram), and prominence (authentic customer reviews, local links, and web authority). Consistent technical execution beats shortcuts.',
-    // DATA NEEDED: Add Gurugram geo-grid / LocalRanker NCR benchmark observations once Naveen confirms client-cleared numbers
+    // DATA NEEDED: Add Gurugram geo-grid / LocalRanker NCR benchmark observations once confirmed with client-cleared numbers
     sections: [
       {
         heading: 'How Does Google Decide Who Appears in the Gurugram 3-Pack?',
@@ -238,7 +238,7 @@ export const guidesData: GuideItem[] = [
     coreQuestion: 'How can medical and dental clinics in Delhi automate patient bookings on WhatsApp safely?',
     directAnswer:
       'Clinics in Delhi automate patient intake and appointment reminders safely by running workflows on the official Meta WhatsApp Business Cloud API rather than unofficial browser plugins. Patients click a WhatsApp button from Google Maps or your website, choose a consultation slot, receive instant confirmation, and escalate to reception whenever clinical questions arise.',
-    // DATA NEEDED: Add verified Delhi clinic no-show reduction / response-time stats once Naveen collects documented metrics
+    // DATA NEEDED: Add verified Delhi clinic no-show reduction / response-time stats once collected with documented metrics
     sections: [
       {
         heading: 'Why Do Delhi Clinics Lose Appointments on WhatsApp Today?',

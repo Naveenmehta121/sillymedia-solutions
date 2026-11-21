@@ -191,7 +191,7 @@ export default function ContactForm({
         <CheckCircle2 size={30} aria-hidden="true" />
         <h3>Message Sent!</h3>
         <p>
-          Thank you for reaching out. {siteConfig.founder.name} will review your project details and
+          Thank you for reaching out. Our team will review your project details and
           respond within 3 business hours.
         </p>
         <button

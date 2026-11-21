@@ -20,7 +20,7 @@ export default function ContactActions({
   const phoneDisplay = getPhoneDisplay();
   const waHref = getWhatsAppHref(
     prefillTopic
-      ? `Hi Naveen, I'm interested in ${prefillTopic} from SillyMedia Solutions for my Delhi NCR business.`
+      ? `Hi, I'm interested in ${prefillTopic} from SillyMedia Solutions for my Delhi NCR business.`
       : undefined
   );
 
@@ -33,7 +33,7 @@ export default function ContactActions({
           onClick={() => trackEvent('call_click', { location: locationTag })}
         >
           <Phone size={17} aria-hidden="true" />
-          Call {phoneDisplay}
+          Call Our Team {phoneDisplay}
         </a>
       )}
 
@@ -46,7 +46,7 @@ export default function ContactActions({
           onClick={() => trackEvent('whatsapp_click', { location: locationTag })}
         >
           <MessageCircle size={18} aria-hidden="true" />
-          Chat with Naveen on WhatsApp
+          Chat with Us on WhatsApp
         </a>
       ) : (
         <a
@@ -68,7 +68,7 @@ export default function ContactActions({
         )}`}
       >
         <Mail size={17} aria-hidden="true" />
-        Email {siteConfig.founder.name} Directly
+        Email Our Team Directly
       </a>
     </div>
   );

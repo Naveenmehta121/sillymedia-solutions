@@ -32,7 +32,7 @@ export const locationsData: LocationItem[] = [
     h1: 'Web Development, Local SEO & WhatsApp Automation in Delhi',
     coreQuestion: 'How can a Delhi business stand out online against crowded local competition?',
     directAnswer:
-      'In Delhi’s high-density markets — from Greater Kailash and South Extension to Connaught Place, Karol Bagh, and Dwarka — searchers compare Google Maps ratings, mobile speed, and WhatsApp responsiveness in under a minute. SillyMedia Solutions builds fast custom websites, locality-tuned SEO, and automated WhatsApp booking flows directly with Naveen.',
+      'In Delhi’s high-density markets — from Greater Kailash and South Extension to Connaught Place, Karol Bagh, and Dwarka — searchers compare Google Maps ratings, mobile speed, and WhatsApp responsiveness in under a minute. SillyMedia Solutions builds fast custom websites, locality-tuned SEO, and automated WhatsApp booking flows engineered by our senior specialists.',
     marketContext:
       'Delhi buyers rarely search generically for "best clinic Delhi" — they search by neighbourhood, metro corridor, and landmark ("dentist near GK-1", "architect in Hauz Khas", "boutique in South Ex"). Generic multi-page agency templates struggle in these hyperlocal micro-markets. Winning requires crisp mobile load speed on busy 4G networks, well-structured Google Business Profiles, and zero-friction call and WhatsApp conversion.',
     neighbourhoods: [
@@ -91,7 +91,7 @@ export const locationsData: LocationItem[] = [
     relatedWorkSlugs: ['delhi-dental-care'],
     faqs: [
       {
-        question: 'Can Naveen meet or run discovery sessions for Delhi-based businesses?',
+        question: 'Can your team meet or run discovery sessions for Delhi-based businesses?',
         answer:
           'Yes. Most discovery audits happen over a focused 20-minute video or phone call for speed, and in-person project kickoffs across Delhi can be scheduled for larger engagements.',
       },
@@ -117,7 +117,7 @@ export const locationsData: LocationItem[] = [
     h1: 'Custom Websites, SaaS MVPs & Local SEO in Gurugram',
     coreQuestion: 'What digital systems drive growth for Gurugram startups, D2C brands, and local services?',
     directAnswer:
-      'Gurugram combines fast-moving Cyber City startups and D2C brands with affluent residential corridors along Golf Course Road and Sohna Road. SillyMedia Solutions builds high-speed headless websites, 4–6 week SaaS MVPs, and local Google Maps SEO engineered directly by Naveen so Gurugram teams ship faster without agency bloat.',
+      'Gurugram combines fast-moving Cyber City startups and D2C brands with affluent residential corridors along Golf Course Road and Sohna Road. SillyMedia Solutions builds high-speed headless websites, 4–6 week SaaS MVPs, and local Google Maps SEO engineered directly by our senior team so Gurugram businesses ship faster without agency bloat.',
     marketContext:
       'Businesses in Gurugram compete on both speed and polish. Buyers on Golf Course Road, DLF Phase 1–5, and Galleria Market expect modern mobile experiences, transparent pricing signals, and instant WhatsApp booking, while SaaS and B2B teams in Cyber Hub and Udyog Vihar need reliable full-stack TypeScript engineering that ships in weeks rather than quarters.',
     neighbourhoods: [
@@ -186,7 +186,7 @@ export const locationsData: LocationItem[] = [
       {
         question: 'How does pricing compare with large Cyber City digital agencies?',
         answer:
-          'Because you work directly with Naveen without account-manager overhead, engagements are scoped as transparent fixed milestones rather than inflated monthly retainers.',
+          'Because you work directly with our senior specialists without account-manager overhead, engagements are scoped as transparent fixed milestones rather than inflated monthly retainers.',
       },
     ],
   },
@@ -200,7 +200,7 @@ export const locationsData: LocationItem[] = [
     h1: 'Web Development, SaaS Apps & Local SEO in Noida',
     coreQuestion: 'What digital engineering services help Noida businesses generate consistent leads?',
     directAnswer:
-      'Noida spans dense IT and B2B corridors in Sectors 62, 63, and 125–142 alongside high-footfall retail and healthcare hubs in Sector 18 and Sector 50. SillyMedia Solutions builds B2B web dashboards, fast company websites, local Google Maps SEO, and WhatsApp automation engineered directly by Naveen for measurable lead generation.',
+      'Noida spans dense IT and B2B corridors in Sectors 62, 63, and 125–142 alongside high-footfall retail and healthcare hubs in Sector 18 and Sector 50. SillyMedia Solutions builds B2B web dashboards, fast company websites, local Google Maps SEO, and WhatsApp automation engineered directly by our agency specialists for measurable lead generation.',
     marketContext:
       'In Noida, B2B tech, fintech, and IT-enabled service companies around Sector 62 and the Noida–Greater Noida Expressway need credible product engineering and technical SEO that wins national and enterprise search queries. Meanwhile, clinics, coaching academies, restaurants, and retail businesses around Sector 18, Sector 50, and Sector 75–78 rely heavily on Google Maps visibility and instant WhatsApp replies.',
     neighbourhoods: [
@@ -281,7 +281,7 @@ export const locationsData: LocationItem[] = [
     h1: 'Web Design, Local SEO & WhatsApp Automation in Greater Noida',
     coreQuestion: 'How can Greater Noida and Noida Extension businesses capture fast-growing local demand?',
     directAnswer:
-      'Greater Noida and Greater Noida West (Noida Extension) are expanding rapidly across colleges, residential townships, hospitals, and industrial units — yet many local businesses still rely on outdated websites or unoptimized Google listings. SillyMedia Solutions builds fast websites, Google Maps SEO, and WhatsApp inquiry flows directly with Naveen.',
+      'Greater Noida and Greater Noida West (Noida Extension) are expanding rapidly across colleges, residential townships, hospitals, and industrial units — yet many local businesses still rely on outdated websites or unoptimized Google listings. SillyMedia Solutions builds fast websites, Google Maps SEO, and WhatsApp inquiry flows engineered by our agency team.',
     marketContext:
       'Local search competition in Greater Noida (Pari Chowk, Alpha/Beta/Gamma Sectors, Knowledge Park) and Greater Noida West (Gaur City, Techzone 4) is still far less saturated than South Delhi or Cyber Hub. Investing early in a properly engineered website, accurate Google Business Profile, and automated WhatsApp follow-up allows local healthcare, education, and real estate businesses to capture high-intent leads efficiently.',
     neighbourhoods: [
@@ -362,7 +362,7 @@ export const locationsData: LocationItem[] = [
     h1: 'Custom Websites, Local SEO & Automation in Faridabad',
     coreQuestion: 'How do Faridabad manufacturers, clinics, and local businesses win more online inquiries?',
     directAnswer:
-      'Faridabad combines one of NCR’s largest industrial and manufacturing belts along Mathura Road with fast-growing residential markets in Sector 15, NIT, and Greater Faridabad (Neharpar). SillyMedia Solutions builds search-ready B2B websites, hyperlocal Google Maps SEO, and WhatsApp lead workflows engineered directly by Naveen.',
+      'Faridabad combines one of NCR’s largest industrial and manufacturing belts along Mathura Road with fast-growing residential markets in Sector 15, NIT, and Greater Faridabad (Neharpar). SillyMedia Solutions builds search-ready B2B websites, hyperlocal Google Maps SEO, and WhatsApp lead workflows engineered directly by our senior team.',
     marketContext:
       'Two distinct opportunities stand out in Faridabad. First, industrial exporters and OEM suppliers around Mathura Road, IMT Faridabad, and Ballabgarh frequently lose RFQs because their websites are outdated or invisible on Google. Second, hospitals, clinics, coaching centres, and retail showrooms across Sector 15, NIT Faridabad, and Neharpar need crisp Google Maps presence and mobile WhatsApp capture to win local families.',
     neighbourhoods: [
@@ -429,7 +429,7 @@ export const locationsData: LocationItem[] = [
       {
         question: 'How do we collaborate if our office is in Faridabad?',
         answer:
-          'You communicate directly with Naveen via phone, WhatsApp, and weekly video demos, with live staging links shared throughout the build.',
+          'You communicate directly with our project leads via phone, WhatsApp, and weekly video demos, with live staging links shared throughout the build.',
       },
     ],
   },
@@ -443,7 +443,7 @@ export const locationsData: LocationItem[] = [
     h1: 'Custom Websites, Local SEO & WhatsApp Automation in Ghaziabad',
     coreQuestion: 'How can Ghaziabad businesses in Indirapuram, Vaishali, and Raj Nagar win local customers?',
     directAnswer:
-      'Ghaziabad’s residential and commercial hubs — Indirapuram, Vaishali, Kaushambi, Vasundhara, and Raj Nagar Extension — generate massive daily local search demand for clinics, coaching, interiors, cafes, and B2B services. SillyMedia Solutions builds fast custom websites, local Google Maps SEO, and WhatsApp automation directly with Naveen.',
+      'Ghaziabad’s residential and commercial hubs — Indirapuram, Vaishali, Kaushambi, Vasundhara, and Raj Nagar Extension — generate massive daily local search demand for clinics, coaching, interiors, cafes, and B2B services. SillyMedia Solutions builds fast custom websites, local Google Maps SEO, and WhatsApp automation engineered directly by our senior specialists.',
     marketContext:
       'Trans-Hindon hubs like Indirapuram, Vaishali, Kaushambi, and Vasundhara share commuter and buyer overlap with East Delhi and Noida Sector 62, while Raj Nagar Extension, Kavi Nagar, and Sahibabad Industrial Area have distinct neighbourhood search patterns. Accurate locality positioning, fast mobile pages, and instant WhatsApp booking help Ghaziabad businesses convert nearby searches into confirmed visits.',
     neighbourhoods: [

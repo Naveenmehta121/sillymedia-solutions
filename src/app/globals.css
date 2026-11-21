@@ -77,7 +77,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .site-header { height: 80px; position: fixed; z-index: 30; inset: 0 0 auto; background: rgba(245, 240, 232, 0.96); border-bottom: 1px solid #e0d8cc; backdrop-filter: blur(12px); transition: height 0.2s ease, box-shadow 0.2s ease; }
 .site-header.scrolled { height: 62px; box-shadow: 0 4px 16px rgba(26, 18, 8, 0.08); }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
-.brand-mark { display: inline-flex; align-items: center; gap: 10px; }
+.brand-mark { display: inline-flex; align-items: center; }
+.brand-logo-img { height: 48px; width: auto; max-width: 220px; object-fit: contain; display: block; transition: height 0.2s ease; }
+.brand-mark-compact .brand-logo-img { height: 38px; }
+.brand-logo-stacked { height: 74px; max-width: 160px; }
+.brand-logo-mark { height: 32px; width: auto; }
 .brand-wordmark { display: inline-flex; flex-direction: column; line-height: 1.05; }
 .brand-wordmark strong { font: 700 18px 'Playfair Display', Georgia, serif; color: #1a1208; letter-spacing: -0.02em; }
 .brand-wordmark span { font: 700 10.5px 'Space Mono', monospace; letter-spacing: 0.14em; text-transform: uppercase; color: #9c3806; }

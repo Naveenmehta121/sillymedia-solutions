@@ -1,34 +1,58 @@
-export default function BrandMark({ compact = false }: { compact?: boolean }) {
-  return (
-    <span className={`brand-mark ${compact ? 'brand-mark-compact' : ''}`}>
-      <svg
-        width={compact ? 30 : 34}
-        height={compact ? 30 : 34}
-        viewBox="0 0 36 36"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <rect x="1" y="1" width="32" height="32" fill="#1a1208" />
-        <rect x="3" y="3" width="28" height="28" fill="#f5f0e8" stroke="#1a1208" strokeWidth="1.5" />
-        <rect x="6" y="6" width="6" height="6" fill="#e8611a" />
-        <text
-          x="17"
-          y="25"
-          textAnchor="middle"
-          fontFamily="Playfair Display, Georgia, serif"
-          fontWeight="700"
-          fontSize="14"
-          fill="#1a1208"
-        >
-          SM
-        </text>
-        <rect x="6" y="27.5" width="22" height="2.2" fill="#1d4d2e" />
-      </svg>
-      <span className="brand-wordmark">
-        <strong>SillyMedia</strong>
-        <span>Solutions</span>
+interface BrandMarkProps {
+  compact?: boolean;
+  variant?: 'horizontal' | 'stacked' | 'mark';
+}
+
+export default function BrandMark({
+  compact = false,
+  variant = 'horizontal',
+}: BrandMarkProps) {
+  if (variant === 'stacked') {
+    return (
+      <span className={`brand-mark brand-mark-stacked ${compact ? 'brand-mark-compact' : ''}`}>
+        <picture>
+          <source srcSet="/images/logo.webp" type="image/webp" />
+          <img
+            src="/images/logo.png"
+            alt="SillyMedia Solutions — Digital Marketing Agency"
+            width={compact ? 120 : 155}
+            height={compact ? 92 : 118}
+            className="brand-logo-img brand-logo-stacked"
+          />
+        </picture>
       </span>
+    );
+  }
+
+  if (variant === 'mark') {
+    return (
+      <span className={`brand-mark brand-mark-icon ${compact ? 'brand-mark-compact' : ''}`}>
+        <picture>
+          <source srcSet="/images/logo-mark.webp" type="image/webp" />
+          <img
+            src="/images/logo-mark.png"
+            alt="SillyMedia Solutions Mark"
+            width={compact ? 48 : 60}
+            height={compact ? 24 : 30}
+            className="brand-logo-img brand-logo-mark"
+          />
+        </picture>
+      </span>
+    );
+  }
+
+  return (
+    <span className={`brand-mark brand-mark-horizontal ${compact ? 'brand-mark-compact' : ''}`}>
+      <picture>
+        <source srcSet="/images/logo-horizontal.webp" type="image/webp" />
+        <img
+          src="/images/logo-horizontal.png"
+          alt="SillyMedia Solutions — Digital Marketing Agency"
+          width={compact ? 175 : 210}
+          height={compact ? 40 : 48}
+          className="brand-logo-img brand-logo-horizontal"
+        />
+      </picture>
     </span>
   );
 }

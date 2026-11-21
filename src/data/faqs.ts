@@ -45,7 +45,7 @@ export const faqsData: FaqEntry[] = [
     category: 'General',
     question: 'Who actually works on my project at SillyMedia Solutions?',
     answer:
-      'You work directly with Naveen, the founder and principal engineer. There are no middleman account managers or surprise handoffs to junior interns.',
+      'You work directly with our senior engineers and digital marketing specialists. There are no middleman account managers or surprise handoffs to junior interns.',
   },
   {
     category: 'Local SEO & AI Search',

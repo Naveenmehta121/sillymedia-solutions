@@ -26,7 +26,7 @@ export default function NotFoundPage() {
               Case Studies
             </Link>
             <Link href="/#contact" className="button-link button-light">
-              Contact Naveen
+              Contact Our Team
             </Link>
           </div>
         </div>

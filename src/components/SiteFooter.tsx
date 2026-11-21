@@ -22,9 +22,9 @@ export default function SiteFooter() {
       <div className="container footer-grid">
         <div>
           <Link href="/" className="footer-brand-link" aria-label={`${siteConfig.brandName} Home`}>
-            <BrandMark />
+            <BrandMark variant="stacked" />
           </Link>
-          <span className="eyebrow footer-eyebrow">SILLYMEDIA SOLUTIONS · DELHI NCR</span>
+          <span className="eyebrow footer-eyebrow">SILLYMEDIA SOLUTIONS · DIGITAL AGENCY · DELHI NCR</span>
           <p>{siteConfig.shortDescription}</p>
           {isConfigured(siteConfig.contact.streetAddress) && (
             <p className="footer-address">
@@ -57,8 +57,8 @@ export default function SiteFooter() {
         </div>
 
         <div>
-          <h2 className="footer-heading">Direct Contact</h2>
-          <p>Consultations, technical audits, and builds led directly by {siteConfig.founder.name}.</p>
+          <h2 className="footer-heading">Agency Contact</h2>
+          <p>Consultations, technical audits, and digital builds delivered directly by our team.</p>
           <a href={`mailto:${siteConfig.contact.email}`} className="orange-text">
             {siteConfig.contact.email}
           </a>
@@ -81,20 +81,20 @@ export default function SiteFooter() {
               onClick={() => trackEvent('whatsapp_click', { location: 'footer' })}
             >
               <MessageCircle size={14} aria-hidden="true" />
-              WhatsApp Naveen
+              WhatsApp Our Team
             </a>
           )}
           <div className="footer-sub-links">
             <Link href="/work">Case Studies</Link>
             <Link href="/guides">NCR Guides</Link>
-            <Link href="/about">About {siteConfig.founder.name}</Link>
+            <Link href="/about">About Our Agency</Link>
             <Link href="/faq">FAQ</Link>
           </div>
         </div>
       </div>
 
       <div className="container footer-bottom">
-        <span>© 2026 {siteConfig.brandName}. All rights reserved.</span>
+        <span>© 2026 {siteConfig.brandName}. Digital marketing &amp; web agency. All rights reserved.</span>
         <div className="footer-legal-links">
           <Link href="/privacy-policy">Privacy Policy</Link>
           <Link href="/terms">Terms</Link>

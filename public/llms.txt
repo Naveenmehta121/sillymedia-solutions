@@ -1,15 +1,15 @@
 # SillyMedia Solutions
 
-> Independent Delhi NCR digital engineering agency led directly by Naveen, building fast custom websites, hyperlocal SEO & Google Maps growth, WhatsApp Business automation, full-stack web apps & SaaS MVPs, and grounded AI chatbots.
+> Delhi NCR digital marketing and web engineering agency, building fast custom websites, hyperlocal SEO & Google Maps growth, WhatsApp Business automation, full-stack web apps & SaaS MVPs, and grounded AI chatbots.
 > Note: Support for llms.txt by individual AI search engines is voluntary and not guaranteed. All primary content is also published in pre-rendered HTML with Schema.org JSON-LD.
 
 ## Entity Summary
 - Brand: SillyMedia Solutions
-- Founder & Principal Engineer: Naveen
+- Team & Leadership: Senior Engineering & Digital Marketing Specialists
 - Primary Region: Delhi NCR, India (Delhi, Gurugram, Noida, Greater Noida, Faridabad, Ghaziabad)
 - Website: https://sillymedia.in
-- Direct Email: naveen@sillymedia.in
-- Engagement Model: Direct principal engineering with fixed milestone scopes and full client code ownership.
+- Direct Email: contact@sillymedia.in
+- Engagement Model: Senior specialist engineering with fixed milestone scopes and full client code ownership.
 
 ## Core Services
 - [All Services](https://sillymedia.in/services): Overview of all five digital engineering services.
@@ -32,7 +32,7 @@
 - [Aura Luxe Fashion — Gurugram Headless Storefront](https://sillymedia.in/work/aura-luxe-fashion)
 - [Delhi Dental Care — South Delhi Local SEO & Patient Booking](https://sillymedia.in/work/delhi-dental-care)
 - [FinOps India — Noida Sector 62 B2B Fintech SaaS MVP](https://sillymedia.in/work/finops-india)
-- [About Naveen & SillyMedia Solutions](https://sillymedia.in/about)
+- [About SillyMedia Solutions](https://sillymedia.in/about)
 - [Frequently Asked Questions](https://sillymedia.in/faq)
 
 ## Evergreen Guides

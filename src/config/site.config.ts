@@ -16,34 +16,34 @@ export function isConfigured(value: string | undefined | null): value is string 
 
 export const siteConfig = {
   brandName: 'SillyMedia Solutions',
-  tagline: 'Delhi NCR’s Digital Engineering & Local Growth Partner',
+  tagline: 'Delhi NCR’s Digital Marketing & Web Engineering Agency',
   shortDescription:
-    'Independent Delhi NCR digital agency led by Naveen, building fast custom websites, hyperlocal SEO & Google Maps growth, WhatsApp automation, web apps, and AI chatbots.',
+    'Delhi NCR digital marketing and web engineering agency building fast custom websites, hyperlocal SEO & Google Maps growth, WhatsApp automation, web apps, and AI chatbots.',
   siteUrl: 'https://sillymedia.in',
   locale: 'en_IN',
   language: 'en-IN',
-  lastUpdated: '2026-11-18',
+  lastUpdated: '2026-11-22',
 
   founder: {
-    name: 'Naveen',
-    // PLACEHOLDER: Full name if you prefer displaying your last name publicly
+    name: 'SillyMedia Solutions Team',
+    // PLACEHOLDER: Full name if you prefer displaying your leadership publicly
     fullName: '[FOUNDER_FULL_NAME]',
-    jobTitle: 'Founder & Principal Engineer',
-    // PLACEHOLDER: Verified years of experience (e.g. "7+ years")
+    jobTitle: 'Digital Marketing & Web Engineering Agency',
+    // PLACEHOLDER: Verified years of agency experience (e.g. "7+ years")
     experienceYears: '[FOUNDER_EXPERIENCE_YEARS]',
-    // PLACEHOLDER: Verified founder headshot path or URL (e.g. "/images/naveen.webp")
+    // PLACEHOLDER: Verified agency team or headshot path or URL (e.g. "/images/team.webp")
     photoUrl: '[FOUNDER_PHOTO_URL]',
-    // PLACEHOLDER: Real profile URLs for Person schema `sameAs`
+    // PLACEHOLDER: Real profile URLs for Person/Agency schema `sameAs`
     linkedinUrl: '[FOUNDER_LINKEDIN_URL]',
     githubUrl: '[FOUNDER_GITHUB_URL]',
     bioParagraphs: [
-      'Naveen is the founder and principal engineer at SillyMedia Solutions, working directly with business owners and product teams across Delhi NCR.',
-      'Instead of passing projects through account managers and junior handoffs, Naveen leads architecture, technical SEO, conversion UX, and automation engineering directly from discovery through launch.',
+      'SillyMedia Solutions is a Delhi NCR digital marketing and web engineering agency partnering directly with business owners, clinics, and startups across Delhi, Gurugram, and Noida.',
+      'We combine senior full-stack web architecture, hyperlocal search optimization, and automated WhatsApp workflows to build high-converting growth engines without agency bloat or junior handoffs.',
     ],
   },
 
   contact: {
-    email: 'naveen@sillymedia.in',
+    email: 'contact@sillymedia.in',
     // PLACEHOLDER: Replace with your real phone number in E.164 format, e.g. "+9198XXXXXXXX"
     phone: '[PHONE]',
     // PLACEHOLDER: Human-formatted phone display, e.g. "+91 98XXX XXXXX"
@@ -51,7 +51,7 @@ export const siteConfig = {
     // PLACEHOLDER: Digits-only WhatsApp number with country code, e.g. "9198XXXXXXXX"
     whatsappNumber: '[WHATSAPP_NUMBER]',
     whatsappDefaultMessage:
-      'Hi Naveen, I found SillyMedia Solutions online and would like to discuss a project for my Delhi NCR business.',
+      'Hi, I found SillyMedia Solutions online and would like to discuss a project for my Delhi NCR business.',
     // PLACEHOLDER: Street address (leave as placeholder if service-area business without public walk-in office)
     streetAddress: '[STREET_ADDRESS]',
     addressLocality: 'New Delhi',
@@ -64,7 +64,7 @@ export const siteConfig = {
     // PLACEHOLDER: Confirm business hours (e.g. "Mo-Sa 10:00-19:00")
     openingHours: '[OPENING_HOURS]',
     openingHoursDisplay: 'Mon–Sat, 10:00 AM – 7:00 PM IST', // VERIFY: Confirm working hours
-    responseSla: 'Reply within 3 business hours', // VERIFY: Confirm response SLA
+    responseSla: 'Reply from our team within 3 business hours', // VERIFY: Confirm response SLA
   },
 
   formBackend: {
@@ -191,7 +191,7 @@ export const siteConfig = {
           'Full-stack Next.js / TypeScript architecture & database design',
           'Authentication, payments/UPI, dashboards & API integrations',
           'Custom AI agents, document workflows & internal tools',
-          'Direct engineering with Naveen from spec to production',
+          'Direct engineering with our senior specialists from spec to production',
         ],
         ctaLabel: 'Scope Your Project',
         accent: 'dark' as const,
@@ -202,7 +202,7 @@ export const siteConfig = {
       { label: 'Code Ownership', value: 'You own 100% of your codebase & domain' }, // VERIFY
       { label: 'Contracts', value: 'Fixed milestone quotes — no forced lock-in retainers' }, // VERIFY
       { label: 'Delivery', value: 'Clear weekly demos & agreed launch dates' }, // VERIFY
-      { label: 'Communication', value: 'Direct reply from Naveen within 3 business hours' }, // VERIFY
+      { label: 'Communication', value: 'Direct reply from our team within 3 business hours' }, // VERIFY
     ],
   },
 
@@ -213,7 +213,7 @@ export const siteConfig = {
    */
   stats: [
     {
-      // VERIFY: Confirm exact count of businesses served by Naveen / SillyMedia Solutions
+      // VERIFY: Confirm exact count of businesses served by SillyMedia Solutions
       value: '80+',
       label: 'Businesses Scaled',
       note: 'Retail, healthcare, tech & dining across NCR',
