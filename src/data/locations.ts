@@ -87,8 +87,8 @@ export const locationsData: LocationItem[] = [
       },
     ],
     localProofNote:
-      'Featured Delhi deployment: Delhi Dental Care (South Delhi / GK-1) — automated patient booking flow, WhatsApp reminders, and local search architecture.',
-    relatedWorkSlugs: ['delhi-dental-care'],
+      'Live deployment: The Diets (thediets.in) — online dietitian platform with 1:1 diet plans, online consultation booking and transparent plan pricing, built and optimised by SillyMedia Solutions.',
+    relatedWorkSlugs: [],
     faqs: [
       {
         question: 'Can your team meet or run discovery sessions for Delhi-based businesses?',
@@ -170,8 +170,8 @@ export const locationsData: LocationItem[] = [
       },
     ],
     localProofNote:
-      'Featured Gurugram deployment: Aura Luxe Fashion (DLF CyberCity / Gurugram) — custom headless storefront with fast catalog browsing and streamlined UPI checkout.',
-    relatedWorkSlugs: ['aura-luxe-fashion'],
+      'Live deployment: The Diets (thediets.in) — online dietitian platform with 1:1 diet plans, online consultation booking and transparent plan pricing, built and optimised by SillyMedia Solutions.',
+    relatedWorkSlugs: [],
     faqs: [
       {
         question: 'Do you work with both Gurugram startups and local retail/clinic businesses?',
@@ -251,8 +251,8 @@ export const locationsData: LocationItem[] = [
       },
     ],
     localProofNote:
-      'Featured Noida deployment: FinOps India (Noida Sector 62) — B2B financial dashboard with automated GST workflow and multi-tenant architecture launched in 4 weeks.',
-    relatedWorkSlugs: ['finops-india'],
+      'Live deployment: The Diets (thediets.in) — online dietitian platform with 1:1 diet plans, online consultation booking and transparent plan pricing, built and optimised by SillyMedia Solutions.',
+    relatedWorkSlugs: [],
     faqs: [
       {
         question: 'Does SillyMedia Solutions build B2B web apps for Noida Sector 62 and Expressway companies?',
@@ -332,8 +332,8 @@ export const locationsData: LocationItem[] = [
       },
     ],
     localProofNote:
-      'Note: We serve Greater Noida and Greater Noida West directly as part of our Delhi NCR footprint. While our published case studies below highlight Delhi, Gurugram, and Noida Sector 62 builds, the same engineering playbook applies across Greater Noida.',
-    relatedWorkSlugs: ['finops-india', 'delhi-dental-care'],
+      'Note: We serve Greater Noida and Greater Noida West directly as part of our Delhi NCR footprint. Our published case study is The Diets (thediets.in) — an online dietitian platform; the same engineering playbook applies across Greater Noida.',
+    relatedWorkSlugs: [],
     faqs: [
       {
         question: 'Do you cover both Greater Noida (Pari Chowk / Knowledge Park) and Greater Noida West (Noida Extension)?',
@@ -413,8 +413,8 @@ export const locationsData: LocationItem[] = [
       },
     ],
     localProofNote:
-      'Note: SillyMedia Solutions works with Faridabad businesses directly across NCR. Published case studies currently showcase our South Delhi, Gurugram, and Noida Sector 62 engagements; Faridabad client case studies will be published only with client permission.',
-    relatedWorkSlugs: ['delhi-dental-care', 'finops-india'],
+      'Note: SillyMedia Solutions works with Faridabad businesses directly across NCR. Our published case study is The Diets (thediets.in) — an online dietitian platform; Faridabad client case studies will be published only with client permission.',
+    relatedWorkSlugs: [],
     faqs: [
       {
         question: 'Do you build B2B websites for Faridabad manufacturing and industrial companies?',
@@ -494,8 +494,8 @@ export const locationsData: LocationItem[] = [
       },
     ],
     localProofNote:
-      'Note: SillyMedia Solutions serves Ghaziabad across Trans-Hindon and Raj Nagar corridors. While our currently published case studies are from Delhi, Gurugram, and adjacent Noida Sector 62, the exact same engineering and local SEO system powers Ghaziabad projects.',
-    relatedWorkSlugs: ['delhi-dental-care', 'finops-india'],
+      'Note: SillyMedia Solutions serves Ghaziabad across Trans-Hindon and Raj Nagar corridors. Our published case study is The Diets (thediets.in); the exact same engineering and local SEO system powers Ghaziabad projects.',
+    relatedWorkSlugs: [],
     faqs: [
       {
         question: 'Can you help a business in Indirapuram or Vaishali rank for both Ghaziabad and nearby Noida/East Delhi searches?',

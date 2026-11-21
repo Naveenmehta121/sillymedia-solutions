@@ -58,12 +58,16 @@ export default function CaseStudyDetailPage({ params }: { params: { slug: string
           <div className="page-meta-row">
             <span>Timeline: {cs.timeline}</span>
             <span>·</span>
-            <span>
-              Location:{' '}
-              <Link href={`/locations/${cs.locationSlug}`} style={{ textDecoration: 'underline' }}>
-                {cs.city}
-              </Link>
-            </span>
+            {cs.locationSlug ? (
+              <span>
+                Location:{' '}
+                <Link href={`/locations/${cs.locationSlug}`} style={{ textDecoration: 'underline' }}>
+                  {cs.city}
+                </Link>
+              </span>
+            ) : (
+              <span>Location: {cs.city}</span>
+            )}
             <span>·</span>
             <span>Last updated: {siteConfig.lastUpdated}</span>
           </div>
@@ -78,10 +82,7 @@ export default function CaseStudyDetailPage({ params }: { params: { slug: string
         <div className="container">
           <div className="visual-card" style={{ maxWidth: 920, marginBottom: 40 }}>
             <div className="image-frame" style={{ aspectRatio: '16/10' }}>
-              <picture>
-                <source srcSet={cs.imageAvif} type="image/avif" />
-                <img src={cs.imageWebp} alt={cs.imageAlt} width={960} height={600} />
-              </picture>
+              <img src={cs.imageWebp} alt={cs.imageAlt} width={960} height={600} />
               <div className="image-badge">
                 <span>
                   <i />
@@ -184,14 +185,15 @@ export default function CaseStudyDetailPage({ params }: { params: { slug: string
         </div>
       </section>
 
-      <section className="section cream">
-        <div className="container">
-          <div className="section-heading">
-            <div>
-              <span className="eyebrow">MORE WORK</span>
-              <h2>Explore Other Delhi NCR Case Studies</h2>
+      {otherCases.length > 0 && (
+        <section className="section cream">
+          <div className="container">
+            <div className="section-heading">
+              <div>
+                <span className="eyebrow">MORE WORK</span>
+                <h2>Explore Other Delhi NCR Case Studies</h2>
+              </div>
             </div>
-          </div>
           <div className="content-grid-2">
             {otherCases.map((item) => (
               <article className="work-card" key={item.slug}>
@@ -215,7 +217,8 @@ export default function CaseStudyDetailPage({ params }: { params: { slug: string
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      )}
 
       <section className="contact" id="contact">
         <div className="container contact-inner">

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+  <rect width="960" height="720" fill="#f6f1e7"/>
+  <rect x="80" y="80" width="800" height="500" fill="#ffffff" stroke="#1a1208" stroke-width="2"/>
+  <rect x="80" y="80" width="800" height="54" fill="#efe8d8" stroke="#1a1208" stroke-width="2"/>
+  <circle cx="110" cy="107" r="7" fill="#c2410c"/>
+  <circle cx="132" cy="107" r="7" fill="#1d5c3f"/>
+  <circle cx="154" cy="107" r="7" fill="#1e3a5f"/>
+  <rect x="620" y="93" width="220" height="28" rx="14" fill="#ffffff" stroke="#1a1208" stroke-width="1.5"/>
+  <text x="730" y="112" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1a1208" text-anchor="middle">thediets.in</text>
+  <text x="480" y="230" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#1a1208" text-anchor="middle">The Diets</text>
+  <text x="480" y="280" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#594138" text-anchor="middle">Nutrition guidance that fits your life.</text>
+  <text x="480" y="322" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="2" fill="#1d5c3f" text-anchor="middle">1:1 DIET PLANS &#183; ONLINE CONSULTATION</text>
+  <rect x="360" y="352" width="240" height="52" fill="#c2410c"/>
+  <text x="480" y="385" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">Book a Consultation</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1a1208" text-anchor="middle">
+    <rect x="150" y="440" width="150" height="40" rx="20" fill="none" stroke="#1a1208" stroke-width="1.5"/>
+    <text x="225" y="466">PCOS Care</text>
+    <rect x="315" y="440" width="150" height="40" rx="20" fill="none" stroke="#1a1208" stroke-width="1.5"/>
+    <text x="390" y="466">Thyroid Care</text>
+    <rect x="480" y="440" width="160" height="40" rx="20" fill="none" stroke="#1a1208" stroke-width="1.5"/>
+    <text x="560" y="466">Weight Loss</text>
+    <rect x="655" y="440" width="155" height="40" rx="20" fill="none" stroke="#1a1208" stroke-width="1.5"/>
+    <text x="732" y="466">Diabetes Care</text>
+  </g>
+  <line x1="120" y1="520" x2="840" y2="520" stroke="#1a1208" stroke-width="1"/>
+  <text x="480" y="552" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="3" fill="#594138" text-anchor="middle">HOME-COOKED INDIAN MEALS &#183; ZERO STARVATION</text>
+  <text x="480" y="648" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#1a1208" text-anchor="middle">The Diets &#8212; Online Dietitian</text>
+  <text x="480" y="684" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2" fill="#594138" text-anchor="middle">1:1 DIET PLANS &#183; THEDIETS.IN</text>
+</svg>

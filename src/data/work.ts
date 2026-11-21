@@ -32,169 +32,51 @@ export interface CaseStudy {
 
 export const caseStudiesData: CaseStudy[] = [
   {
-    slug: 'aura-luxe-fashion',
-    client: 'Aura Luxe Fashion',
-    city: 'Gurugram',
-    locationSlug: 'gurugram',
-    sector: 'Retail E-Commerce',
-    badgeColor: 'orange',
-    title: 'High-Speed Headless Storefront & Instant Mobile Catalog',
-    metaTitle: 'Aura Luxe Fashion Case Study — Gurugram E-Commerce',
-    metaDescription:
-      'How SillyMedia Solutions engineered a fast headless storefront and streamlined UPI checkout for Aura Luxe Fashion in Gurugram.',
-    summary:
-      'Custom headless e-commerce architecture built for fast mobile catalog browsing and streamlined UPI checkout across DLF CyberCity and pan-India shoppers.',
-    // VERIFY: Original site listed "+3.8x checkout conversion rate" and "0.34s Load" — verify exact analytics timeframe & numbers
-    headlineMetric: '+3.8x',
-    headlineMetricLabel: 'Client-reported checkout conversion lift',
-    metricVerificationNote:
-      'Outcome reported from the original deployment scope; detailed walkthrough and architecture review available on discovery calls.',
-    imageWebp: '/images/hero-showcase-960.webp',
-    imageAvif: '/images/hero-showcase-960.avif',
-    imageAlt: 'Aura Luxe Fashion headless storefront interface showcase',
-    imageTag: 'Headless Storefront · Gurugram',
-    timeline: '3 weeks', // VERIFY: Original testimonial mentions "3 weeks"
-    servicesUsed: [
-      { slug: 'custom-websites', label: 'Custom Websites' },
-      { slug: 'web-apps-saas', label: 'Web Apps & SaaS' },
-    ],
-    challenge: [
-      'A heavy template storefront created sluggish product browsing on mobile 4G networks, leading to high bounce rates from paid social and local search traffic.',
-      'Multi-step checkout friction slowed down Indian mobile shoppers who prefer fast UPI checkout.',
-    ],
-    approach: [
-      'Engineered a lightweight headless storefront with pre-rendered category and product views, responsive WebP/AVIF imagery, and minimal client-side JavaScript.',
-      'Streamlined product discovery, variant selection, and mobile cart-to-UPI checkout flow to reduce taps before payment.',
-      'Structured clean product metadata and technical SEO tags for improved organic discoverability.',
-    ],
-    results: [
-      'Significantly faster mobile page loads across 4G connections compared to the legacy theme setup.',
-      'Client-reported +3.8x improvement in checkout conversion following launch.', // VERIFY
-      'Launched end-to-end in 3 weeks with direct engineering by SillyMedia Solutions.', // VERIFY
-    ],
-    architectureStack: [
-      'Headless Storefront Frontend',
-      'Optimized WebP/AVIF Media Pipeline',
-      'Streamlined Mobile UPI Checkout Flow',
-      'Technical E-Commerce SEO Structure',
-    ],
-    // VERIFY: Confirm client name, role, and permission for public quote
-    testimonial: {
-      quote:
-        'Our headless e-commerce store loads fast on 4G. The SillyMedia Solutions team built and launched the platform in 3 weeks.',
-      author: 'Rohan Sethi',
-      role: 'MD, Aura Luxe Apparel, DLF CyberCity',
-    },
-  },
-  {
-    slug: 'delhi-dental-care',
-    client: 'Delhi Dental Care',
-    city: 'South Delhi',
-    locationSlug: 'delhi',
-    sector: 'Healthcare',
+    slug: 'the-diets',
+    client: 'The Diets',
+    city: 'Online · Pan-India',
+    locationSlug: '',
+    sector: 'Online Dietitian & Nutrition',
     badgeColor: 'green',
-    title: 'Automated Patient Booking System & South Delhi Local SEO',
-    metaTitle: 'Delhi Dental Care Case Study — South Delhi Local SEO',
+    title: 'Online Dietitian Consultations & 1:1 Diet Plans',
+    metaTitle: 'The Diets Case Study — Online Dietitian Website',
     metaDescription:
-      'Automated patient consultation booking, WhatsApp reminders, and hyperlocal South Delhi Google Maps SEO for Delhi Dental Care in GK-1.',
+      'How SillyMedia Solutions built and optimised thediets.in — an online dietitian platform with 1:1 diet plans, online consultations and transparent pricing.',
     summary:
-      'Combined hyperlocal Google Business Profile optimization, speciality treatment pages, and automated WhatsApp appointment reminders for a South Delhi clinic.',
-    // VERIFY: Original site listed "+185% Patient Leads" and "#1 Local Google Pack" — verify exact analytics timeframe
-    headlineMetric: '+185%',
-    headlineMetricLabel: 'Client-reported organic consultation leads',
+      'Custom website for The Diets — an online dietitian platform offering 1:1 diet plans led by qualified dietitians, with online consultation booking and transparent plan pricing.',
+    headlineMetric: '1:1',
+    headlineMetricLabel: 'Personalised diet plans with online consultation',
     metricVerificationNote:
-      'Reported growth from combined local SEO and automated WhatsApp booking; individual clinic timelines vary by neighbourhood competition.',
-    imageWebp: '/images/case-dental-care.webp',
-    imageAvif: '/images/case-dental-care.avif',
-    imageAlt: 'Delhi Dental Care South Delhi patient booking and local SEO case overview',
-    imageTag: 'Local SEO & Booking · South Delhi',
-    timeline: '90-day local growth sprint', // VERIFY: Original testimonial mentions "90 days"
+      'Plans, dietitians and pricing as published on thediets.in.',
+    imageWebp: '/images/case-the-diets.svg',
+    imageAvif: '/images/case-the-diets.svg',
+    imageAlt: 'The Diets online dietitian website — 1:1 diet plans and consultation booking',
+    imageTag: 'Online Dietitian · India',
+    timeline: 'Ongoing',
     servicesUsed: [
-      { slug: 'local-seo-google-maps', label: 'Local SEO & Google Maps' },
-      { slug: 'whatsapp-automation', label: 'WhatsApp Automation' },
       { slug: 'custom-websites', label: 'Custom Websites' },
+      { slug: 'local-seo-google-maps', label: 'Local SEO & Google Maps' },
     ],
     challenge: [
-      'High local search competition across Greater Kailash (GK-1) and South Delhi kept the clinic buried below aggregated directories on Google Maps.',
-      'Front-desk staff manually handled phone and WhatsApp follow-ups, causing missed after-hours inquiries and appointment no-shows.',
+      'People searching for diet plans face conflicting advice online and need a trustworthy place to book a qualified dietitian.',
+      'The platform needed clear plan pages for PCOS, thyroid, weight loss and diabetes, with a simple path to book an online consultation.',
     ],
     approach: [
-      'Restructured the website with fast treatment-specific pages, clean LocalBusiness schema, and clear South Delhi locality signals.',
-      'Audited and optimized the Google Business Profile categories, services, photo cadence, and ethical patient review flow.',
-      'Built an automated appointment intake and WhatsApp confirmation/reminder sequence so incoming leads received instant responses.',
+      'Built a fast, pre-rendered website with dedicated pages for PCOS, weight-loss, diabetes and thyroid diet plans.',
+      'Added a clear online consultation flow with transparent plan pricing and WhatsApp contact options.',
+      'Structured clean diet-plan metadata and technical SEO so the right plan pages surface for the right searches.',
     ],
     results: [
-      'Stronger Google Maps visibility across target South Delhi and GK-1 dental queries.', // VERIFY: Original claimed "page 4 to #1"
-      'Client-reported +185% increase in organic patient consultation leads.', // VERIFY
-      'Lower front-desk overhead via automated booking confirmations and reminders.',
+      'Dedicated plan pages for PCOS, thyroid, weight loss and diabetes care.',
+      'Online consultation booking with transparent pricing published on the site.',
+      'Fast mobile pages built for search visibility and direct consultation enquiries.',
     ],
     architectureStack: [
-      'Pre-rendered Treatment & Locality Pages',
-      'Google Business Profile Optimization',
-      'Automated WhatsApp Intake & Reminders',
-      'Call & Booking Conversion Tracking',
+      'Pre-rendered diet-plan pages',
+      'Online consultation flow',
+      'Transparent plan pricing',
+      'Technical SEO structure',
     ],
-    // VERIFY: Confirm client name, role, and permission for public quote
-    testimonial: {
-      quote:
-        'SillyMedia Solutions helped our clinic climb local search in South Delhi and streamlined our monthly consultation bookings.',
-      author: 'Dr. Anjali Sharma',
-      role: 'Founder, Delhi Dental Care, GK-1',
-    },
-  },
-  {
-    slug: 'finops-india',
-    client: 'FinOps India',
-    city: 'Noida Sector 62',
-    locationSlug: 'noida',
-    sector: 'Fintech SaaS',
-    badgeColor: 'blue',
-    title: 'B2B Financial Dashboard & Automated GST Reconciliation Flow',
-    metaTitle: 'FinOps India Case Study — Noida Fintech SaaS MVP',
-    metaDescription:
-      'Multi-tenant B2B financial dashboard with automated GST reconciliation and audit reporting built for FinOps India in Noida Sector 62 in 4 weeks.',
-    summary:
-      'Production B2B web application with multi-tenant authentication, GST reconciliation workflows, and structured audit reporting delivered in a 4-week sprint.',
-    // VERIFY: Confirm 4-week timeline & scope details
-    headlineMetric: '4 Weeks',
-    headlineMetricLabel: 'Kickoff to production MVP launch',
-    metricVerificationNote:
-      'Delivered as a fixed-scope milestone sprint with clean TypeScript architecture ready for internal team extension.',
-    imageWebp: '/images/case-finops-india.webp',
-    imageAvif: '/images/case-finops-india.avif',
-    imageAlt: 'FinOps India Noida Sector 62 B2B financial dashboard case overview',
-    imageTag: 'B2B SaaS MVP · Noida Sector 62',
-    timeline: '4 weeks', // VERIFY
-    servicesUsed: [
-      { slug: 'web-apps-saas', label: 'Web Apps & SaaS MVPs' },
-    ],
-    challenge: [
-      'Finance teams relied on brittle spreadsheet workflows for GST reconciliation and client audit reporting, slowing monthly close cycles.',
-      'The startup needed a production-ready multi-tenant web application quickly without burning months on a bloated agency discovery phase.',
-    ],
-    approach: [
-      'Scoped a crisp 4-week engineering sprint covering relational schema design, role-based multi-tenant access control, and core reconciliation views.',
-      'Implemented automated GST validation flows, exportable audit reports, and responsive data tables using strict TypeScript.',
-      'Delivered clean repository documentation and deployment pipelines so internal engineers could extend features seamlessly.',
-    ],
-    results: [
-      'Production B2B SaaS platform launched in 4 weeks.', // VERIFY
-      'Automated GST reconciliation and audit reporting workflows replacing manual spreadsheet assembly.',
-      'Clean, maintainable TypeScript codebase handed over with zero vendor lock-in.',
-    ],
-    architectureStack: [
-      'TypeScript Full-Stack Web App',
-      'Multi-Tenant Role-Based Auth',
-      'Automated GST Reconciliation Engine',
-      'Structured Audit Reporting Exports',
-    ],
-    // VERIFY: Confirm client name, role, and permission for public quote
-    testimonial: {
-      quote:
-        'Clean engineering and zero agency bloat. SillyMedia Solutions writes scalable code and communicates with total clarity.',
-      author: 'Vikram Malhotra',
-      role: 'CTO, FinOps India, Noida',
-    },
   },
 ];
 

@@ -4,7 +4,6 @@ import {
   CheckCircle2,
   ChevronDown,
   ExternalLink,
-  Star,
 } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import ContactActions from '@/components/ContactActions';
@@ -98,39 +97,27 @@ export default function HomePage() {
           <div className="hero-visual">
             <div className="visual-card">
               <div className="image-frame">
-                <picture>
-                  <source
-                    srcSet="/images/hero-showcase-640.avif 640w, /images/hero-showcase-960.avif 960w"
-                    type="image/avif"
-                    sizes="(max-width: 900px) 92vw, 520px"
-                  />
-                  <source
-                    srcSet="/images/hero-showcase-640.webp 640w, /images/hero-showcase-960.webp 960w"
-                    type="image/webp"
-                    sizes="(max-width: 900px) 92vw, 520px"
-                  />
-                  <img
-                    src="/images/hero-showcase-960.webp"
-                    alt="Digital interfaces engineered by SillyMedia Solutions for Delhi NCR businesses"
-                    width={960}
-                    height={720}
-                    fetchPriority="high"
-                  />
-                </picture>
+                <img
+                  src="/images/hero-showcase.svg"
+                  alt="The Diets — online dietitian website built by SillyMedia Solutions"
+                  width={960}
+                  height={720}
+                  fetchPriority="high"
+                />
                 <div className="image-badge">
                   <span>
                     <i />
                     Core Web Vitals Optimized
                   </span>
-                  <b>Multi-Sector</b>
+                  <b>Live Deployment</b>
                 </div>
               </div>
               <div className="caption">
-                <span>CASE SPECIMEN 01–03 · DELHI NCR ECOSYSTEM</span>
-                <small>South Delhi · Cyber Hub · Noida</small>
+                <span>CASE SPECIMEN 01 · LIVE DEPLOYMENT</span>
+                <small>thediets.in · Online Dietitian</small>
                 <p>
-                  Multi-sector digital architecture across South Delhi, Gurugram &amp; Noida —
-                  built for mobile speed, local search visibility, and direct lead conversion.
+                  Online dietitian platform with 1:1 diet plans, online consultation booking and
+                  transparent pricing — built for mobile speed and direct enquiries.
                 </p>
               </div>
             </div>
@@ -252,8 +239,8 @@ export default function HomePage() {
         <div className="container">
           <SectionHeading
             eyebrow="OUR WORK — 03"
-            title="Selected Works & Production Deployments"
-            description="Production deployments across South Delhi, Gurugram, and Noida Sector 62."
+            title="Selected Work & Production Deployment"
+            description="Live production deployment — thediets.in, an online dietitian platform."
           />
           <div className="work-grid">
             {featuredCase && (
@@ -268,16 +255,13 @@ export default function HomePage() {
                   </span>
                 </div>
                 <div className="work-image">
-                  <picture>
-                    <source srcSet={featuredCase.imageAvif} type="image/avif" />
-                    <img
-                      src={featuredCase.imageWebp}
-                      alt={featuredCase.imageAlt}
-                      width={960}
-                      height={600}
-                      loading="lazy"
-                    />
-                  </picture>
+                  <img
+                    src={featuredCase.imageWebp}
+                    alt={featuredCase.imageAlt}
+                    width={960}
+                    height={600}
+                    loading="lazy"
+                  />
                   <span>{featuredCase.imageTag}</span>
                 </div>
                 <h3>
@@ -403,38 +387,10 @@ export default function HomePage() {
 
       <PricingSection sectionNumber="06" />
 
-      <section className="section testimonials">
-        <div className="container">
-          <SectionHeading
-            eyebrow="CLIENT NOTES — 07"
-            title="What Delhi NCR Founders Say"
-            description="Feedback from client deployments across South Delhi, Gurugram, and Noida."
-          />
-          <div className="testimonial-grid">
-            {caseStudiesData
-              .filter((c) => c.testimonial)
-              .map((cs) => (
-                <article className="testimonial" key={cs.slug}>
-                  <div className="stars" aria-hidden="true">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} size={15} fill="currentColor" />
-                    ))}
-                  </div>
-                  <p>“{cs.testimonial!.quote}”</p>
-                  <footer>
-                    <b>{cs.testimonial!.author}</b>
-                    <span>{cs.testimonial!.role}</span>
-                  </footer>
-                </article>
-              ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section warm" id="guides">
         <div className="container">
           <SectionHeading
-            eyebrow="DELHI NCR PLAYBOOKS — 08"
+            eyebrow="DELHI NCR PLAYBOOKS — 07"
             title="Practical Guides Before You Hire an Agency"
             description="Answer-first technical guides covering Delhi NCR website pricing, Gurugram Google Maps SEO, and clinic WhatsApp automation."
           />
@@ -461,7 +417,7 @@ export default function HomePage() {
         <div className="container faq-layout">
           <div>
             <SectionHeading
-              eyebrow="TRANSPARENCY — 09"
+              eyebrow="TRANSPARENCY — 08"
               title="Direct Answers to Hard Questions"
               description="No agency buzzwords, no opaque retainers, and no hidden fine print."
             />

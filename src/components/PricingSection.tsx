@@ -50,6 +50,52 @@ export default function PricingSection({ sectionNumber = '06' }: { sectionNumber
           })}
         </div>
 
+        <div style={{ marginTop: 56 }}>
+          <div className="section-heading">
+            <div>
+              <span className="eyebrow">WEBSITE PACKAGES — FIXED PRICES</span>
+              <h2>Website Packages With Clear, Fixed Pricing</h2>
+            </div>
+            <p>
+              One-page, multi-page and e-commerce websites at fixed prices — no hidden add-ons.
+              Every package starts with a free 20-minute review.
+            </p>
+          </div>
+
+          <div className="pricing-grid">
+            {siteConfig.pricing.websitePackages.map((tier) => {
+              const hasPrice = isConfigured(tier.startingPrice);
+              return (
+                <article className={`pricing-card pricing-${tier.accent}`} key={tier.id}>
+                  <div>
+                    <span className="pricing-eyebrow">{tier.eyebrow}</span>
+                    <h3>{tier.name}</h3>
+                    <div className="pricing-price-block">
+                      <span className="pricing-starting-label">Starting from</span>
+                      <strong className="pricing-amount">
+                        {hasPrice ? tier.startingPrice : tier.fallbackLabel}
+                      </strong>
+                      <small className="pricing-timeline">Typical timeline: {tier.timeline}</small>
+                    </div>
+                    <p className="pricing-best-for">{tier.bestFor}</p>
+                    <ul className="pricing-features">
+                      {tier.features.map((feat) => (
+                        <li key={feat}>
+                          <CheckCircle2 size={15} aria-hidden="true" />
+                          <span>{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <Link href="/#contact" className="button-link pricing-cta">
+                    {tier.ctaLabel} <ArrowRight size={15} aria-hidden="true" />
+                  </Link>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+
         <div className="terms-strip" aria-label="Commercial terms">
           {siteConfig.pricing.termsStrip.map((term) => (
             <div className="terms-strip-item" key={term.label}>

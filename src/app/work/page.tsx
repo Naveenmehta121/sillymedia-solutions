@@ -8,9 +8,9 @@ import { caseStudiesData } from '@/data/work';
 import { siteConfig } from '@/config/site.config';
 
 export const metadata: Metadata = {
-  title: 'Case Studies & Client Work in Delhi NCR',
+  title: 'Our Work — The Diets (thediets.in)',
   description:
-    'Selected web development, local SEO, WhatsApp booking, and B2B SaaS deployments built across Delhi, Gurugram, and Noida by SillyMedia Solutions.',
+    'The Diets (thediets.in) — online dietitian website with 1:1 diet plans, built and optimised by SillyMedia Solutions.',
   alternates: { canonical: '/work' },
 };
 
@@ -26,19 +26,18 @@ export default function WorkIndexPage() {
             <i />
             SELECTED WORK · DELHI NCR
           </span>
-          <h1>Case Studies &amp; Production Deployments</h1>
+          <h1>Our Work &amp; Production Deployment</h1>
           <div className="page-meta-row">
             <span>Last updated: {siteConfig.lastUpdated}</span>
             <span>·</span>
-            <span>E-Commerce · Healthcare · B2B SaaS</span>
+            <span>Online Dietitian · 1:1 Diet Plans</span>
           </div>
           <div className="answer-box">
             <span className="answer-box-label">What kinds of projects does SillyMedia Solutions build?</span>
             <p>
-              SillyMedia Solutions engineers production digital systems for Delhi NCR businesses —
-              including headless retail storefronts in Gurugram, automated patient booking and
-              local Google Maps SEO for clinics in South Delhi, and multi-tenant B2B fintech web
-              applications in Noida Sector 62.
+              SillyMedia Solutions engineers production digital systems for Delhi NCR businesses.
+              Our live deployment is The Diets (thediets.in) — an online dietitian platform with
+              1:1 diet plans, online consultation booking and transparent pricing.
             </p>
           </div>
         </div>
@@ -63,16 +62,13 @@ export default function WorkIndexPage() {
                 </span>
               </div>
               <div className="work-image">
-                <picture>
-                  <source srcSet={cs.imageAvif} type="image/avif" />
-                  <img
-                    src={cs.imageWebp}
-                    alt={cs.imageAlt}
-                    width={960}
-                    height={600}
-                    loading="lazy"
-                  />
-                </picture>
+                <img
+                  src={cs.imageWebp}
+                  alt={cs.imageAlt}
+                  width={960}
+                  height={600}
+                  loading="lazy"
+                />
                 <span>{cs.imageTag}</span>
               </div>
               <h3>

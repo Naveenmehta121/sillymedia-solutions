@@ -121,7 +121,7 @@ export const servicesData: ServiceItem[] = [
       'B2B firms, architects, legal practices, and advisory boutiques',
       'Hospitality venues, cafes, and coaching institutes targeting local searches',
     ],
-    relatedWorkSlugs: ['aura-luxe-fashion', 'delhi-dental-care'],
+    relatedWorkSlugs: ['the-diets'],
     relatedLocationSlugs: ['delhi', 'gurugram', 'noida'],
     faqs: [
       {
@@ -230,7 +230,7 @@ export const servicesData: ServiceItem[] = [
       'Home services, interior designers, architects, and real estate consultants',
       'Coaching centres, diagnostic labs, and multi-branch NCR businesses',
     ],
-    relatedWorkSlugs: ['delhi-dental-care'],
+    relatedWorkSlugs: ['the-diets'],
     relatedLocationSlugs: ['delhi', 'gurugram', 'noida', 'ghaziabad', 'faridabad', 'greater-noida'],
     faqs: [
       {
@@ -339,7 +339,7 @@ export const servicesData: ServiceItem[] = [
       'Coaching institutes handling batch schedules, fees, and demo class bookings',
       'D2C retail brands sending order updates, catalog links, and repeat offers',
     ],
-    relatedWorkSlugs: ['delhi-dental-care'],
+    relatedWorkSlugs: [],
     relatedLocationSlugs: ['delhi', 'gurugram', 'noida', 'faridabad'],
     faqs: [
       {
@@ -448,7 +448,7 @@ export const servicesData: ServiceItem[] = [
       'Multi-branch healthcare, logistics, or education businesses needing custom booking/CRM tools',
       'D2C brands needing headless storefronts or custom configurators',
     ],
-    relatedWorkSlugs: ['finops-india', 'aura-luxe-fashion'],
+    relatedWorkSlugs: [],
     relatedLocationSlugs: ['gurugram', 'noida', 'delhi', 'greater-noida'],
     faqs: [
       {
@@ -557,7 +557,7 @@ export const servicesData: ServiceItem[] = [
       'Education academies answering course, eligibility, and fee inquiries 24/7',
       'D2C and SaaS teams reducing repetitive tier-1 support tickets',
     ],
-    relatedWorkSlugs: ['finops-india', 'delhi-dental-care'],
+    relatedWorkSlugs: [],
     relatedLocationSlugs: ['gurugram', 'noida', 'delhi'],
     faqs: [
       {

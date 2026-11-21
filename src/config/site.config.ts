@@ -43,13 +43,11 @@ export const siteConfig = {
   },
 
   contact: {
-    email: 'contact@sillymedia.in',
-    // PLACEHOLDER: Replace with your real phone number in E.164 format, e.g. "+9198XXXXXXXX"
-    phone: '[PHONE]',
-    // PLACEHOLDER: Human-formatted phone display, e.g. "+91 98XXX XXXXX"
-    phoneDisplay: '[PHONE_DISPLAY]',
-    // PLACEHOLDER: Digits-only WhatsApp number with country code, e.g. "9198XXXXXXXX"
-    whatsappNumber: '[WHATSAPP_NUMBER]',
+    email: 'sillymediaconnect@gmail.com',
+    // Verified 22 Nov 2026: Naveen's phone / WhatsApp number
+    phone: '+918102619871',
+    phoneDisplay: '+91 81026 19871',
+    whatsappNumber: '918102619871',
     whatsappDefaultMessage:
       'Hi, I found SillyMedia Solutions online and would like to discuss a project for my Delhi NCR business.',
     // PLACEHOLDER: Street address (leave as placeholder if service-area business without public walk-in office)
@@ -194,6 +192,77 @@ export const siteConfig = {
           'Direct engineering with our senior specialists from spec to production',
         ],
         ctaLabel: 'Scope Your Project',
+        accent: 'dark' as const,
+      },
+    ],
+    // Fixed website package prices confirmed by Naveen, 22 Nov 2026
+    websitePackages: [
+      {
+        id: 'one-page-website',
+        eyebrow: 'WEBSITE PACKAGE 01',
+        name: 'One-Page Website',
+        startingPrice: '₹4,999',
+        fallbackLabel: 'Fixed package price',
+        timeline: 'Confirmed on free 20-min call',
+        bestFor: 'New businesses, clinics and local services that need a fast single-page presence.',
+        features: [
+          'Single-page custom mobile-first design',
+          'Business info, services & contact on one page',
+          'WhatsApp click-to-chat, call CTA & lead capture form',
+          'On-page local SEO structure & Schema.org markup',
+        ],
+        ctaLabel: 'Request Website Quote',
+        accent: 'orange' as const,
+      },
+      {
+        id: 'multi-page-website',
+        eyebrow: 'WEBSITE PACKAGE 02',
+        name: 'Multi-Page Website',
+        startingPrice: '₹14,999',
+        fallbackLabel: 'Fixed package price',
+        timeline: 'Confirmed on free 20-min call',
+        bestFor: 'Growing businesses that need separate pages for services, about, contact and more.',
+        features: [
+          'Multi-page custom mobile-first website',
+          'Separate pages for services, about, contact & more',
+          'WhatsApp click-to-chat, call CTA & lead capture form',
+          'On-page local SEO structure & Schema.org markup',
+        ],
+        ctaLabel: 'Request Website Quote',
+        accent: 'green' as const,
+      },
+      {
+        id: 'ecommerce-no-gateway',
+        eyebrow: 'WEBSITE PACKAGE 03',
+        name: 'E-commerce Without Payment Gateway',
+        startingPrice: '₹17,999',
+        fallbackLabel: 'Fixed package price',
+        timeline: 'Confirmed on free 20-min call',
+        bestFor: 'Stores that want an online catalog with ordering over WhatsApp or phone.',
+        features: [
+          'Online store with product catalog & category pages',
+          'Ordering over WhatsApp or phone — no online payments',
+          'Cart / enquiry flow for customers',
+          'On-page local SEO structure & Schema.org markup',
+        ],
+        ctaLabel: 'Request Website Quote',
+        accent: 'blue' as const,
+      },
+      {
+        id: 'ecommerce-with-gateway',
+        eyebrow: 'WEBSITE PACKAGE 04',
+        name: 'E-commerce With Payment Gateway',
+        startingPrice: '₹24,999',
+        fallbackLabel: 'Fixed package price',
+        timeline: 'Confirmed on free 20-min call',
+        bestFor: 'Stores that want full online selling with UPI / online payment checkout.',
+        features: [
+          'Online store with product catalog, cart & checkout',
+          'UPI / online payment gateway setup',
+          'Order enquiries & WhatsApp updates',
+          'On-page local SEO structure & Schema.org markup',
+        ],
+        ctaLabel: 'Request Website Quote',
         accent: 'dark' as const,
       },
     ],
