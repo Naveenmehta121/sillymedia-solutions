@@ -19,6 +19,10 @@ export const siteConfig = {
   tagline: 'Delhi NCR’s Digital Marketing & Web Engineering Agency',
   shortDescription:
     'Delhi NCR digital marketing and web engineering agency building fast custom websites, hyperlocal SEO & Google Maps growth, WhatsApp automation, web apps, and AI chatbots.',
+  // SEO: default meta description for the homepage (140-160 chars). shortDescription
+  // above is also rendered visibly in the footer, so it must not be shortened.
+  defaultMetaDescription:
+    'Delhi NCR web & SEO agency building fast custom websites, Google Maps growth, WhatsApp automation, web apps and AI chatbots for local businesses.',
   siteUrl: 'https://sillymedia.in',
   locale: 'en_IN',
   language: 'en-IN',

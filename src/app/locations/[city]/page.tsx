@@ -27,7 +27,20 @@ export function generateMetadata({ params }: { params: { city: string } }): Meta
       title: `${loc.metaTitle} | ${siteConfig.brandName}`,
       description: loc.metaDescription,
       url: `${siteConfig.siteUrl}/locations/${loc.slug}`,
-      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: `${loc.metaTitle} — ${siteConfig.brandName}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${loc.metaTitle} | ${siteConfig.brandName}`,
+      description: loc.metaDescription,
+      images: ['/og-image.png'],
     },
   };
 }

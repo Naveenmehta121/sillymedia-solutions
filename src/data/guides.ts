@@ -20,6 +20,9 @@ export interface GuideItem {
   eyebrow: string;
   title: string;
   metaTitle: string;
+  // SEO: short title (<=35 chars) used only in <title>/og:title so the full title stays under 60 chars.
+  // metaTitle is kept for the visible breadcrumb label and WhatsApp prefill text.
+  seoTitle: string;
   metaDescription: string; // 140-160 chars
   datePublished: string;
   dateModified: string;
@@ -40,6 +43,7 @@ export const guidesData: GuideItem[] = [
     eyebrow: 'BUYER GUIDE · WEBSITE PRICING',
     title: 'Website Development Cost in Delhi NCR: What Actually Drives the Price?',
     metaTitle: 'Website Development Cost in Delhi NCR — Complete Guide',
+    seoTitle: 'Website Cost in Delhi NCR — Guide',
     metaDescription:
       'Understand what determines custom website development pricing in Delhi NCR, compare template vs custom Next.js builds, and spot hidden agency retainer traps.',
     datePublished: '2026-11-18',
@@ -137,6 +141,7 @@ export const guidesData: GuideItem[] = [
     eyebrow: 'LOCAL SEO PLAYBOOK · GURUGRAM',
     title: 'How to Rank on Google Maps in Gurugram: A Technical Local SEO Playbook',
     metaTitle: 'How to Rank on Google Maps in Gurugram (Local SEO Guide)',
+    seoTitle: 'Rank on Google Maps in Gurugram',
     metaDescription:
       'Step-by-step Google Maps and local SEO playbook for Gurugram clinics, studios, and businesses across Cyber Hub, Golf Course Road, and Sohna Road.',
     datePublished: '2026-11-18',
@@ -230,6 +235,7 @@ export const guidesData: GuideItem[] = [
     eyebrow: 'AUTOMATION GUIDE · HEALTHCARE DELHI',
     title: 'WhatsApp Automation for Clinics in Delhi: Architecture & Compliance Guide',
     metaTitle: 'WhatsApp Automation for Clinics in Delhi — Practical Guide',
+    seoTitle: 'WhatsApp for Delhi Clinics',
     metaDescription:
       'How Delhi clinics automate patient appointment booking, intake, and reminders using the official Meta WhatsApp Business Cloud API without risking number bans.',
     datePublished: '2026-11-18',

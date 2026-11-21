@@ -39,7 +39,7 @@ export const caseStudiesData: CaseStudy[] = [
     sector: 'Online Dietitian & Nutrition',
     badgeColor: 'green',
     title: 'Online Dietitian Consultations & 1:1 Diet Plans',
-    metaTitle: 'The Diets Case Study — Online Dietitian Website',
+    metaTitle: 'The Diets — Online Dietitian',
     metaDescription:
       'How SillyMedia Solutions built and optimised thediets.in — an online dietitian platform with 1:1 diet plans, online consultations and transparent pricing.',
     summary:

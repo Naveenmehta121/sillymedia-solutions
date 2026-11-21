@@ -7,11 +7,34 @@ import { buildBreadcrumbSchema } from '@/lib/schema';
 import { caseStudiesData } from '@/data/work';
 import { siteConfig } from '@/config/site.config';
 
+const pageTitle = 'Our Work — The Diets (thediets.in)';
+
 export const metadata: Metadata = {
-  title: 'Our Work — The Diets (thediets.in)',
+  title: pageTitle,
   description:
-    'The Diets (thediets.in) — online dietitian website with 1:1 diet plans, built and optimised by SillyMedia Solutions.',
+    'Selected web development, local SEO, WhatsApp booking, and B2B SaaS deployments built across Delhi NCR — currently featuring The Diets (thediets.in).',
   alternates: { canonical: '/work' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Selected web development, local SEO, WhatsApp booking, and B2B SaaS deployments built across Delhi NCR — currently featuring The Diets (thediets.in).',
+    url: `${siteConfig.siteUrl}/work`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — Selected Work & Production Deployment',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Selected web development, local SEO, WhatsApp booking, and B2B SaaS deployments built across Delhi NCR — currently featuring The Diets (thediets.in).',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function WorkIndexPage() {
@@ -71,9 +94,9 @@ export default function WorkIndexPage() {
                 />
                 <span>{cs.imageTag}</span>
               </div>
-              <h3>
+              <h2>
                 <Link href={`/work/${cs.slug}`}>{cs.title}</Link>
-              </h3>
+              </h2>
               <p>{cs.summary}</p>
               <div className="card-foot">
                 <strong className={cs.badgeColor === 'green' ? 'green-text' : ''}>

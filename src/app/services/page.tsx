@@ -11,11 +11,34 @@ import { servicesData } from '@/data/services';
 import { locationsData } from '@/data/locations';
 import { siteConfig } from '@/config/site.config';
 
+const pageTitle = 'Web, SEO & AI Services — Delhi NCR';
+
 export const metadata: Metadata = {
-  title: 'Web Development, Local SEO & AI Services in Delhi NCR',
+  title: pageTitle,
   description:
     'Explore custom website development, hyperlocal Google Maps SEO, WhatsApp automation, SaaS web apps, and AI chatbots by SillyMedia Solutions in Delhi NCR.',
   alternates: { canonical: '/services' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Explore custom website development, hyperlocal Google Maps SEO, WhatsApp automation, SaaS web apps, and AI chatbots by SillyMedia Solutions in Delhi NCR.',
+    url: `${siteConfig.siteUrl}/services`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — Web Development, Local SEO & AI Services in Delhi NCR',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Explore custom website development, hyperlocal Google Maps SEO, WhatsApp automation, SaaS web apps, and AI chatbots by SillyMedia Solutions in Delhi NCR.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function ServicesIndexPage() {

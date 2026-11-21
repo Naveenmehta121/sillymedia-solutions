@@ -7,11 +7,34 @@ import { buildBreadcrumbSchema } from '@/lib/schema';
 import { locationsData } from '@/data/locations';
 import { siteConfig } from '@/config/site.config';
 
+const pageTitle = 'Delhi NCR Service Locations';
+
 export const metadata: Metadata = {
-  title: 'Delhi NCR Service Locations — Delhi, Gurugram, Noida & More',
+  title: pageTitle,
   description:
     'Hyperlocal web development, Google Maps SEO, and WhatsApp automation across Delhi, Gurugram, Noida, Greater Noida, Faridabad, and Ghaziabad.',
   alternates: { canonical: '/locations' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Hyperlocal web development, Google Maps SEO, and WhatsApp automation across Delhi, Gurugram, Noida, Greater Noida, Faridabad, and Ghaziabad.',
+    url: `${siteConfig.siteUrl}/locations`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — Delhi NCR Service Locations',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Hyperlocal web development, Google Maps SEO, and WhatsApp automation across Delhi, Gurugram, Noida, Greater Noida, Faridabad, and Ghaziabad.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function LocationsIndexPage() {
@@ -49,9 +72,9 @@ export default function LocationsIndexPage() {
           {locationsData.map((loc) => (
             <article className="editorial-card" key={loc.slug}>
               <span className="eyebrow">{loc.regionLabel}</span>
-              <h3>
+              <h2>
                 <Link href={`/locations/${loc.slug}`}>{loc.city}</Link>
-              </h3>
+              </h2>
               <p style={{ marginBottom: 14 }}>{loc.directAnswer}</p>
               <p style={{ fontSize: 13, color: '#3d2c24', marginBottom: 18 }}>
                 <strong>Key Hubs:</strong> {loc.neighbourhoods.slice(0, 4).join(' · ')}

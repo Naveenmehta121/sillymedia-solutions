@@ -25,7 +25,20 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       title: `${cs.metaTitle} | ${siteConfig.brandName}`,
       description: cs.metaDescription,
       url: `${siteConfig.siteUrl}/work/${cs.slug}`,
-      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: `${cs.metaTitle} — ${siteConfig.brandName}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${cs.metaTitle} | ${siteConfig.brandName}`,
+      description: cs.metaDescription,
+      images: ['/og-image.png'],
     },
   };
 }

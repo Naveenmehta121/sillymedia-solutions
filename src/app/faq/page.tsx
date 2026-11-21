@@ -8,11 +8,34 @@ import { buildBreadcrumbSchema, buildFaqSchema } from '@/lib/schema';
 import { faqsData } from '@/data/faqs';
 import { siteConfig } from '@/config/site.config';
 
+const pageTitle = 'Frequently Asked Questions';
+
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions — Web Design, SEO & AI',
+  title: pageTitle,
   description:
-    'Direct answers about website development timelines, pricing structure, Google Maps SEO, WhatsApp Business API compliance, and code ownership at SillyMedia Solutions.',
+    'Direct answers about website timelines, pricing structure, Google Maps SEO, WhatsApp Business API compliance, and code ownership at SillyMedia Solutions.',
   alternates: { canonical: '/faq' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Direct answers about website timelines, pricing structure, Google Maps SEO, WhatsApp Business API compliance, and code ownership at SillyMedia Solutions.',
+    url: `${siteConfig.siteUrl}/faq`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — Frequently Asked Questions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Direct answers about website timelines, pricing structure, Google Maps SEO, WhatsApp Business API compliance, and code ownership at SillyMedia Solutions.',
+    images: ['/og-image.png'],
+  },
 };
 
 const categories = [

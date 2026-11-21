@@ -6,7 +6,8 @@
 SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineering agency. Clients collaborate directly with senior engineering and marketing specialists on custom websites, hyperlocal SEO & Google Maps optimization, official WhatsApp Business Cloud API automation, full-stack web apps & SaaS MVPs, and grounded AI chatbots.
 
 - Canonical Website: https://sillymedia.in
-- Direct Email: contact@sillymedia.in
+- Direct Email: sillymediaconnect@gmail.com
+- Phone / WhatsApp: +91 81026 19871
 - Service Area: Delhi, Gurugram, Noida, Greater Noida, Faridabad, Ghaziabad (National Capital Region, India)
 - Delivery Philosophy: Fixed milestone quotes, full client code/domain ownership, pre-rendered HTML for crawlability and mobile Core Web Vitals, and zero guaranteed "#1 ranking" gimmicks.
 
@@ -36,16 +37,21 @@ SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineerin
 - **Ghaziabad** (`/locations/ghaziabad`): Indirapuram, Vaishali, Kaushambi, Vasundhara, Raj Nagar Extension, RDC, Crossings Republik, Sahibabad Industrial Area.
 
 ## 4. Selected Case Studies
-- **Aura Luxe Fashion** (`/work/aura-luxe-fashion`, Gurugram · Retail E-Commerce): Headless storefront with fast 4G catalog browsing and streamlined mobile UPI checkout.
-- **Delhi Dental Care** (`/work/delhi-dental-care`, South Delhi · Healthcare): Automated patient booking, WhatsApp reminders, and South Delhi hyperlocal SEO.
-- **FinOps India** (`/work/finops-india`, Noida Sector 62 · Fintech SaaS): Multi-tenant B2B financial dashboard with automated GST reconciliation launched in 4 weeks.
+- **The Diets** (`/work/the-diets`, Online · Pan-India): Online dietitian platform (thediets.in) with 1:1 diet plans, online consultation booking and transparent plan pricing, built and optimised by SillyMedia Solutions.
 
-## 5. Evergreen Guides
+## 5. Website Packages (fixed prices, as published on the homepage)
+- One-Page Website: ₹4,999
+- Multi-Page Website: ₹14,999
+- E-commerce Without Payment Gateway: ₹17,999
+- E-commerce With Payment Gateway: ₹24,999
+- All other services (local SEO, WhatsApp automation, web apps, AI chatbots) are scoped on a free 20-minute call — no fixed price is published for them.
+
+## 6. Evergreen Guides
 - **Website Development Cost in Delhi NCR** (`/guides/website-cost-delhi-ncr`)
 - **How to Rank on Google Maps in Gurugram** (`/guides/rank-on-google-maps-gurugram`)
 - **WhatsApp Automation for Clinics in Delhi** (`/guides/whatsapp-automation-clinics-delhi`)
 
-## 6. Key Contact & Policies
+## 7. Key Contact & Policies
 - Contact Form: https://sillymedia.in/#contact
 - About Founder: https://sillymedia.in/about
 - FAQ: https://sillymedia.in/faq

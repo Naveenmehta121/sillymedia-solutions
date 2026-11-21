@@ -26,7 +26,7 @@ export const locationsData: LocationItem[] = [
     slug: 'delhi',
     city: 'Delhi',
     regionLabel: 'NCT of Delhi',
-    metaTitle: 'Web Design, Local SEO & WhatsApp Automation in Delhi',
+    metaTitle: 'Web Design & SEO in Delhi',
     metaDescription:
       'Custom websites, hyperlocal Google Maps SEO, and WhatsApp automation for Delhi businesses across South Delhi, Connaught Place, West Delhi, and Rohini.',
     h1: 'Web Development, Local SEO & WhatsApp Automation in Delhi',
@@ -111,9 +111,9 @@ export const locationsData: LocationItem[] = [
     slug: 'gurugram',
     city: 'Gurugram',
     regionLabel: 'Haryana · Delhi NCR',
-    metaTitle: 'Web Apps, Custom Websites & SEO in Gurugram',
+    metaTitle: 'Web Apps & SEO in Gurugram',
     metaDescription:
-      'Custom websites, headless e-commerce, SaaS MVPs, and local SEO in Gurugram across Cyber Hub, Golf Course Road, Sohna Road, and Udyog Vihar.',
+      'Custom websites, headless e-commerce, SaaS MVPs, and local SEO in Gurugram across Cyber Hub, Golf Course Road, Sohna Road and Udyog Vihar areas.',
     h1: 'Custom Websites, SaaS MVPs & Local SEO in Gurugram',
     coreQuestion: 'What digital systems drive growth for Gurugram startups, D2C brands, and local services?',
     directAnswer:
@@ -194,7 +194,7 @@ export const locationsData: LocationItem[] = [
     slug: 'noida',
     city: 'Noida',
     regionLabel: 'Uttar Pradesh · Delhi NCR',
-    metaTitle: 'Web Development, SaaS Apps & Local SEO in Noida',
+    metaTitle: 'Web Development & SEO in Noida',
     metaDescription:
       'Full-stack web apps, custom websites, local SEO, and AI automation for Noida businesses in Sector 62, Sector 18, Sector 63, and Noida Expressway.',
     h1: 'Web Development, SaaS Apps & Local SEO in Noida',
@@ -275,7 +275,7 @@ export const locationsData: LocationItem[] = [
     slug: 'greater-noida',
     city: 'Greater Noida',
     regionLabel: 'Uttar Pradesh · Delhi NCR',
-    metaTitle: 'Web Design, Local SEO & WhatsApp Bots in Greater Noida',
+    metaTitle: 'Web Design & SEO in Greater Noida',
     metaDescription:
       'Custom websites, Google Maps SEO, and WhatsApp automation for Greater Noida and Noida Extension businesses across Knowledge Park, Pari Chowk, and Techzone 4.',
     h1: 'Web Design, Local SEO & WhatsApp Automation in Greater Noida',
@@ -356,7 +356,7 @@ export const locationsData: LocationItem[] = [
     slug: 'faridabad',
     city: 'Faridabad',
     regionLabel: 'Haryana · Delhi NCR',
-    metaTitle: 'Website Development, SEO & Automation in Faridabad',
+    metaTitle: 'Web Development & SEO in Faridabad',
     metaDescription:
       'Custom websites, B2B catalogs, local Google Maps SEO, and WhatsApp automation for Faridabad businesses across NIT, Sector 15, Neharpar, and Mathura Road.',
     h1: 'Custom Websites, Local SEO & Automation in Faridabad',
@@ -437,7 +437,7 @@ export const locationsData: LocationItem[] = [
     slug: 'ghaziabad',
     city: 'Ghaziabad',
     regionLabel: 'Uttar Pradesh · Delhi NCR',
-    metaTitle: 'Web Design, Local SEO & WhatsApp Bots in Ghaziabad',
+    metaTitle: 'Web Design & SEO in Ghaziabad',
     metaDescription:
       'Custom websites, Google Maps SEO, and WhatsApp automation in Ghaziabad across Indirapuram, Vaishali, Kaushambi, Raj Nagar Extension, and Vasundhara.',
     h1: 'Custom Websites, Local SEO & WhatsApp Automation in Ghaziabad',

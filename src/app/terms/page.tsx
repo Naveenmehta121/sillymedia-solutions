@@ -4,11 +4,34 @@ import JsonLd from '@/components/JsonLd';
 import { buildBreadcrumbSchema } from '@/lib/schema';
 import { siteConfig } from '@/config/site.config';
 
+const pageTitle = 'Terms of Service';
+
 export const metadata: Metadata = {
-  title: 'Terms of Service',
+  title: pageTitle,
   description:
-    'Terms governing the use of sillymedia.in and project engagements with SillyMedia Solutions in Delhi NCR.',
+    'Terms governing the use of sillymedia.in and project engagements with SillyMedia Solutions, including quotes, code ownership, timelines and responsibilities.',
   alternates: { canonical: '/terms' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Terms governing the use of sillymedia.in and project engagements with SillyMedia Solutions, including quotes, code ownership, timelines and responsibilities.',
+    url: `${siteConfig.siteUrl}/terms`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — Terms of Service',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Terms governing the use of sillymedia.in and project engagements with SillyMedia Solutions, including quotes, code ownership, timelines and responsibilities.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function TermsPage() {

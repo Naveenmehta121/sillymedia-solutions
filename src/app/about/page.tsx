@@ -9,11 +9,34 @@ import { buildBreadcrumbSchema } from '@/lib/schema';
 import { siteConfig } from '@/config/site.config';
 import { servicesData } from '@/data/services';
 
+const pageTitle = 'About SillyMedia Solutions';
+
 export const metadata: Metadata = {
-  title: 'About SillyMedia Solutions — Delhi NCR Digital Marketing & Web Agency',
+  title: pageTitle,
   description:
-    'SillyMedia Solutions is a Delhi NCR digital marketing and web engineering agency. Fast custom websites, hyperlocal SEO, WhatsApp automation, and custom web apps.',
+    'SillyMedia Solutions is a Delhi NCR digital marketing and web engineering agency building custom websites, hyperlocal SEO, WhatsApp automation and web apps.',
   alternates: { canonical: '/about' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'SillyMedia Solutions is a Delhi NCR digital marketing and web engineering agency building custom websites, hyperlocal SEO, WhatsApp automation and web apps.',
+    url: `${siteConfig.siteUrl}/about`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — About the Delhi NCR Agency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'SillyMedia Solutions is a Delhi NCR digital marketing and web engineering agency building custom websites, hyperlocal SEO, WhatsApp automation and web apps.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function AboutPage() {

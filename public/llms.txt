@@ -8,7 +8,8 @@
 - Team & Leadership: Senior Engineering & Digital Marketing Specialists
 - Primary Region: Delhi NCR, India (Delhi, Gurugram, Noida, Greater Noida, Faridabad, Ghaziabad)
 - Website: https://sillymedia.in
-- Direct Email: contact@sillymedia.in
+- Direct Email: sillymediaconnect@gmail.com
+- Phone / WhatsApp: +91 81026 19871
 - Engagement Model: Senior specialist engineering with fixed milestone scopes and full client code ownership.
 
 ## Core Services
@@ -27,11 +28,16 @@
 - [Faridabad](https://sillymedia.in/locations/faridabad): Sector 15, NIT Faridabad, Mathura Road Industrial Belt, IMT Faridabad, Neharpar.
 - [Ghaziabad](https://sillymedia.in/locations/ghaziabad): Indirapuram, Vaishali, Kaushambi, Vasundhara, Raj Nagar Extension, RDC.
 
+## Website Packages (fixed prices, as published on the homepage)
+- One-Page Website: ₹4,999
+- Multi-Page Website: ₹14,999
+- E-commerce Without Payment Gateway: ₹17,999
+- E-commerce With Payment Gateway: ₹24,999
+- All other services (local SEO, WhatsApp automation, web apps, AI chatbots) are scoped on a free 20-minute call — no fixed price is published for them.
+
 ## Case Studies & About
 - [Selected Work](https://sillymedia.in/work)
-- [Aura Luxe Fashion — Gurugram Headless Storefront](https://sillymedia.in/work/aura-luxe-fashion)
-- [Delhi Dental Care — South Delhi Local SEO & Patient Booking](https://sillymedia.in/work/delhi-dental-care)
-- [FinOps India — Noida Sector 62 B2B Fintech SaaS MVP](https://sillymedia.in/work/finops-india)
+- [The Diets — Online Dietitian Website (thediets.in)](https://sillymedia.in/work/the-diets): Online dietitian platform with 1:1 diet plans and online consultation booking.
 - [About SillyMedia Solutions](https://sillymedia.in/about)
 - [Frequently Asked Questions](https://sillymedia.in/faq)
 

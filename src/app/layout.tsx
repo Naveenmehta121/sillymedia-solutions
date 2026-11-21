@@ -17,10 +17,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: `${siteConfig.brandName} — ${siteConfig.tagline}`,
+    // SEO: default title kept under 60 characters (was 81 with the full tagline)
+    default: `${siteConfig.brandName} | Delhi NCR Web, SEO & AI Agency`,
     template: `%s | ${siteConfig.brandName}`,
   },
-  description: siteConfig.shortDescription,
+  description: siteConfig.defaultMetaDescription,
   alternates: {
     canonical: '/',
   },
@@ -38,8 +39,8 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     url: siteConfig.siteUrl,
     siteName: siteConfig.brandName,
-    title: `${siteConfig.brandName} — ${siteConfig.tagline}`,
-    description: siteConfig.shortDescription,
+    title: `${siteConfig.brandName} | Delhi NCR Web, SEO & AI Agency`,
+    description: siteConfig.defaultMetaDescription,
     images: [
       {
         url: '/og-image.png',
@@ -51,8 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.brandName} — ${siteConfig.tagline}`,
-    description: siteConfig.shortDescription,
+    title: `${siteConfig.brandName} | Delhi NCR Web, SEO & AI Agency`,
+    description: siteConfig.defaultMetaDescription,
     images: ['/og-image.png'],
   },
   verification: isConfigured(siteConfig.analytics.gscToken)

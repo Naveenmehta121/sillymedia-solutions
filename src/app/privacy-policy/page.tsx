@@ -4,11 +4,34 @@ import JsonLd from '@/components/JsonLd';
 import { buildBreadcrumbSchema } from '@/lib/schema';
 import { siteConfig } from '@/config/site.config';
 
+const pageTitle = 'Privacy Policy';
+
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
+  title: pageTitle,
   description:
-    'How SillyMedia Solutions collects, uses, and protects project inquiry details submitted via our website in India.',
+    'How SillyMedia Solutions collects, uses, and protects the project inquiry details you submit through our contact form — and the choices you have over your data.',
   alternates: { canonical: '/privacy-policy' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'How SillyMedia Solutions collects, uses, and protects the project inquiry details you submit through our contact form — and the choices you have over your data.',
+    url: `${siteConfig.siteUrl}/privacy-policy`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — Privacy Policy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'How SillyMedia Solutions collects, uses, and protects the project inquiry details you submit through our contact form — and the choices you have over your data.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function PrivacyPolicyPage() {

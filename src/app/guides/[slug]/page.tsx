@@ -20,17 +20,30 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const guide = getGuideBySlug(params.slug);
   if (!guide) return {};
   return {
-    title: guide.metaTitle,
+    title: guide.seoTitle,
     description: guide.metaDescription,
     alternates: { canonical: `/guides/${guide.slug}` },
     openGraph: {
       type: 'article',
-      title: `${guide.metaTitle} | ${siteConfig.brandName}`,
+      title: `${guide.seoTitle} | ${siteConfig.brandName}`,
       description: guide.metaDescription,
       url: `${siteConfig.siteUrl}/guides/${guide.slug}`,
       publishedTime: guide.datePublished,
       modifiedTime: guide.dateModified,
-      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: `${guide.seoTitle} — ${siteConfig.brandName}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${guide.seoTitle} | ${siteConfig.brandName}`,
+      description: guide.metaDescription,
+      images: ['/og-image.png'],
     },
   };
 }

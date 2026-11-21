@@ -152,7 +152,7 @@ export function buildFaqSchema(faqs: { question: string; answer: string }[]) {
 
 export function buildServiceSchema(service: ServiceItem) {
   const url = `${siteConfig.siteUrl}/services/${service.slug}`;
-  return {
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `${url}#service`,
@@ -165,6 +165,64 @@ export function buildServiceSchema(service: ServiceItem) {
       '@type': 'City',
       name: city.name,
     })),
+  };
+
+  // Offer is emitted ONLY when the service's pricing tier has a real, configured
+  // numeric starting price visible on the page. All four tiers currently use
+  // placeholder prices, so no Offer is emitted today — once Naveen confirms a
+  // tier price in site.config.ts, the Offer appears automatically.
+  const tier = siteConfig.pricing.tiers.find((t) => t.id === service.pricingTierId);
+  const price = tier ? parseInrPrice(tier.startingPrice) : null;
+  if (tier && price !== null) {
+    schema.hasOffer = {
+      '@type': 'Offer',
+      name: tier.name,
+      priceCurrency: siteConfig.pricing.currency,
+      price,
+      availability: 'https://schema.org/InStock',
+      url,
+    };
+  }
+  return schema;
+}
+
+/** Parse a configured INR price string (e.g. '₹25,000') to a number; null if placeholder/unparseable. */
+function parseInrPrice(value: string): number | null {
+  if (!isConfigured(value)) return null;
+  const digits = value.replace(/[^\d.]/g, '');
+  const num = Number(digits);
+  return Number.isFinite(num) && num > 0 ? num : null;
+}
+
+/**
+ * Offers for the four fixed-price Website Packages shown on the homepage
+ * (PricingSection). Prices are read from site.config.ts — the same values
+ * rendered visibly on the page — so no price is invented.
+ */
+export function buildWebsitePackagesOffer() {
+  const packages = siteConfig.pricing.websitePackages
+    .map((pkg, idx) => {
+      const price = parseInrPrice(pkg.startingPrice);
+      if (price === null) return null;
+      return {
+        '@type': 'ListItem',
+        position: idx + 1,
+        item: {
+          '@type': 'Offer',
+          name: pkg.name,
+          priceCurrency: siteConfig.pricing.currency,
+          price,
+          availability: 'https://schema.org/InStock',
+          url: `${siteConfig.siteUrl}/#pricing`,
+        },
+      };
+    })
+    .filter(Boolean);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Website Packages — Fixed Prices',
+    itemListElement: packages,
   };
 }
 

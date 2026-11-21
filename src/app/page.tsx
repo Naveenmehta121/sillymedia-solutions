@@ -9,7 +9,7 @@ import ContactForm from '@/components/ContactForm';
 import ContactActions from '@/components/ContactActions';
 import PricingSection from '@/components/PricingSection';
 import JsonLd from '@/components/JsonLd';
-import { buildFaqSchema } from '@/lib/schema';
+import { buildFaqSchema, buildWebsitePackagesOffer } from '@/lib/schema';
 import { siteConfig } from '@/config/site.config';
 import { servicesData } from '@/data/services';
 import { locationsData } from '@/data/locations';
@@ -59,6 +59,7 @@ export default function HomePage() {
   return (
     <main id="top">
       <JsonLd data={buildFaqSchema(homeFaqs)} />
+      <JsonLd data={buildWebsitePackagesOffer()} />
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">

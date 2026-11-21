@@ -7,11 +7,34 @@ import { buildBreadcrumbSchema } from '@/lib/schema';
 import { guidesData } from '@/data/guides';
 import { siteConfig } from '@/config/site.config';
 
+const pageTitle = 'Delhi NCR Growth Guides — Web, SEO';
+
 export const metadata: Metadata = {
-  title: 'Delhi NCR Digital Growth Guides — Websites, Local SEO & WhatsApp',
+  title: pageTitle,
   description:
-    'Practical, answer-first guides by SillyMedia Solutions on website development costs in Delhi NCR, Google Maps SEO in Gurugram, and WhatsApp automation for clinics.',
+    'Practical, answer-first guides on website costs in Delhi NCR, Google Maps SEO in Gurugram, and WhatsApp automation for clinics — by SillyMedia Solutions.',
   alternates: { canonical: '/guides' },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Practical, answer-first guides on website costs in Delhi NCR, Google Maps SEO in Gurugram, and WhatsApp automation for clinics — by SillyMedia Solutions.',
+    url: `${siteConfig.siteUrl}/guides`,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SillyMedia Solutions — Delhi NCR Digital Growth Guides',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${pageTitle} | ${siteConfig.brandName}`,
+    description:
+      'Practical, answer-first guides on website costs in Delhi NCR, Google Maps SEO in Gurugram, and WhatsApp automation for clinics — by SillyMedia Solutions.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function GuidesIndexPage() {

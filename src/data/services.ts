@@ -43,7 +43,7 @@ export const servicesData: ServiceItem[] = [
     eyebrow: 'SPEED & CONVERSION',
     shortName: 'Custom Websites',
     name: 'Custom Website Development in Delhi NCR',
-    metaTitle: 'Custom Website Development in Delhi NCR',
+    metaTitle: 'Custom Websites in Delhi NCR',
     metaDescription:
       'Custom Next.js and headless websites in Delhi NCR built by SillyMedia Solutions. Fast Core Web Vitals, clean local SEO structure, and WhatsApp lead capture.',
     accent: 'orange',
@@ -152,7 +152,7 @@ export const servicesData: ServiceItem[] = [
     eyebrow: 'LOCAL VISIBILITY',
     shortName: 'Local SEO & Google Maps',
     name: 'Hyperlocal SEO & Google Maps Ranking in Delhi NCR',
-    metaTitle: 'Local SEO & Google Maps Agency in Delhi NCR',
+    metaTitle: 'Local SEO & Maps in Delhi NCR',
     metaDescription:
       'Hyperlocal SEO and Google Business Profile optimization across Delhi, Gurugram, Noida, Faridabad, and Ghaziabad. Technical SEO built for local map calls.',
     accent: 'green',
@@ -261,9 +261,9 @@ export const servicesData: ServiceItem[] = [
     eyebrow: 'ZERO LEAD DROP-OFF',
     shortName: 'WhatsApp Automation',
     name: 'WhatsApp Automation & CRM Workflows in Delhi NCR',
-    metaTitle: 'WhatsApp Business Automation in Delhi NCR',
+    metaTitle: 'WhatsApp Automation in Delhi NCR',
     metaDescription:
-      'Automate appointment booking, lead qualification, and follow-ups on WhatsApp for Delhi NCR clinics, retail stores, and service businesses.',
+      'Automate appointment booking, lead qualification, and follow-ups on WhatsApp for clinics and local businesses across Delhi NCR — on the official Meta API.',
     accent: 'orange',
     h1: 'WhatsApp Business Automation & Lead Workflows in Delhi NCR',
     coreQuestion: 'How does WhatsApp automation increase conversions for Delhi NCR businesses?',
@@ -370,9 +370,9 @@ export const servicesData: ServiceItem[] = [
     eyebrow: 'PRODUCT ENGINEERING',
     shortName: 'Web Apps & SaaS MVPs',
     name: 'Full-Stack Web Apps & SaaS MVP Development in Delhi NCR',
-    metaTitle: 'Web App & SaaS MVP Development in Delhi NCR',
+    metaTitle: 'Web Apps & SaaS MVPs in Delhi NCR',
     metaDescription:
-      'Full-stack TypeScript, Next.js, and Postgres web apps and SaaS MVPs built in Delhi NCR. Production architecture scoped in 4–6 week sprints by SillyMedia Solutions.',
+      'Full-stack TypeScript, Next.js, and Postgres web apps and SaaS MVPs built in Delhi NCR — auth, payments, dashboards, APIs and integrations included.',
     accent: 'blue',
     h1: 'Web Applications & Full-Stack SaaS MVPs in Delhi NCR',
     coreQuestion: 'How fast can a Delhi NCR startup or SME launch a production web app MVP?',
@@ -479,7 +479,7 @@ export const servicesData: ServiceItem[] = [
     eyebrow: 'PRACTICAL AI ENGINEERING',
     shortName: 'AI Chatbots & Agents',
     name: 'Custom AI Chatbots & Workflow Agents in Delhi NCR',
-    metaTitle: 'Custom AI Chatbots & Agents in Delhi NCR',
+    metaTitle: 'AI Chatbots & Agents in Delhi NCR',
     metaDescription:
       'Grounded custom AI chatbots, multilingual English/Hindi support assistants, and internal workflow agents built for Delhi NCR businesses by SillyMedia Solutions.',
     accent: 'green',
