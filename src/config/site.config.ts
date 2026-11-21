@@ -213,8 +213,8 @@ export const siteConfig = {
    */
   stats: [
     {
-      // VERIFY: Confirm exact count of businesses served by SillyMedia Solutions
-      value: '80+',
+      // Confirmed by Naveen, 22 Nov 2026: 50+ businesses served
+      value: '50+',
       label: 'Businesses Scaled',
       note: 'Retail, healthcare, tech & dining across NCR',
       proofLabel: 'See selected work →',
@@ -222,8 +222,8 @@ export const siteConfig = {
       needsVerification: true,
     },
     {
-      // VERIFY: Confirm cumulative client-reported revenue figure (₹3 Cr) with documented basis
-      value: '₹3 Cr',
+      // Confirmed by Naveen, 22 Nov 2026: ₹1 Cr+ cumulative client-reported revenue
+      value: '₹1 Cr+',
       label: 'Client-Reported Revenue Impact',
       note: 'Cumulative sales & inquiries reported by NCR clients',
       proofLabel: 'Review case studies →',
