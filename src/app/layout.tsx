@@ -3,6 +3,7 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import AnalyticsScripts from '@/components/AnalyticsScripts';
+import ClickTracker from '@/components/ClickTracker';
 import JsonLd from '@/components/JsonLd';
 import { buildGlobalGraph } from '@/lib/schema';
 import { isConfigured, siteConfig } from '@/config/site.config';
@@ -103,6 +104,7 @@ export default function RootLayout({
           <MobileStickyBar />
         </div>
         <AnalyticsScripts />
+        <ClickTracker />
       </body>
     </html>
   );

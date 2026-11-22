@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { MessageCircle, Phone } from 'lucide-react';
 import BrandMark from '@/components/BrandMark';
@@ -10,7 +8,6 @@ import {
   isConfigured,
   siteConfig,
 } from '@/config/site.config';
-import { trackEvent } from '@/lib/analytics';
 
 export default function SiteFooter() {
   const phoneHref = getPhoneHref();
@@ -66,7 +63,8 @@ export default function SiteFooter() {
             <a
               href={phoneHref}
               className="footer-contact-action"
-              onClick={() => trackEvent('call_click', { location: 'footer' })}
+              data-track-event="call_click"
+              data-track-location="footer"
             >
               <Phone size={14} aria-hidden="true" />
               {phoneDisplay}
@@ -78,7 +76,8 @@ export default function SiteFooter() {
               target="_blank"
               rel="noreferrer"
               className="footer-contact-action"
-              onClick={() => trackEvent('whatsapp_click', { location: 'footer' })}
+              data-track-event="whatsapp_click"
+              data-track-location="footer"
             >
               <MessageCircle size={14} aria-hidden="true" />
               WhatsApp Our Team

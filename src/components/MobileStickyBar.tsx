@@ -1,9 +1,6 @@
-'use client';
-
 import Link from 'next/link';
 import { MessageCircle, Phone, Send } from 'lucide-react';
 import { getPhoneHref, getWhatsAppHref, siteConfig } from '@/config/site.config';
-import { trackEvent } from '@/lib/analytics';
 
 export default function MobileStickyBar() {
   const phoneHref = getPhoneHref();
@@ -15,7 +12,8 @@ export default function MobileStickyBar() {
         <a
           href={phoneHref}
           className="sticky-btn sticky-call"
-          onClick={() => trackEvent('call_click', { location: 'mobile_sticky_bar' })}
+          data-track-event="call_click"
+          data-track-location="mobile_sticky_bar"
         >
           <Phone size={15} aria-hidden="true" />
           <span>Call</span>
@@ -24,7 +22,8 @@ export default function MobileStickyBar() {
         <a
           href={`mailto:${siteConfig.contact.email}?subject=Callback%20Request`}
           className="sticky-btn sticky-call"
-          onClick={() => trackEvent('call_click', { location: 'mobile_sticky_bar_email_fallback' })}
+          data-track-event="call_click"
+          data-track-location="mobile_sticky_bar_email_fallback"
         >
           <Phone size={15} aria-hidden="true" />
           <span>Callback</span>
@@ -37,7 +36,8 @@ export default function MobileStickyBar() {
           target="_blank"
           rel="noreferrer"
           className="sticky-btn sticky-wa"
-          onClick={() => trackEvent('whatsapp_click', { location: 'mobile_sticky_bar' })}
+          data-track-event="whatsapp_click"
+          data-track-location="mobile_sticky_bar"
         >
           <MessageCircle size={15} aria-hidden="true" />
           <span>WhatsApp</span>
@@ -46,7 +46,8 @@ export default function MobileStickyBar() {
         <Link
           href="/#contact"
           className="sticky-btn sticky-wa"
-          onClick={() => trackEvent('whatsapp_click', { location: 'mobile_sticky_bar_form_fallback' })}
+          data-track-event="whatsapp_click"
+          data-track-location="mobile_sticky_bar_form_fallback"
         >
           <MessageCircle size={15} aria-hidden="true" />
           <span>Chat</span>
