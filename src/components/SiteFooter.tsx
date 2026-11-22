@@ -86,6 +86,7 @@ export default function SiteFooter() {
           )}
           <div className="footer-sub-links">
             <Link href="/work">Case Studies</Link>
+            <Link href="/prices">Website Prices</Link>
             <Link href="/guides">NCR Guides</Link>
             <Link href="/about">About Our Agency</Link>
             <Link href="/faq">FAQ</Link>

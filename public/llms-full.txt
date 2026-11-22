@@ -41,7 +41,8 @@ SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineerin
 - **SillyMedia** (`/work/sillymedia`, Delhi NCR): The agency's own website (sillymedia.co.in) for restaurant and hospitality brands, with client work, services, process and pricing.
 - **Rajesh Paul Bridal Collection** (`/work/rajesh-paul-bridal-collection`, Kolkata): Heritage bridal couture house, est. 1998 — heirloom lehengas and wedding couture, with an editorial collections gallery and appointment booking.
 
-## 5. Website Packages (fixed prices, as published on the homepage)
+## 5. Website Prices (fixed prices)
+- Full pricing page: https://sillymedia.in/prices — all four fixed website packages, service tiers and commercial terms.
 - One-Page Website: ₹4,999
 - Multi-Page Website: ₹14,999
 - E-commerce Without Payment Gateway: ₹17,999

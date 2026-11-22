@@ -199,7 +199,7 @@ function parseInrPrice(value: string): number | null {
  * (PricingSection). Prices are read from site.config.ts — the same values
  * rendered visibly on the page — so no price is invented.
  */
-export function buildWebsitePackagesOffer() {
+export function buildWebsitePackagesOffer(url = '/#pricing') {
   const packages = siteConfig.pricing.websitePackages
     .map((pkg, idx) => {
       const price = parseInrPrice(pkg.startingPrice);
@@ -213,7 +213,7 @@ export function buildWebsitePackagesOffer() {
           priceCurrency: siteConfig.pricing.currency,
           price,
           availability: 'https://schema.org/InStock',
-          url: `${siteConfig.siteUrl}/#pricing`,
+          url: `${siteConfig.siteUrl}${url}`,
         },
       };
     })

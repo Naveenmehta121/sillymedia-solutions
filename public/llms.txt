@@ -28,7 +28,8 @@
 - [Faridabad](https://sillymedia.in/locations/faridabad): Sector 15, NIT Faridabad, Mathura Road Industrial Belt, IMT Faridabad, Neharpar.
 - [Ghaziabad](https://sillymedia.in/locations/ghaziabad): Indirapuram, Vaishali, Kaushambi, Vasundhara, Raj Nagar Extension, RDC.
 
-## Website Packages (fixed prices, as published on the homepage)
+## Website Prices (fixed prices)
+- [Full pricing page](https://sillymedia.in/prices): all four fixed website packages, service tiers and commercial terms.
 - One-Page Website: ₹4,999
 - Multi-Page Website: ₹14,999
 - E-commerce Without Payment Gateway: ₹17,999

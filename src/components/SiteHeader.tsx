@@ -8,9 +8,11 @@ import { getPhoneDisplay, getPhoneHref, getWhatsAppHref, siteConfig } from '@/co
 import { trackEvent } from '@/lib/analytics';
 
 const navLinks = [
+  { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/locations/delhi', label: 'Locations' },
   { href: '/work', label: 'Work' },
+  { href: '/prices', label: 'Prices' },
   { href: '/#products', label: 'Products' },
   { href: '/guides', label: 'Guides' },
   { href: '/about', label: 'About' },
