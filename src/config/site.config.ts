@@ -31,14 +31,14 @@ export const siteConfig = {
   founder: {
     name: 'SillyMedia Solutions Team',
     // PLACEHOLDER: Full name if you prefer displaying your leadership publicly
-    fullName: '[FOUNDER_FULL_NAME]',
-    jobTitle: 'Digital Marketing & Web Engineering Agency',
+    fullName: 'Naveen Kumar',
+    jobTitle: 'Founder',
     // PLACEHOLDER: Verified years of agency experience (e.g. "7+ years")
     experienceYears: '[FOUNDER_EXPERIENCE_YEARS]',
     // PLACEHOLDER: Verified agency team or headshot path or URL (e.g. "/images/team.webp")
     photoUrl: '[FOUNDER_PHOTO_URL]',
     // PLACEHOLDER: Real profile URLs for Person/Agency schema `sameAs`
-    linkedinUrl: '[FOUNDER_LINKEDIN_URL]',
+    linkedinUrl: 'https://www.linkedin.com/in/naveen-kumar-mehta',
     githubUrl: '[FOUNDER_GITHUB_URL]',
     bioParagraphs: [
       'SillyMedia Solutions is a Delhi NCR digital marketing and web engineering agency partnering directly with business owners, clinics, and startups across Delhi, Gurugram, and Noida.',
@@ -64,8 +64,8 @@ export const siteConfig = {
     geoLat: '[GEO_LAT]',
     geoLng: '[GEO_LNG]',
     // PLACEHOLDER: Confirm business hours (e.g. "Mo-Sa 10:00-19:00")
-    openingHours: '[OPENING_HOURS]',
-    openingHoursDisplay: 'Mon–Sat, 10:00 AM – 7:00 PM IST', // VERIFY: Confirm working hours
+    openingHours: 'Mo-Sa 10:00-12:00',
+    openingHoursDisplay: 'Mon–Sat, 10:00 AM – 12:00 PM IST',
     responseSla: 'Reply from our team within 3 business hours', // VERIFY: Confirm response SLA
   },
 
@@ -93,7 +93,7 @@ export const siteConfig = {
     googleBusinessProfile: '[GBP_URL]',
     clutch: '[CLUTCH_URL]',
     goodfirms: '[GOODFIRMS_URL]',
-    instagram: '[INSTAGRAM_URL]',
+    instagram: 'https://instagram.com/sillymedia.co.in',
   },
 
   // Configurable crawler policy for robots.txt (Phase 5)
@@ -127,7 +127,7 @@ export const siteConfig = {
    * (e.g. "₹25,000") and `[PRICE_RANGE]` (e.g. "₹₹") when ready.
    */
   pricing: {
-    priceRangeSchema: '[PRICE_RANGE]',
+    priceRangeSchema: '₹4,999 - ₹24,999',
     currency: 'INR',
     tiers: [
       {
