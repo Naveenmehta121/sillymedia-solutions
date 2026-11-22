@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { buildBreadcrumbSchema } from '@/lib/schema';
@@ -85,13 +85,31 @@ export default function WorkIndexPage() {
                 </span>
               </div>
               <div className="work-image">
-                <img
-                  src={cs.imageWebp}
-                  alt={cs.imageAlt}
-                  width={960}
-                  height={600}
-                  loading="lazy"
-                />
+                {cs.liveUrl ? (
+                  <a
+                    href={cs.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit ${cs.client} website (opens in a new tab)`}
+                    style={{ display: 'block', height: '100%' }}
+                  >
+                    <img
+                      src={cs.imageWebp}
+                      alt={cs.imageAlt}
+                      width={960}
+                      height={600}
+                      loading="lazy"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={cs.imageWebp}
+                    alt={cs.imageAlt}
+                    width={960}
+                    height={600}
+                    loading="lazy"
+                  />
+                )}
                 <span>{cs.imageTag}</span>
               </div>
               <h2>
@@ -102,9 +120,16 @@ export default function WorkIndexPage() {
                 <strong className={cs.badgeColor === 'green' ? 'green-text' : ''}>
                   {cs.headlineMetric} <small>{cs.headlineMetricLabel}</small>
                 </strong>
-                <Link href={`/work/${cs.slug}`}>
-                  Read Case Study <ArrowRight size={14} aria-hidden="true" />
-                </Link>
+                <span style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+                  {cs.liveUrl && (
+                    <a href={cs.liveUrl} target="_blank" rel="noopener noreferrer">
+                      Visit live site <ArrowUpRight size={14} aria-hidden="true" />
+                    </a>
+                  )}
+                  <Link href={`/work/${cs.slug}`}>
+                    Read Case Study <ArrowRight size={14} aria-hidden="true" />
+                  </Link>
+                </span>
               </div>
             </article>
           ))}

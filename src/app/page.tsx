@@ -98,13 +98,31 @@ export default function HomePage() {
           <div className="hero-visual">
             <div className="visual-card">
               <div className="image-frame">
-                <img
-                  src="/images/hero-showcase.svg"
-                  alt="The Diets — online dietitian website built by SillyMedia Solutions"
-                  width={960}
-                  height={720}
-                  fetchPriority="high"
-                />
+                {featuredCase.liveUrl ? (
+                  <a
+                    href={featuredCase.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit The Diets website (opens in a new tab)"
+                    style={{ display: 'block', height: '100%' }}
+                  >
+                    <img
+                      src="/images/hero-showcase.svg"
+                      alt="The Diets — online dietitian website built by SillyMedia Solutions"
+                      width={960}
+                      height={720}
+                      fetchPriority="high"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src="/images/hero-showcase.svg"
+                    alt="The Diets — online dietitian website built by SillyMedia Solutions"
+                    width={960}
+                    height={720}
+                    fetchPriority="high"
+                  />
+                )}
                 <div className="image-badge">
                   <span>
                     <i />
@@ -115,7 +133,21 @@ export default function HomePage() {
               </div>
               <div className="caption">
                 <span>CASE SPECIMEN 01 · LIVE DEPLOYMENT</span>
-                <small>thediets.in · Online Dietitian</small>
+                <small>
+                  {featuredCase.liveUrl ? (
+                    <a
+                      href={featuredCase.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: 'underline' }}
+                    >
+                      thediets.in
+                    </a>
+                  ) : (
+                    'thediets.in'
+                  )}
+                  {' · Online Dietitian'}
+                </small>
                 <p>
                   Online dietitian platform with 1:1 diet plans, online consultation booking and
                   transparent pricing — built for mobile speed and direct enquiries.
@@ -256,13 +288,31 @@ export default function HomePage() {
                   </span>
                 </div>
                 <div className="work-image">
-                  <img
-                    src={featuredCase.imageWebp}
-                    alt={featuredCase.imageAlt}
-                    width={960}
-                    height={600}
-                    loading="lazy"
-                  />
+                  {featuredCase.liveUrl ? (
+                    <a
+                      href={featuredCase.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Visit The Diets website (opens in a new tab)"
+                      style={{ display: 'block', height: '100%' }}
+                    >
+                      <img
+                        src={featuredCase.imageWebp}
+                        alt={featuredCase.imageAlt}
+                        width={960}
+                        height={600}
+                        loading="lazy"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={featuredCase.imageWebp}
+                      alt={featuredCase.imageAlt}
+                      width={960}
+                      height={600}
+                      loading="lazy"
+                    />
+                  )}
                   <span>{featuredCase.imageTag}</span>
                 </div>
                 <h3>

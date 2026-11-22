@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactActions from '@/components/ContactActions';
 import ContactForm from '@/components/ContactForm';
@@ -83,6 +83,19 @@ export default function CaseStudyDetailPage({ params }: { params: { slug: string
             )}
             <span>·</span>
             <span>Last updated: {siteConfig.lastUpdated}</span>
+            {cs.liveUrl && (
+              <>
+                <span>·</span>
+                <a
+                  href={cs.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'underline' }}
+                >
+                  Visit live site <ArrowUpRight size={13} aria-hidden="true" />
+                </a>
+              </>
+            )}
           </div>
           <div className="answer-box">
             <span className="answer-box-label">Project Summary</span>
@@ -95,7 +108,19 @@ export default function CaseStudyDetailPage({ params }: { params: { slug: string
         <div className="container">
           <div className="visual-card" style={{ maxWidth: 920, marginBottom: 40 }}>
             <div className="image-frame" style={{ aspectRatio: '16/10' }}>
-              <img src={cs.imageWebp} alt={cs.imageAlt} width={960} height={600} />
+              {cs.liveUrl ? (
+                <a
+                  href={cs.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${cs.client} website (opens in a new tab)`}
+                  style={{ display: 'block', height: '100%' }}
+                >
+                  <img src={cs.imageWebp} alt={cs.imageAlt} width={960} height={600} />
+                </a>
+              ) : (
+                <img src={cs.imageWebp} alt={cs.imageAlt} width={960} height={600} />
+              )}
               <div className="image-badge">
                 <span>
                   <i />

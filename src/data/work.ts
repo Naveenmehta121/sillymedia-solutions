@@ -16,6 +16,7 @@ export interface CaseStudy {
   imageAvif: string;
   imageAlt: string;
   imageTag: string;
+  liveUrl?: string; // public URL of the client's live website (opens in a new tab)
   timeline: string;
   servicesUsed: { slug: string; label: string }[];
   challenge: string[];
@@ -52,6 +53,7 @@ export const caseStudiesData: CaseStudy[] = [
     imageAvif: '/images/case-the-diets.svg',
     imageAlt: 'The Diets online dietitian website — 1:1 diet plans and consultation booking',
     imageTag: 'Online Dietitian · India',
+    liveUrl: 'https://www.thediets.in',
     timeline: 'Ongoing',
     servicesUsed: [
       { slug: 'custom-websites', label: 'Custom Websites' },
