@@ -47,7 +47,7 @@ export const siteConfig = {
   },
 
   contact: {
-    email: 'sillymediaconnect@gmail.com',
+    email: 'sillymediasolutions@gmail.com',
     // Verified 22 Nov 2026: Naveen's phone / WhatsApp number
     phone: '+918102619871',
     phoneDisplay: '+91 81026 19871',

@@ -6,7 +6,7 @@
 SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineering agency. Clients collaborate directly with senior engineering and marketing specialists on custom websites, hyperlocal SEO & Google Maps optimization, official WhatsApp Business Cloud API automation, full-stack web apps & SaaS MVPs, and grounded AI chatbots.
 
 - Canonical Website: https://sillymediasolutions.in
-- Direct Email: sillymediaconnect@gmail.com
+- Direct Email: sillymediasolutions@gmail.com
 - Phone / WhatsApp: +91 81026 19871
 - Service Area: Delhi, Gurugram, Noida, Greater Noida, Faridabad, Ghaziabad (National Capital Region, India)
 - Delivery Philosophy: Fixed milestone quotes, full client code/domain ownership, pre-rendered HTML for crawlability and mobile Core Web Vitals, and zero guaranteed "#1 ranking" gimmicks.
