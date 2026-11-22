@@ -5,7 +5,9 @@ import {
   ChevronDown,
   ExternalLink,
 } from 'lucide-react';
-import ContactForm from '@/components/ContactForm';
+import dynamic from 'next/dynamic';
+
+const ContactForm = dynamic(() => import('@/components/ContactForm'));
 import ContactActions from '@/components/ContactActions';
 import PricingSection from '@/components/PricingSection';
 import JsonLd from '@/components/JsonLd';
