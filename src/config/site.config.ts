@@ -23,7 +23,7 @@ export const siteConfig = {
   // above is also rendered visibly in the footer, so it must not be shortened.
   defaultMetaDescription:
     'Delhi NCR web & SEO agency building fast custom websites, Google Maps growth, WhatsApp automation, web apps and AI chatbots for local businesses.',
-  siteUrl: 'https://sillymedia.in',
+  siteUrl: 'https://sillymediasolutions.in',
   locale: 'en_IN',
   language: 'en-IN',
   lastUpdated: '2026-11-22',

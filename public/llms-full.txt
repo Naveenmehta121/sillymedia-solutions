@@ -1,16 +1,16 @@
 # SillyMedia Solutions — Complete Reference Context
 
-> Note: Support for llms-full.txt by AI crawlers is voluntary and not guaranteed. All facts below match the pre-rendered HTML pages published on https://sillymedia.in.
+> Note: Support for llms-full.txt by AI crawlers is voluntary and not guaranteed. All facts below match the pre-rendered HTML pages published on https://sillymediasolutions.in.
 
 ## 1. Organization Overview
 SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineering agency. Clients collaborate directly with senior engineering and marketing specialists on custom websites, hyperlocal SEO & Google Maps optimization, official WhatsApp Business Cloud API automation, full-stack web apps & SaaS MVPs, and grounded AI chatbots.
 
-- Canonical Website: https://sillymedia.in
+- Canonical Website: https://sillymediasolutions.in
 - Direct Email: sillymediaconnect@gmail.com
 - Phone / WhatsApp: +91 81026 19871
 - Service Area: Delhi, Gurugram, Noida, Greater Noida, Faridabad, Ghaziabad (National Capital Region, India)
 - Delivery Philosophy: Fixed milestone quotes, full client code/domain ownership, pre-rendered HTML for crawlability and mobile Core Web Vitals, and zero guaranteed "#1 ranking" gimmicks.
-- Social Media Management: delivered by SillyMedia for restaurants and hospitality brands in Delhi NCR — see https://sillymedia.in/social-media (packages and bookings at https://sillymedia.co.in).
+- Social Media Management: delivered by SillyMedia for restaurants and hospitality brands in Delhi NCR — see https://sillymediasolutions.in/social-media (packages and bookings at https://sillymedia.co.in).
 
 ## 2. Services & Typical Timelines
 1. **Custom Website Development** (`/services/custom-websites`)
@@ -43,7 +43,7 @@ SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineerin
 - **Rajesh Paul Bridal Collection** (`/work/rajesh-paul-bridal-collection`, Kolkata): Heritage bridal couture house, est. 1998 — heirloom lehengas and wedding couture, with an editorial collections gallery and appointment booking.
 
 ## 5. Website Prices (fixed prices)
-- Full pricing page: https://sillymedia.in/prices — all four fixed website packages, service tiers and commercial terms.
+- Full pricing page: https://sillymediasolutions.in/prices — all four fixed website packages, service tiers and commercial terms.
 - One-Page Website: ₹4,999
 - Multi-Page Website: ₹14,999
 - E-commerce Without Payment Gateway: ₹17,999
@@ -56,8 +56,8 @@ SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineerin
 - **WhatsApp Automation for Clinics in Delhi** (`/guides/whatsapp-automation-clinics-delhi`)
 
 ## 7. Key Contact & Policies
-- Contact Form: https://sillymedia.in/#contact
-- About Founder: https://sillymedia.in/about
-- FAQ: https://sillymedia.in/faq
-- Privacy Policy: https://sillymedia.in/privacy-policy
-- Terms of Service: https://sillymedia.in/terms
+- Contact Form: https://sillymediasolutions.in/#contact
+- About Founder: https://sillymediasolutions.in/about
+- FAQ: https://sillymediasolutions.in/faq
+- Privacy Policy: https://sillymediasolutions.in/privacy-policy
+- Terms of Service: https://sillymediasolutions.in/terms

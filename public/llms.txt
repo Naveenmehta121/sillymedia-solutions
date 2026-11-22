@@ -7,29 +7,29 @@
 - Brand: SillyMedia Solutions
 - Team & Leadership: Senior Engineering & Digital Marketing Specialists
 - Primary Region: Delhi NCR, India (Delhi, Gurugram, Noida, Greater Noida, Faridabad, Ghaziabad)
-- Website: https://sillymedia.in
+- Website: https://sillymediasolutions.in
 - Direct Email: sillymediaconnect@gmail.com
 - Phone / WhatsApp: +91 81026 19871
 - Engagement Model: Senior specialist engineering with fixed milestone scopes and full client code ownership.
 
 ## Core Services
-- [All Services](https://sillymedia.in/services): Overview of all five digital engineering services.
-- [Custom Website Development in Delhi NCR](https://sillymedia.in/services/custom-websites): Pre-rendered Next.js & headless websites built in 14–21 working days.
-- [Hyperlocal SEO & Google Maps Ranking](https://sillymedia.in/services/local-seo-google-maps): Google Business Profile optimization, local Schema.org, and neighbourhood SEO.
-- [WhatsApp Business Automation](https://sillymedia.in/services/whatsapp-automation): Official Meta Cloud API appointment booking, lead qualification, and CRM sync.
-- [Web Apps & SaaS MVPs](https://sillymedia.in/services/web-apps-saas): Full-stack TypeScript, Next.js, and PostgreSQL MVPs delivered in 4–6 weeks.
-- [Custom AI Chatbots & Agents](https://sillymedia.in/services/ai-chatbots-agents): Guardrailed multilingual (English/Hindi/Hinglish) assistants and document workflows.
+- [All Services](https://sillymediasolutions.in/services): Overview of all five digital engineering services.
+- [Custom Website Development in Delhi NCR](https://sillymediasolutions.in/services/custom-websites): Pre-rendered Next.js & headless websites built in 14–21 working days.
+- [Hyperlocal SEO & Google Maps Ranking](https://sillymediasolutions.in/services/local-seo-google-maps): Google Business Profile optimization, local Schema.org, and neighbourhood SEO.
+- [WhatsApp Business Automation](https://sillymediasolutions.in/services/whatsapp-automation): Official Meta Cloud API appointment booking, lead qualification, and CRM sync.
+- [Web Apps & SaaS MVPs](https://sillymediasolutions.in/services/web-apps-saas): Full-stack TypeScript, Next.js, and PostgreSQL MVPs delivered in 4–6 weeks.
+- [Custom AI Chatbots & Agents](https://sillymediasolutions.in/services/ai-chatbots-agents): Guardrailed multilingual (English/Hindi/Hinglish) assistants and document workflows.
 
 ## Delhi NCR Locations
-- [Delhi](https://sillymedia.in/locations/delhi): South Delhi (GK, South Ex, Saket, Hauz Khas), Connaught Place, Karol Bagh, Dwarka, Rohini.
-- [Gurugram](https://sillymedia.in/locations/gurugram): DLF Cyber Hub, Golf Course Road, Sohna Road, Udyog Vihar, MG Road.
-- [Noida](https://sillymedia.in/locations/noida): Sector 62, Sector 63, Sector 18, Film City, Noida Expressway.
-- [Greater Noida](https://sillymedia.in/locations/greater-noida): Knowledge Park, Pari Chowk, Alpha/Beta/Gamma Sectors, Greater Noida West / Gaur City.
-- [Faridabad](https://sillymedia.in/locations/faridabad): Sector 15, NIT Faridabad, Mathura Road Industrial Belt, IMT Faridabad, Neharpar.
-- [Ghaziabad](https://sillymedia.in/locations/ghaziabad): Indirapuram, Vaishali, Kaushambi, Vasundhara, Raj Nagar Extension, RDC.
+- [Delhi](https://sillymediasolutions.in/locations/delhi): South Delhi (GK, South Ex, Saket, Hauz Khas), Connaught Place, Karol Bagh, Dwarka, Rohini.
+- [Gurugram](https://sillymediasolutions.in/locations/gurugram): DLF Cyber Hub, Golf Course Road, Sohna Road, Udyog Vihar, MG Road.
+- [Noida](https://sillymediasolutions.in/locations/noida): Sector 62, Sector 63, Sector 18, Film City, Noida Expressway.
+- [Greater Noida](https://sillymediasolutions.in/locations/greater-noida): Knowledge Park, Pari Chowk, Alpha/Beta/Gamma Sectors, Greater Noida West / Gaur City.
+- [Faridabad](https://sillymediasolutions.in/locations/faridabad): Sector 15, NIT Faridabad, Mathura Road Industrial Belt, IMT Faridabad, Neharpar.
+- [Ghaziabad](https://sillymediasolutions.in/locations/ghaziabad): Indirapuram, Vaishali, Kaushambi, Vasundhara, Raj Nagar Extension, RDC.
 
 ## Website Prices (fixed prices)
-- [Full pricing page](https://sillymedia.in/prices): all four fixed website packages, service tiers and commercial terms.
+- [Full pricing page](https://sillymediasolutions.in/prices): all four fixed website packages, service tiers and commercial terms.
 - One-Page Website: ₹4,999
 - Multi-Page Website: ₹14,999
 - E-commerce Without Payment Gateway: ₹17,999
@@ -37,19 +37,19 @@
 - All other services (local SEO, WhatsApp automation, web apps, AI chatbots) are scoped on a free 20-minute call — no fixed price is published for them.
 
 ## Case Studies & About
-- [Selected Work](https://sillymedia.in/work)
-- [The Diets — Online Dietitian Website (thediets.in)](https://sillymedia.in/work/the-diets): Online dietitian platform with 1:1 diet plans and online consultation booking.
-- [SillyMedia — Agency Website (sillymedia.co.in)](https://sillymedia.in/work/sillymedia): The agency's own website for restaurant and hospitality brands in Delhi NCR, with client work, services, process and pricing.
-- [Rajesh Paul Bridal Collection — Bridal Couture Website](https://sillymedia.in/work/rajesh-paul-bridal-collection): Heritage bridal couture house, est. 1998 — heirloom lehengas and wedding couture with an editorial collections gallery and appointment booking.
-- [Social Media Management](https://sillymedia.in/social-media): Social media management for restaurants and hospitality brands in Delhi NCR, delivered by SillyMedia — packages and bookings at sillymedia.co.in.
-- [About SillyMedia Solutions](https://sillymedia.in/about)
-- [Frequently Asked Questions](https://sillymedia.in/faq)
+- [Selected Work](https://sillymediasolutions.in/work)
+- [The Diets — Online Dietitian Website (thediets.in)](https://sillymediasolutions.in/work/the-diets): Online dietitian platform with 1:1 diet plans and online consultation booking.
+- [SillyMedia — Agency Website (sillymedia.co.in)](https://sillymediasolutions.in/work/sillymedia): The agency's own website for restaurant and hospitality brands in Delhi NCR, with client work, services, process and pricing.
+- [Rajesh Paul Bridal Collection — Bridal Couture Website](https://sillymediasolutions.in/work/rajesh-paul-bridal-collection): Heritage bridal couture house, est. 1998 — heirloom lehengas and wedding couture with an editorial collections gallery and appointment booking.
+- [Social Media Management](https://sillymediasolutions.in/social-media): Social media management for restaurants and hospitality brands in Delhi NCR, delivered by SillyMedia — packages and bookings at sillymedia.co.in.
+- [About SillyMedia Solutions](https://sillymediasolutions.in/about)
+- [Frequently Asked Questions](https://sillymediasolutions.in/faq)
 
 ## Evergreen Guides
-- [Website Development Cost in Delhi NCR](https://sillymedia.in/guides/website-cost-delhi-ncr)
-- [How to Rank on Google Maps in Gurugram](https://sillymedia.in/guides/rank-on-google-maps-gurugram)
-- [WhatsApp Automation for Clinics in Delhi](https://sillymedia.in/guides/whatsapp-automation-clinics-delhi)
+- [Website Development Cost in Delhi NCR](https://sillymediasolutions.in/guides/website-cost-delhi-ncr)
+- [How to Rank on Google Maps in Gurugram](https://sillymediasolutions.in/guides/rank-on-google-maps-gurugram)
+- [WhatsApp Automation for Clinics in Delhi](https://sillymediasolutions.in/guides/whatsapp-automation-clinics-delhi)
 
 ## Optional Full Context
-- [llms-full.txt](https://sillymedia.in/llms-full.txt)
-- [XML Sitemap](https://sillymedia.in/sitemap.xml)
+- [llms-full.txt](https://sillymediasolutions.in/llms-full.txt)
+- [XML Sitemap](https://sillymediasolutions.in/sitemap.xml)

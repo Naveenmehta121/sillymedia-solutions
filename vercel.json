@@ -9,10 +9,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.sillymedia.in"
+          "value": "www.sillymediasolutions.in"
         }
       ],
-      "destination": "https://sillymedia.in/:path*",
+      "destination": "https://sillymediasolutions.in/:path*",
       "permanent": true
     }
   ],
