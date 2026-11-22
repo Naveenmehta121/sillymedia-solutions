@@ -135,7 +135,7 @@ export const siteConfig = {
         eyebrow: 'TIER 01 · FAST LAUNCH',
         name: 'Business Website Sprint',
         startingPrice: '[PRICE_TIER_WEBSITE]',
-        fallbackLabel: 'Scoped on free 20-min audit',
+        fallbackLabel: 'Custom quote after a free 20-minute audit',
         timeline: '14–21 working days', // VERIFY: Confirm standard website delivery window
         bestFor: 'Local businesses, clinics, retail stores, and service firms across Delhi NCR.',
         features: [
@@ -152,7 +152,7 @@ export const siteConfig = {
         eyebrow: 'TIER 02 · LOCAL VISIBILITY',
         name: 'Delhi NCR Local SEO & Maps',
         startingPrice: '[PRICE_TIER_LOCAL_SEO]',
-        fallbackLabel: 'Monthly or sprint scope',
+        fallbackLabel: 'Custom quote after a free 20-minute audit',
         timeline: 'Ongoing (initial audit in 7 days)', // VERIFY: Confirm SEO engagement structure
         bestFor: 'Clinics, restaurants, showrooms, and local services competing for Google Maps calls.',
         features: [
@@ -169,7 +169,7 @@ export const siteConfig = {
         eyebrow: 'TIER 03 · LEAD AUTOMATION',
         name: 'WhatsApp & AI Lead Engine',
         startingPrice: '[PRICE_TIER_AUTOMATION]',
-        fallbackLabel: 'Scoped by workflow complexity',
+        fallbackLabel: 'Custom quote after a free 20-minute audit',
         timeline: '2–3 weeks', // VERIFY: Confirm automation delivery timeline
         bestFor: 'High-inquiry clinics, coaching institutes, D2C brands, and real estate teams.',
         features: [
@@ -186,7 +186,7 @@ export const siteConfig = {
         eyebrow: 'TIER 04 · CUSTOM ENGINEERING',
         name: 'Web Apps, SaaS MVP & Custom AI',
         startingPrice: '[PRICE_TIER_CUSTOM]',
-        fallbackLabel: 'Milestone-based fixed quote',
+        fallbackLabel: 'Custom quote after a free 20-minute audit',
         timeline: '4–6 weeks (MVP scope)', // VERIFY: Confirm MVP delivery timeline
         bestFor: 'NCR startups, B2B platforms, booking portals, and multi-location brands.',
         features: [

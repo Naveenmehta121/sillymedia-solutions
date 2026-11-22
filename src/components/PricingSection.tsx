@@ -26,7 +26,7 @@ export default function PricingSection({ sectionNumber = '06' }: { sectionNumber
                   <span className="pricing-eyebrow">{tier.eyebrow}</span>
                   <h3>{tier.name}</h3>
                   <div className="pricing-price-block">
-                    <span className="pricing-starting-label">Starting from</span>
+                    {hasPrice && <span className="pricing-starting-label">Starting from</span>}
                     <strong className="pricing-amount">
                       {hasPrice ? tier.startingPrice : tier.fallbackLabel}
                     </strong>
@@ -71,7 +71,7 @@ export default function PricingSection({ sectionNumber = '06' }: { sectionNumber
                     <span className="pricing-eyebrow">{tier.eyebrow}</span>
                     <h3>{tier.name}</h3>
                     <div className="pricing-price-block">
-                      <span className="pricing-starting-label">Starting from</span>
+                      {hasPrice && <span className="pricing-starting-label">Starting from</span>}
                       <strong className="pricing-amount">
                         {hasPrice ? tier.startingPrice : tier.fallbackLabel}
                       </strong>

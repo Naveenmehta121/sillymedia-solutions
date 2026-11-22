@@ -83,10 +83,13 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             {tier && (
               <>
                 <span>·</span>
-                <span>
-                  Starting from:{' '}
-                  {isConfigured(tier.startingPrice) ? tier.startingPrice : tier.fallbackLabel}
-                </span>
+                {isConfigured(tier.startingPrice) ? (
+                  <span>
+                    Starting from: {tier.startingPrice}
+                  </span>
+                ) : (
+                  <span>{tier.fallbackLabel}</span>
+                )}
               </>
             )}
           </div>
