@@ -38,6 +38,8 @@ SillyMedia Solutions is a premier Delhi NCR digital marketing and web engineerin
 
 ## 4. Selected Case Studies
 - **The Diets** (`/work/the-diets`, Online · Pan-India): Online dietitian platform (thediets.in) with 1:1 diet plans, online consultation booking and transparent plan pricing, built and optimised by SillyMedia Solutions.
+- **SillyMedia** (`/work/sillymedia`, Delhi NCR): The agency's own website (sillymedia.co.in) for restaurant and hospitality brands, with client work, services, process and pricing.
+- **Rajesh Paul Bridal Collection** (`/work/rajesh-paul-bridal-collection`, Kolkata): Heritage bridal couture house, est. 1998 — heirloom lehengas and wedding couture, with an editorial collections gallery and appointment booking.
 
 ## 5. Website Packages (fixed prices, as published on the homepage)
 - One-Page Website: ₹4,999

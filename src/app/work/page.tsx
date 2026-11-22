@@ -7,24 +7,24 @@ import { buildBreadcrumbSchema } from '@/lib/schema';
 import { caseStudiesData } from '@/data/work';
 import { siteConfig } from '@/config/site.config';
 
-const pageTitle = 'Our Work — The Diets (thediets.in)';
+const pageTitle = 'Our Work — Selected Projects';
 
 export const metadata: Metadata = {
   title: pageTitle,
   description:
-    'Selected web development, local SEO, WhatsApp booking, and B2B SaaS deployments built across Delhi NCR — currently featuring The Diets (thediets.in).',
+    'Selected web development and design deployments — The Diets (thediets.in), SillyMedia (sillymedia.co.in) and the Rajesh Paul Bridal Collection.',
   alternates: { canonical: '/work' },
   openGraph: {
     title: `${pageTitle} | ${siteConfig.brandName}`,
     description:
-      'Selected web development, local SEO, WhatsApp booking, and B2B SaaS deployments built across Delhi NCR — currently featuring The Diets (thediets.in).',
+      'Selected web development and design deployments — The Diets (thediets.in), SillyMedia (sillymedia.co.in) and the Rajesh Paul Bridal Collection.',
     url: `${siteConfig.siteUrl}/work`,
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'SillyMedia Solutions — Selected Work & Production Deployment',
+        alt: 'SillyMedia Solutions — Selected Work & Production Deployments',
       },
     ],
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${pageTitle} | ${siteConfig.brandName}`,
     description:
-      'Selected web development, local SEO, WhatsApp booking, and B2B SaaS deployments built across Delhi NCR — currently featuring The Diets (thediets.in).',
+      'Selected web development and design deployments — The Diets (thediets.in), SillyMedia (sillymedia.co.in) and the Rajesh Paul Bridal Collection.',
     images: ['/og-image.png'],
   },
 };
@@ -49,18 +49,19 @@ export default function WorkIndexPage() {
             <i />
             SELECTED WORK · DELHI NCR
           </span>
-          <h1>Our Work &amp; Production Deployment</h1>
+          <h1>Our Work &amp; Production Deployments</h1>
           <div className="page-meta-row">
             <span>Last updated: {siteConfig.lastUpdated}</span>
             <span>·</span>
-            <span>Online Dietitian · 1:1 Diet Plans</span>
+            <span>Three Live Deployments</span>
           </div>
           <div className="answer-box">
             <span className="answer-box-label">What kinds of projects does SillyMedia Solutions build?</span>
             <p>
               SillyMedia Solutions engineers production digital systems for Delhi NCR businesses.
-              Our live deployment is The Diets (thediets.in) — an online dietitian platform with
-              1:1 diet plans, online consultation booking and transparent pricing.
+              Our live deployments are The Diets (thediets.in), an online dietitian platform with
+              1:1 diet plans; SillyMedia (sillymedia.co.in), the agency&apos;s own website; and the
+              Rajesh Paul Bridal Collection, a heritage bridal couture showcase.
             </p>
           </div>
         </div>

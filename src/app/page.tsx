@@ -107,7 +107,7 @@ export default function HomePage() {
                     style={{ display: 'block', height: '100%' }}
                   >
                     <img
-                      src="/images/hero-showcase.svg"
+                      src="/images/hero-showcase.webp"
                       alt="The Diets — online dietitian website built by SillyMedia Solutions"
                       width={960}
                       height={720}
@@ -116,7 +116,7 @@ export default function HomePage() {
                   </a>
                 ) : (
                   <img
-                    src="/images/hero-showcase.svg"
+                    src="/images/hero-showcase.webp"
                     alt="The Diets — online dietitian website built by SillyMedia Solutions"
                     width={960}
                     height={720}
@@ -272,8 +272,8 @@ export default function HomePage() {
         <div className="container">
           <SectionHeading
             eyebrow="OUR WORK — 03"
-            title="Selected Work & Production Deployment"
-            description="Live production deployment — thediets.in, an online dietitian platform."
+            title="Selected Work & Production Deployments"
+            description="Three live production deployments — thediets.in, sillymedia.co.in and the Rajesh Paul Bridal Collection."
           />
           <div className="work-grid">
             {featuredCase && (

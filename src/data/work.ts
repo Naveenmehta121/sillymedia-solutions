@@ -49,8 +49,8 @@ export const caseStudiesData: CaseStudy[] = [
     headlineMetricLabel: 'Personalised diet plans with online consultation',
     metricVerificationNote:
       'Plans, dietitians and pricing as published on thediets.in.',
-    imageWebp: '/images/case-the-diets.svg',
-    imageAvif: '/images/case-the-diets.svg',
+    imageWebp: '/images/case-the-diets.webp',
+    imageAvif: '/images/case-the-diets.webp',
     imageAlt: 'The Diets online dietitian website — 1:1 diet plans and consultation booking',
     imageTag: 'Online Dietitian · India',
     liveUrl: 'https://www.thediets.in',
@@ -78,6 +78,100 @@ export const caseStudiesData: CaseStudy[] = [
       'Online consultation flow',
       'Transparent plan pricing',
       'Technical SEO structure',
+    ],
+  },
+  {
+    slug: 'sillymedia',
+    client: 'SillyMedia',
+    city: 'Delhi NCR',
+    locationSlug: 'delhi',
+    sector: 'Digital Marketing Agency',
+    badgeColor: 'blue',
+    title: 'Restaurant & Hospitality Social Media Agency Website',
+    metaTitle: 'SillyMedia — Agency Website',
+    metaDescription:
+      'How SillyMedia Solutions built sillymedia.co.in — the agency website for restaurant and hospitality brands, with client work, services and pricing.',
+    summary:
+      'The agency’s own website — a single-page site for restaurant and hospitality brands in Delhi NCR, showing client work, services, process, pricing and team.',
+    headlineMetric: '20+',
+    headlineMetricLabel: 'Brands transformed, as published on sillymedia.co.in',
+    metricVerificationNote:
+      'Stats (20+ brands, 150k+ growth, 90% average growth rate) as published on sillymedia.co.in.',
+    imageWebp: '/images/case-sillymedia.webp',
+    imageAvif: '/images/case-sillymedia.webp',
+    imageAlt: 'SillyMedia agency website — restaurant and hospitality social media, Delhi NCR',
+    imageTag: 'Agency Website · Delhi NCR',
+    liveUrl: 'https://sillymedia.co.in',
+    timeline: 'Ongoing',
+    servicesUsed: [
+      { slug: 'custom-websites', label: 'Custom Websites' },
+    ],
+    challenge: [
+      'The agency needed one place to show its restaurant and hospitality work — client results, services, process, pricing and team — and turn visits into enquiries.',
+      'Restaurant and bar brands judge an agency by its own site, so the site had to look as bold as the work it sells.',
+    ],
+    approach: [
+      'Built a single-page agency site with a work portfolio, services, process, pricing and team sections, plus a contact path.',
+      'Led with client stories — Bakoo Yaar, Delight Dining, Saga and Olives and Figs — each with what was delivered and the outcome.',
+      'Put the agency’s published stats up front: 20+ brands transformed, 150k+ growth and a 90% average growth rate.',
+    ],
+    results: [
+      'Live agency site with a named client portfolio and published outcomes for Delhi NCR restaurants and bars.',
+      'Clear services, process and pricing sections with a direct contact path for new business.',
+      'Stats-led credibility — 20+ brands, 150k+ growth, 90% average growth rate — as published on the site.',
+    ],
+    architectureStack: [
+      'Single-page agency site',
+      'Client portfolio',
+      'Services & pricing sections',
+      'Contact enquiry flow',
+    ],
+  },
+  {
+    slug: 'rajesh-paul-bridal-collection',
+    client: 'Rajesh Paul Bridal Collection',
+    city: 'Kolkata',
+    locationSlug: '',
+    sector: 'Bridal Couture',
+    badgeColor: 'green',
+    title: 'Heirloom Bridal Couture & Lehengas Website',
+    metaTitle: 'Rajesh Paul — Bridal Couture',
+    metaDescription:
+      'How SillyMedia Solutions built the Rajesh Paul Bridal Collection website — heirloom lehengas and wedding couture, est. 1998, with an editorial gallery.',
+    summary:
+      'An editorial website for a heritage bridal couture house, est. 1998 — hand-embroidered lehengas and wedding couture, with a collections gallery and appointment booking.',
+    headlineMetric: '1998',
+    headlineMetricLabel: 'Heritage bridal couture house, est. 1998',
+    metricVerificationNote:
+      'Est. 1998 and Kolkata as published on the Rajesh Paul Bridal Collection website.',
+    imageWebp: '/images/case-rajesh-paul.webp',
+    imageAvif: '/images/case-rajesh-paul.webp',
+    imageAlt: 'Rajesh Paul Bridal Collection website — heirloom lehengas and wedding couture',
+    imageTag: 'Bridal Couture · Kolkata',
+    liveUrl: 'https://rajesh-paul-bridal-collection-websi.vercel.app',
+    timeline: 'Ongoing',
+    servicesUsed: [
+      { slug: 'custom-websites', label: 'Custom Websites' },
+    ],
+    challenge: [
+      'A heritage bridal house needed an online showcase that carries the weight of heirloom craft — zardozi embroidery, hand-woven silks and bespoke fittings — not just a catalogue.',
+      'Browsing had to lead somewhere: private appointments and WhatsApp enquiries, not a checkout.',
+    ],
+    approach: [
+      'Built an editorial-style site around the brand story — from the bylanes of Chandni Chowk to the modern Indian bride — with a four-step craft process.',
+      'Added a filterable collections gallery (8 editorial pieces across Bridal, Occasion Wear and Cocktail) with a piece-detail view.',
+      'Kept the enquiry path personal: book-an-appointment and WhatsApp enquiry, plus maps and Instagram links.',
+    ],
+    results: [
+      'Live editorial showcase with an 8-piece collections gallery across bridal, occasion wear and cocktail.',
+      'Brand story and four-step craft process (zardozi, fabric study, drape & fitting, final styling) published on the site.',
+      'Appointment booking and WhatsApp enquiries wired into every collection piece.',
+    ],
+    architectureStack: [
+      'Editorial collections gallery',
+      'Appointment booking',
+      'WhatsApp enquiry',
+      'Brand story & craft sections',
     ],
   },
 ];
