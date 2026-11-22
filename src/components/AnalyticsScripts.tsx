@@ -13,9 +13,9 @@ export default function AnalyticsScripts() {
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}
-            strategy="lazyOnload"
+            strategy="afterInteractive"
           />
-          <Script id="ga4-init" strategy="lazyOnload">
+          <Script id="ga4-init" strategy="afterInteractive">
             {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
