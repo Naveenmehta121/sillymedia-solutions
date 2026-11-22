@@ -95,7 +95,7 @@ export const guidesData: GuideItem[] = [
           'Generic Template / Page Builder',
           '3–7 days',
           'Often heavy JS/CSS; mixed mobile Core Web Vitals',
-          'Temporary placeholder only',
+          'Very small budgets that only need a basic online presence',
         ],
         [
           'Custom Pre-Rendered Business Site (Next.js)',
