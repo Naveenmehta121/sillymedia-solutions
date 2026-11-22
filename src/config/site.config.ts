@@ -74,7 +74,7 @@ export const siteConfig = {
     endpoint: 'https://api.web3forms.com/submit',
     accessKey:
       process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
-      'aa990098-e503-45b4-b7eb-734fa28e4b97',
+      'a3407244-f8a2-4748-ac71-1ae1b9305032',
   },
 
   analytics: {
