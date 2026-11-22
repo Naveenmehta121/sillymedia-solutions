@@ -79,7 +79,7 @@ export const siteConfig = {
 
   analytics: {
     // PLACEHOLDER: Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX"
-    ga4Id: process.env.NEXT_PUBLIC_GA4_ID || '[GA4_ID]',
+    ga4Id: process.env.NEXT_PUBLIC_GA4_ID || 'G-MSBW55TGXL',
     // PLACEHOLDER: Google Search Console HTML meta verification token
     gscToken: process.env.NEXT_PUBLIC_GSC_TOKEN || '[GSC_TOKEN]',
     // PLACEHOLDER: Microsoft Clarity project ID
